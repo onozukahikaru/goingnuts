@@ -50,8 +50,8 @@
         "featured-collection-0": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "title": "",
+            "collection": "売上ランキング",
+            "title": "売上ランキング",
             "grid_items_count": 8,
             "button_text": "View all products"
           }
@@ -61,7 +61,7 @@
         "featured-collection-0"
       ],
       "settings": {
-        "title": "Featured collection",
+        "title": "",
         "layout_mode": "grid",
         "show_product_info": true,
         "show_vendor": false,
