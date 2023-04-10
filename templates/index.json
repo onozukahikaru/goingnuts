@@ -76,6 +76,37 @@
         "button_background": "#ffffff"
       }
     },
+    "5983daf6-5e3a-47bb-900e-35fd12ad7640": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18557725802773__5983daf6-5e3a-47bb-900e-35fd12ad7640-1681106831b0e09898-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/butter_banner.png",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "Tell your story",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18557725802773__5983daf6-5e3a-47bb-900e-35fd12ad7640-1681106831b0e09898-0"
+      ],
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -291,6 +322,7 @@
   },
   "order": [
     "slideshow",
+    "5983daf6-5e3a-47bb-900e-35fd12ad7640",
     "collection-list",
     "featured-product",
     "blog-posts",
