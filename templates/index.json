@@ -281,6 +281,23 @@
         "title": "Our looks",
         "show_mobile_product_info": false
       }
+    },
+    "22d350db-1005-4071-a924-bb597450593a": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "新着情報",
+        "html": "相談後制作予定"
+      }
+    },
+    "6c6dcb4b-ece2-4a6e-a193-64d9e52b1118": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Recently viewed",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
     }
   },
   "order": [
@@ -290,6 +307,8 @@
     "featured-product",
     "timeline",
     "blog-posts",
-    "shop-the-look"
+    "shop-the-look",
+    "22d350db-1005-4071-a924-bb597450593a",
+    "6c6dcb4b-ece2-4a6e-a193-64d9e52b1118"
   ]
 }
