@@ -20,6 +20,7 @@
         "slide-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/slide-2.png",
             "apply_overlay": true,
             "content_position": "bottomLeft",
             "subheading": "Slide title",
