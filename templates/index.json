@@ -44,32 +44,6 @@
         "button_background": "#ffffff"
       }
     },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "featured-collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "売上ランキング",
-            "title": "売上ランキング",
-            "grid_items_count": 8,
-            "button_text": "View all products"
-          }
-        }
-      },
-      "block_order": [
-        "featured-collection-0"
-      ],
-      "settings": {
-        "title": "",
-        "layout_mode": "grid",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false,
-        "grid_mobile_items_per_row": "2",
-        "grid_desktop_items_per_row": 4
-      }
-    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -174,49 +148,6 @@
         "product": ""
       }
     },
-    "timeline": {
-      "type": "timeline",
-      "blocks": {
-        "item-0": {
-          "type": "item",
-          "settings": {
-            "apply_overlay": true,
-            "title": "2000",
-            "subheading": "Sub-heading",
-            "heading": "Heading",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
-          }
-        },
-        "item-1": {
-          "type": "item",
-          "settings": {
-            "apply_overlay": true,
-            "title": "2001",
-            "subheading": "Sub-heading",
-            "heading": "Heading",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
-          }
-        },
-        "item-2": {
-          "type": "item",
-          "settings": {
-            "apply_overlay": true,
-            "title": "2002",
-            "subheading": "Sub-heading",
-            "heading": "Heading",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "item-0",
-        "item-1",
-        "item-2"
-      ],
-      "settings": {
-        "text_color": "#ffffff"
-      }
-    },
     "blog-posts": {
       "type": "blog-posts",
       "blocks": {
@@ -282,12 +213,30 @@
         "show_mobile_product_info": false
       }
     },
-    "22d350db-1005-4071-a924-bb597450593a": {
-      "type": "custom-html",
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "featured-collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "売上ランキング",
+            "title": "売上ランキング",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        }
+      },
+      "block_order": [
+        "featured-collection-0"
+      ],
       "settings": {
-        "subheading": "",
-        "title": "新着情報",
-        "html": "相談後制作予定"
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
       }
     },
     "6c6dcb4b-ece2-4a6e-a193-64d9e52b1118": {
@@ -298,17 +247,24 @@
         "show_vendor": false,
         "show_color_swatch": false
       }
+    },
+    "22d350db-1005-4071-a924-bb597450593a": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "新着情報",
+        "html": "相談後制作予定"
+      }
     }
   },
   "order": [
     "slideshow",
-    "featured-collections",
     "collection-list",
     "featured-product",
-    "timeline",
     "blog-posts",
     "shop-the-look",
-    "22d350db-1005-4071-a924-bb597450593a",
-    "6c6dcb4b-ece2-4a6e-a193-64d9e52b1118"
+    "featured-collections",
+    "6c6dcb4b-ece2-4a6e-a193-64d9e52b1118",
+    "22d350db-1005-4071-a924-bb597450593a"
   ]
 }
