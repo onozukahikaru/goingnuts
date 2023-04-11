@@ -120,7 +120,7 @@
             "title": "{{ block.settings.collection.title }}",
             "button_text": "View products",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "collection-1": {
@@ -133,20 +133,20 @@
             "title": "{{ block.settings.collection.title }}",
             "button_text": "View products",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "dried-fruit",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
+            "subheading": "Going Nuts!のドライフルーツ類一覧",
+            "title": "{{ block.settings.collection.title }}",
             "button_text": "View products",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         }
       },
