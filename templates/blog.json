@@ -3,26 +3,14 @@
     "main": {
       "type": "main-blog",
       "settings": {
-      }
-    },
-    "shop-now": {
-      "type": "shop-now",
-      "blocks": {
-        "quote": {
-          "type": "quote",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "quote"
-      ],
-      "settings": {
+        "show_rss": false,
+        "show_tags": false,
+        "show_featured_article": true,
+        "show_category": false
       }
     }
   },
   "order": [
-    "main",
-    "shop-now"
+    "main"
   ]
 }
