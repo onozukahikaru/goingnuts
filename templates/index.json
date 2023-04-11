@@ -113,7 +113,7 @@
         "collection-0": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "nuts",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
