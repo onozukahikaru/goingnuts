@@ -117,7 +117,7 @@
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Going Nuts!のナッツ類一覧",
-            "title": "ナッツ",
+            "title": "{{ block.settings.collection.title }}",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -126,11 +126,11 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "mix",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
+            "subheading": "新しい風味と美容効果をお楽しみください。",
+            "title": "{{ block.settings.collection.title }}",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
