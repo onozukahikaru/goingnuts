@@ -232,6 +232,32 @@
         "button_text": "View all articles"
       }
     },
+    "38a58fab-56cc-499b-a4bd-4f67bf1a9220": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--18557725802773__38a58fab-56cc-499b-a4bd-4f67bf1a9220-1681190810d0e4b0a1-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "ranking",
+            "title": "{{ block.settings.collection.title }}",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        }
+      },
+      "block_order": [
+        "template--18557725802773__38a58fab-56cc-499b-a4bd-4f67bf1a9220-1681190810d0e4b0a1-0"
+      ],
+      "settings": {
+        "title": "Featured collection",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
     "0db90031-7c5e-47cf-9386-faad8d847250": {
       "type": "featured-collections",
       "blocks": {
@@ -316,6 +342,7 @@
     "collection-list",
     "featured-product",
     "blog-posts",
+    "38a58fab-56cc-499b-a4bd-4f67bf1a9220",
     "0db90031-7c5e-47cf-9386-faad8d847250",
     "featured-collections",
     "6c6dcb4b-ece2-4a6e-a193-64d9e52b1118",
