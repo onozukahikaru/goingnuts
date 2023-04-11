@@ -6,6 +6,10 @@
         "product_meta": {
           "type": "product_meta",
           "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
           }
         },
         "description": {
@@ -21,16 +25,23 @@
         "variant_selector": {
           "type": "variant_selector",
           "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
           }
         },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
+            "show_label": false
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": true
           }
         }
       },
@@ -43,16 +54,30 @@
         "buy_buttons"
       ],
       "settings": {
+        "image_size": "large",
+        "stack_images": true,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": false
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
+        "heading": "You may also like",
+        "recommendations_count": 4,
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
       }
     },
     "recently-viewed-products": {
       "type": "recently-viewed-products",
       "settings": {
+        "title": "Recently viewed",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
       }
     }
   },
