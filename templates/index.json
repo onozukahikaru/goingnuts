@@ -211,27 +211,6 @@
         "product": ""
       }
     },
-    "blog-posts": {
-      "type": "blog-posts",
-      "blocks": {
-        "blog-0": {
-          "type": "blog",
-          "settings": {
-            "blog": "news"
-          }
-        }
-      },
-      "block_order": [
-        "blog-0"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "Featured article",
-        "show_category": false,
-        "button_link": "",
-        "button_text": "View all articles"
-      }
-    },
     "38a58fab-56cc-499b-a4bd-4f67bf1a9220": {
       "type": "featured-collections",
       "blocks": {
@@ -319,6 +298,27 @@
         "show_color_swatch": false
       }
     },
+    "blog-posts": {
+      "type": "blog-posts",
+      "blocks": {
+        "blog-0": {
+          "type": "blog",
+          "settings": {
+            "blog": "news"
+          }
+        }
+      },
+      "block_order": [
+        "blog-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Featured article",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "View all articles"
+      }
+    },
     "22d350db-1005-4071-a924-bb597450593a": {
       "type": "custom-html",
       "settings": {
@@ -341,11 +341,11 @@
     "5983daf6-5e3a-47bb-900e-35fd12ad7640",
     "collection-list",
     "featured-product",
-    "blog-posts",
     "38a58fab-56cc-499b-a4bd-4f67bf1a9220",
     "0db90031-7c5e-47cf-9386-faad8d847250",
     "featured-collections",
     "6c6dcb4b-ece2-4a6e-a193-64d9e52b1118",
+    "blog-posts",
     "22d350db-1005-4071-a924-bb597450593a",
     "bc9b4315-5e42-438d-80bf-a82582428639"
   ]
