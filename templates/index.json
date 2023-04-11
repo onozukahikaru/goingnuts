@@ -120,7 +120,7 @@
             "title": "{{ block.settings.collection.title }}",
             "button_text": "View products",
             "button_link": "",
-            "apply_overlay": false
+            "apply_overlay": true
           }
         },
         "collection-1": {
