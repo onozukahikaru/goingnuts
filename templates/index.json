@@ -164,51 +164,16 @@
         "button_color": "#363636"
       }
     },
-    "featured-product": {
-      "type": "featured-product",
-      "blocks": {
-        "product-meta": {
-          "type": "product_meta",
-          "settings": {
-            "show_vendor": false,
-            "show_sku": false,
-            "show_product_rating": false,
-            "show_taxes_included": false
-          }
-        },
-        "share-buttons": {
-          "type": "share_buttons",
-          "settings": {
-          }
-        },
-        "variant-selector": {
-          "type": "variant_selector",
-          "settings": {
-            "selector_mode": "dropdown",
-            "show_color_swatch": false,
-            "show_color_carousel": false,
-            "size_chart": ""
-          }
-        },
-        "buy-buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_price_in_button": false,
-            "show_payment_button": true
-          }
-        }
-      },
-      "block_order": [
-        "product-meta",
-        "share-buttons",
-        "variant-selector",
-        "buy-buttons"
-      ],
+    "c8d871be-8ad9-41f1-9126-6d5effb8ce8f": {
+      "type": "text-with-image",
       "settings": {
-        "subheading": "",
-        "title": "おすすめ商品",
-        "show_headings_on_mobile": true,
-        "product": "natural-almond-butter"
+        "subheading": "Sub-heading",
+        "title": "取り扱い店舗一覧",
+        "image": "shopify:\/\/shop_images\/banners03_toriatsukai.png",
+        "image_position": "left",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": "shopify:\/\/pages\/partners"
       }
     },
     "38a58fab-56cc-499b-a4bd-4f67bf1a9220": {
@@ -298,6 +263,53 @@
         "show_color_swatch": false
       }
     },
+    "featured-product": {
+      "type": "featured-product",
+      "blocks": {
+        "product-meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "share-buttons": {
+          "type": "share_buttons",
+          "settings": {
+          }
+        },
+        "variant-selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "buy-buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": true
+          }
+        }
+      },
+      "block_order": [
+        "product-meta",
+        "share-buttons",
+        "variant-selector",
+        "buy-buttons"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "おすすめ商品",
+        "show_headings_on_mobile": true,
+        "product": "natural-almond-butter"
+      }
+    },
     "blog-posts": {
       "type": "blog-posts",
       "blocks": {
@@ -334,32 +346,20 @@
         "title": "Googleカレンダー",
         "html": "一旦カレンダ埋め込みから"
       }
-    },
-    "c8d871be-8ad9-41f1-9126-6d5effb8ce8f": {
-      "type": "text-with-image",
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "取り扱い店舗一覧",
-        "image": "shopify:\/\/shop_images\/banners03_toriatsukai.png",
-        "image_position": "left",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "link_text": "",
-        "link_url": "shopify:\/\/pages\/partners"
-      }
     }
   },
   "order": [
     "slideshow",
     "5983daf6-5e3a-47bb-900e-35fd12ad7640",
     "collection-list",
-    "featured-product",
+    "c8d871be-8ad9-41f1-9126-6d5effb8ce8f",
     "38a58fab-56cc-499b-a4bd-4f67bf1a9220",
     "0db90031-7c5e-47cf-9386-faad8d847250",
     "featured-collections",
     "6c6dcb4b-ece2-4a6e-a193-64d9e52b1118",
+    "featured-product",
     "blog-posts",
     "22d350db-1005-4071-a924-bb597450593a",
-    "bc9b4315-5e42-438d-80bf-a82582428639",
-    "c8d871be-8ad9-41f1-9126-6d5effb8ce8f"
+    "bc9b4315-5e42-438d-80bf-a82582428639"
   ]
 }
