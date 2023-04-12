@@ -50,25 +50,52 @@
         "type": "sidebar-menu",
         "settings": {
           "primary_menu": "main-menu",
+          "secondary_menu": "",
           "show_social_media": true
         }
       },
       "announcement": {
         "type": "announcement",
         "settings": {
+          "enable_bar": true,
+          "home_page_only": false,
           "background": "#000000",
           "text_color": "#ffffff",
-          "content": "Announce something here"
+          "content": "Announce something here",
+          "link": ""
         }
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "2bb21803-d24f-4b84-8cfc-389b4e55f982": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "ああああああああ",
+              "push_1_heading": "Example heading",
+              "push_1_subheading": "Example sub-heading",
+              "push_1_url": "",
+              "push_2_heading": "Example heading",
+              "push_2_subheading": "Example sub-heading",
+              "push_2_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "2bb21803-d24f-4b84-8cfc-389b4e55f982"
+        ],
         "settings": {
           "use_sticky_header": true,
           "logo_max_width": 140,
+          "mobile_logo_max_width": 90,
+          "show_country_selector": false,
+          "show_locale_selector": true,
           "navigation_menu": "main-menu",
           "navigation_style": "inline",
+          "show_icons": false,
           "enable_transparent_header": true,
+          "enable_transparent_header_collection": false,
+          "show_transparent_header_border": true,
           "transparent_text_color": "#ffffff"
         }
       },
@@ -103,10 +130,28 @@
           "footer-2"
         ],
         "settings": {
-          "show_payment_methods": true
+          "show_payment_methods": true,
+          "show_country_selector": true,
+          "show_locale_selector": true
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "settings": {
+          "show_popup": false,
+          "show_only_on_index": true,
+          "show_only_for_visitors": true,
+          "show_only_once": true,
+          "title": "Popup",
+          "content": "<p>You can use this popup to display some useful information to your customers.<\/p>",
+          "show_newsletter": true,
+          "apparition_delay": 5
         }
       }
     },
+    "content_for_index": [
+
+    ],
     "blocks": {
       "fbf92371-cdfd-40c7-91f5-817d3ab75f64": {
         "type": "shopify:\/\/apps\/instagram-feed-story-tiktok\/blocks\/social-widget\/508b8d5b-b176-4dc6-a0ba-2b222db6eb79",
