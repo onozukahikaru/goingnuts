@@ -88,7 +88,7 @@
         "settings": {
           "use_sticky_header": true,
           "logo": "{{ shop.brand.logo }}",
-          "logo_max_width": 165,
+          "logo_max_width": 80,
           "mobile_logo_max_width": 90,
           "show_country_selector": false,
           "show_locale_selector": true,
