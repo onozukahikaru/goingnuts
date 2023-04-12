@@ -158,7 +158,7 @@
       "settings": {
         "image_size": "normal",
         "add_spacing": true,
-        "expand_collection": false,
+        "expand_collection": true,
         "stack_on_mobile": true,
         "text_color": "#ffffff",
         "button_color": "#363636"
