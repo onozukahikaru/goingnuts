@@ -176,6 +176,18 @@
         "link_url": "shopify:\/\/pages\/partners"
       }
     },
+    "7d33335a-13e1-4948-b924-260fca0ba1cc": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "メディア向けページ",
+        "image": "shopify:\/\/shop_images\/media_banner.png",
+        "image_position": "right",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "メディア向けページを見る",
+        "link_url": "shopify:\/\/pages\/press-kit"
+      }
+    },
     "78976c10-5067-4fe1-96c3-050a79043b43": {
       "type": "text-with-image",
       "settings": {
@@ -365,6 +377,7 @@
     "5983daf6-5e3a-47bb-900e-35fd12ad7640",
     "collection-list",
     "c8d871be-8ad9-41f1-9126-6d5effb8ce8f",
+    "7d33335a-13e1-4948-b924-260fca0ba1cc",
     "78976c10-5067-4fe1-96c3-050a79043b43",
     "38a58fab-56cc-499b-a4bd-4f67bf1a9220",
     "0db90031-7c5e-47cf-9386-faad8d847250",
