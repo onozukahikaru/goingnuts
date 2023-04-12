@@ -164,6 +164,18 @@
         "button_color": "#363636"
       }
     },
+    "78976c10-5067-4fe1-96c3-050a79043b43": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "店舗紹介",
+        "image": "shopify:\/\/shop_images\/banners03_tenpo.png",
+        "image_position": "left",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "店舗紹介を見る",
+        "link_url": "shopify:\/\/pages\/store-locations"
+      }
+    },
     "c8d871be-8ad9-41f1-9126-6d5effb8ce8f": {
       "type": "text-with-image",
       "settings": {
@@ -188,16 +200,16 @@
         "link_url": "shopify:\/\/pages\/press-kit"
       }
     },
-    "78976c10-5067-4fe1-96c3-050a79043b43": {
+    "9ec21ff4-3879-4cb7-96fe-df1c25f0abec": {
       "type": "text-with-image",
       "settings": {
         "subheading": "Sub-heading",
-        "title": "店舗紹介",
-        "image": "shopify:\/\/shop_images\/banners03_tenpo.png",
-        "image_position": "left",
+        "title": "",
+        "image": "shopify:\/\/shop_images\/banners03_insta.png",
+        "image_position": "right",
         "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "link_text": "店舗紹介を見る",
-        "link_url": "shopify:\/\/pages\/store-locations"
+        "link_text": "",
+        "link_url": ""
       }
     },
     "38a58fab-56cc-499b-a4bd-4f67bf1a9220": {
@@ -376,9 +388,10 @@
     "slideshow",
     "5983daf6-5e3a-47bb-900e-35fd12ad7640",
     "collection-list",
+    "78976c10-5067-4fe1-96c3-050a79043b43",
     "c8d871be-8ad9-41f1-9126-6d5effb8ce8f",
     "7d33335a-13e1-4948-b924-260fca0ba1cc",
-    "78976c10-5067-4fe1-96c3-050a79043b43",
+    "9ec21ff4-3879-4cb7-96fe-df1c25f0abec",
     "38a58fab-56cc-499b-a4bd-4f67bf1a9220",
     "0db90031-7c5e-47cf-9386-faad8d847250",
     "featured-collections",
