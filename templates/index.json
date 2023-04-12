@@ -209,7 +209,7 @@
         "image_position": "right",
         "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
         "link_text": "Instagramを見る",
-        "link_url": "{{ shop.brand.favicon_url }}"
+        "link_url": "https:\/\/www.instagram.com\/goingnuts777\/"
       }
     },
     "b55374c3-626e-4180-a067-68db24187d6c": {
