@@ -223,13 +223,27 @@
             "button_link": "",
             "apply_overlay": true
           }
+        },
+        "6e822362-5b0f-4b15-b4d2-1590e6ec6bb7": {
+          "type": "collection",
+          "settings": {
+            "collection": "guilt-free-sweets",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
         }
       },
       "block_order": [
         "collection-0",
         "collection-1",
         "collection-2",
-        "af360a54-5ffa-4aaa-8900-88d8e512317e"
+        "af360a54-5ffa-4aaa-8900-88d8e512317e",
+        "6e822362-5b0f-4b15-b4d2-1590e6ec6bb7"
       ],
       "settings": {
         "image_size": "normal",
