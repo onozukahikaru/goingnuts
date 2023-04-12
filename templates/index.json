@@ -509,7 +509,7 @@
       "settings": {
         "subheading": "",
         "title": "Googleカレンダー",
-        "html": "<iframe src=\"https:\/\/calendar.google.com\/calendar\/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;showPrint=0&amp;showTabs=0&amp;src=Y19iNTg0ODgwMWI3ZjQwMTVmOWY3NzVhYjk2ZDAxNjlmOWEzNjNlZGQ3YzJlNWNlYWVmZmRkYzAwZjNjYTdlNmZhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23b3b60d\" style=\"border:solid 1px #777\" width=\"800\" height=\"600\" frameborder=\"0\" scrolling=\"no\"><\/iframe>"
+        "html": "<iframe src=\"https:\/\/calendar.google.com\/calendar\/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;showPrint=0&amp;showTabs=0&amp;src=Y19iNTg0ODgwMWI3ZjQwMTVmOWY3NzVhYjk2ZDAxNjlmOWEzNjNlZGQ3YzJlNWNlYWVmZmRkYzAwZjNjYTdlNmZhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23b3b60d\" style=\"border:solid 1px #777\" width=\"300\" height=\"300\" frameborder=\"0\" scrolling=\"no\"><\/iframe>"
       }
     }
   },
