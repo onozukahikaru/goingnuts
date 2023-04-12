@@ -139,13 +139,13 @@
       "popup": {
         "type": "popup",
         "settings": {
-          "show_popup": false,
+          "show_popup": true,
           "show_only_on_index": true,
           "show_only_for_visitors": true,
           "show_only_once": true,
           "title": "Popup",
           "content": "<p>You can use this popup to display some useful information to your customers.<\/p>",
-          "show_newsletter": true,
+          "show_newsletter": false,
           "apparition_delay": 5
         }
       }
