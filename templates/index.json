@@ -182,7 +182,7 @@
         "subheading": "Sub-heading",
         "title": "取り扱い店舗一覧",
         "image": "shopify:\/\/shop_images\/banners03_toriatsukai.png",
-        "image_position": "left",
+        "image_position": "right",
         "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
         "link_text": "一覧を見る",
         "link_url": "shopify:\/\/pages\/partners"
@@ -194,7 +194,7 @@
         "subheading": "Sub-heading",
         "title": "メディア向けページ",
         "image": "shopify:\/\/shop_images\/media_banner.png",
-        "image_position": "right",
+        "image_position": "left",
         "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
         "link_text": "メディア向けページを見る",
         "link_url": "shopify:\/\/pages\/press-kit"
