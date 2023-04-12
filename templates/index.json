@@ -334,6 +334,18 @@
         "title": "Googleカレンダー",
         "html": "一旦カレンダ埋め込みから"
       }
+    },
+    "c8d871be-8ad9-41f1-9126-6d5effb8ce8f": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "取り扱い店舗一覧",
+        "image": "shopify:\/\/shop_images\/banners03_toriatsukai.png",
+        "image_position": "left",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": "shopify:\/\/pages\/partners"
+      }
     }
   },
   "order": [
@@ -347,6 +359,7 @@
     "6c6dcb4b-ece2-4a6e-a193-64d9e52b1118",
     "blog-posts",
     "22d350db-1005-4071-a924-bb597450593a",
-    "bc9b4315-5e42-438d-80bf-a82582428639"
+    "bc9b4315-5e42-438d-80bf-a82582428639",
+    "c8d871be-8ad9-41f1-9126-6d5effb8ce8f"
   ]
 }
