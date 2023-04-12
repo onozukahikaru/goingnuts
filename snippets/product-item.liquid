@@ -156,27 +156,27 @@
           <div class="ProductItem__PriceList {% if show_price_on_hover %}ProductItem__PriceList--showOnHover{% endif %} Heading">
             {%- if product.compare_at_price > product.price -%}
               {%- if settings.currency_code_enabled -%}
-                <span class="ProductItem__Price Price Price--highlight Text--subdued">{{ product.price | money_with_currency }}</span>
+                <span class="ProductItem__Price Price Price--highlight Text--subdued"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price | money_with_currency }}</span></span>
                 <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ product.compare_at_price | money_with_currency }}</span>
               {%- else -%}
-                <span class="ProductItem__Price Price Price--highlight Text--subdued">{{ product.price | money }}</span>
+                <span class="ProductItem__Price Price Price--highlight Text--subdued"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price | money }}</span></span>
                 <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ product.compare_at_price | money }}</span>
               {%- endif -%}
             {%- elsif product.price_varies -%}
               {%- if settings.currency_code_enabled -%}
-                {%- capture formatted_min_price -%}{{ product.price_min | money_with_currency }}{%- endcapture -%}
-                {%- capture formatted_max_price -%}{{ product.price_max | money_with_currency }}{%- endcapture -%}
+                {%- capture formatted_min_price -%}<span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price_min | money_with_currency }}</span>{%- endcapture -%}
+                {%- capture formatted_max_price -%}<span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price_max | money_with_currency }}</span>{%- endcapture -%}
               {%- else -%}
-                {%- capture formatted_min_price -%}{{ product.price_min | money }}{%- endcapture -%}
-                {%- capture formatted_max_price -%}{{ product.price_max | money }}{%- endcapture -%}
+                {%- capture formatted_min_price -%}<span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price_min | money }}</span>{%- endcapture -%}
+                {%- capture formatted_max_price -%}<span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price_max | money }}</span>{%- endcapture -%}
               {%- endif -%}
 
               <span class="ProductItem__Price Price Text--subdued">{{ 'collection.product.from_price_html' | t: min_price: formatted_min_price, max_price: formatted_max_price }}</span>
             {%- else -%}
               {%- if settings.currency_code_enabled -%}
-                <span class="ProductItem__Price Price Text--subdued">{{ product.price | money_with_currency }}</span>
+                <span class="ProductItem__Price Price Text--subdued"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price | money_with_currency }}</span></span>
               {%- else -%}
-                <span class="ProductItem__Price Price Text--subdued">{{ product.price | money }}</span>
+                <span class="ProductItem__Price Price Text--subdued"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price | money }}</span></span>
               {%- endif -%}
             {%- endif -%}
           </div>
@@ -207,4 +207,4 @@
   {%- if use_horizontal -%}
     <a href="{{ product.url }}" class="ProductItem__ViewButton Button Button--secondary hidden-pocket">{{ 'collection.product.view_product' | t }}</a>
   {%- endif -%}
-</div>
+</div>{% comment %}<!-- ymq option done -->{% endcomment %}
