@@ -212,6 +212,51 @@
         "link_url": "https:\/\/www.instagram.com\/goingnuts777\/"
       }
     },
+    "b55374c3-626e-4180-a067-68db24187d6c": {
+      "type": "image-with-text-block",
+      "settings": {
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "small",
+        "title": "Your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_parallax": true
+      }
+    },
+    "f89065e7-ce65-4d97-9383-583ba6bf43ee": {
+      "type": "timeline",
+      "blocks": {
+        "template--18557725802773__f89065e7-ce65-4d97-9383-583ba6bf43ee-16812703053f746f3c-1": {
+          "type": "item",
+          "settings": {
+            "apply_overlay": true,
+            "title": "2001",
+            "subheading": "Sub-heading",
+            "heading": "Heading",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        },
+        "template--18557725802773__f89065e7-ce65-4d97-9383-583ba6bf43ee-16812703053f746f3c-2": {
+          "type": "item",
+          "settings": {
+            "apply_overlay": true,
+            "title": "2002",
+            "subheading": "Sub-heading",
+            "heading": "Heading",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18557725802773__f89065e7-ce65-4d97-9383-583ba6bf43ee-16812703053f746f3c-1",
+        "template--18557725802773__f89065e7-ce65-4d97-9383-583ba6bf43ee-16812703053f746f3c-2"
+      ],
+      "settings": {
+        "text_color": "#ffffff"
+      }
+    },
     "38a58fab-56cc-499b-a4bd-4f67bf1a9220": {
       "type": "featured-collections",
       "blocks": {
@@ -392,6 +437,8 @@
     "c8d871be-8ad9-41f1-9126-6d5effb8ce8f",
     "7d33335a-13e1-4948-b924-260fca0ba1cc",
     "9ec21ff4-3879-4cb7-96fe-df1c25f0abec",
+    "b55374c3-626e-4180-a067-68db24187d6c",
+    "f89065e7-ce65-4d97-9383-583ba6bf43ee",
     "38a58fab-56cc-499b-a4bd-4f67bf1a9220",
     "0db90031-7c5e-47cf-9386-faad8d847250",
     "featured-collections",
