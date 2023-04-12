@@ -138,6 +138,37 @@
         "button_background": "#ffffff"
       }
     },
+    "f710af6d-4230-4303-a7bc-58e33eefe340": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18557725802773__f710af6d-4230-4303-a7bc-58e33eefe340-1681271346181d6fa0-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mothersdayPC.png",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "一旦配置：健康経営LP",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/pages\/health-management",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18557725802773__f710af6d-4230-4303-a7bc-58e33eefe340-1681271346181d6fa0-1"
+      ],
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -518,6 +549,7 @@
     "slideshow",
     "5983daf6-5e3a-47bb-900e-35fd12ad7640",
     "865a45c3-bf94-4ee3-89a4-d2da8770ff5e",
+    "f710af6d-4230-4303-a7bc-58e33eefe340",
     "collection-list",
     "78976c10-5067-4fe1-96c3-050a79043b43",
     "c8d871be-8ad9-41f1-9126-6d5effb8ce8f",
