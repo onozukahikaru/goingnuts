@@ -243,13 +243,14 @@
     "d66e582b-5bd6-4174-9f1c-a21033e78b77": {
       "type": "image-with-text-block",
       "settings": {
+        "image": "shopify:\/\/shop_images\/media_banner.png",
         "background": "#ffffff",
         "text_color": "#1c1b1b",
         "block_size": "small",
-        "title": "Your story",
+        "title": "メディア向けページ",
         "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "button_label": "",
-        "button_link": "",
+        "button_label": "メディア向けページを見る",
+        "button_link": "shopify:\/\/pages\/press-kit",
         "show_parallax": true
       }
     },
