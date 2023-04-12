@@ -39,7 +39,12 @@
   })();
 </script>
 
-<section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
+<section
+  class="Product Product--{{ section.settings.image_size }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="product"
+  data-section-settings="{{ section_settings }}"
+>
   <div class="Product__Wrapper">
     {%- capture action_list_items -%}
       {%- if section.settings.enable_image_zoom -%}
@@ -70,9 +75,9 @@
     {%- endcapture -%}
 
     {%- comment -%}
-    --------------------------------------------------------------------------------------------------------------------
-    PRODUCT GALLERY
-    --------------------------------------------------------------------------------------------------------------------
+      --------------------------------------------------------------------------------------------------------------------
+      PRODUCT GALLERY
+      --------------------------------------------------------------------------------------------------------------------
     {%- endcomment -%}
 
     {%- assign initial_media_id = product.featured_media.id -%}
@@ -205,7 +210,10 @@
         }
         {%- endcapture -%}
 
-        <div class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel" data-flickity-config='{{ flickity_options }}'>
+        <div
+          class="Product__Slideshow {% if section.settings.enable_image_zoom %}Product__Slideshow--zoomable{% endif %} Carousel"
+          data-flickity-config="{{ flickity_options }}"
+        >
           {{ slideshow_media }}
         </div>
 
@@ -213,8 +221,16 @@
         {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
 
         {%- if first_3d_model -%}
-          <button class="Product__ViewInSpace Button Button--full" data-shopify-xr data-shopify-model3d-id="{{ first_3d_model.id }}" data-shopify-model3d-default-id="{{ first_3d_model.id }}" data-shopify-title="{{ product.title | escape }}" data-shopify-xr-hidden>
-            {%- render 'icon', icon: 'media-view-in-space' -%} {{- 'product.general.view_in_space' | t -}}
+          <button
+            class="Product__ViewInSpace Button Button--full"
+            data-shopify-xr
+            data-shopify-model3d-id="{{ first_3d_model.id }}"
+            data-shopify-model3d-default-id="{{ first_3d_model.id }}"
+            data-shopify-title="{{ product.title | escape }}"
+            data-shopify-xr-hidden
+          >
+            {%- render 'icon', icon: 'media-view-in-space' -%}
+            {{- 'product.general.view_in_space' | t -}}
           </button>
         {%- endif -%}
 
@@ -226,17 +242,32 @@
           {%- endcomment -%}
 
           <div class="Product__SlideshowMobileNav {% if section.settings.stack_images or section.settings.show_thumbnails %}hidden-lap-and-up{% endif %}">
-            <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--previous" type="button" data-direction="previous" aria-label="{{ 'general.accessibility.previous' | t }}">
+            <button
+              class="Product__SlideshowNavArrow Product__SlideshowNavArrow--previous"
+              type="button"
+              data-direction="previous"
+              aria-label="{{ 'general.accessibility.previous' | t }}"
+            >
               {% render 'icon' with 'media-arrow-left' %}
             </button>
 
             <div class="flickity-page-dots">
               {%- for i in (1..media_count) -%}
-                <button type="button" aria-label="{{ 'product.slideshow.go_to_image' | t: i: i | escape }}" class="dot {% if forloop.index0 == initial_media_index %}is-selected{% endif %}" data-index="{{ forloop.index0 }}"></button>
+                <button
+                  type="button"
+                  aria-label="{{ 'product.slideshow.go_to_image' | t: i: i | escape }}"
+                  class="dot {% if forloop.index0 == initial_media_index %}is-selected{% endif %}"
+                  data-index="{{ forloop.index0 }}"
+                ></button>
               {%- endfor -%}
             </div>
 
-            <button class="Product__SlideshowNavArrow Product__SlideshowNavArrow--next" type="button" data-direction="next" aria-label="{{ 'general.accessibility.next' | t }}">
+            <button
+              class="Product__SlideshowNavArrow Product__SlideshowNavArrow--next"
+              type="button"
+              data-direction="next"
+              aria-label="{{ 'general.accessibility.next' | t }}"
+            >
               {% render 'icon' with 'media-arrow-right' %}
             </button>
           </div>
@@ -285,6 +316,7 @@
     <div class="Product__InfoWrapper">
       <div class="Product__Info {% if media_count == 0 %}Product__Info--noGallery{% endif %}">
         <div class="Container">
+          <p style="text-decoration: underline;">{%- render 'product-tag' -%}</p>
           {%- assign has_ouputted_variant_selector = false -%}
 
           {%- form 'product', product, class: 'ProductForm' -%}
@@ -309,17 +341,47 @@
 
                 {%- when 'share_buttons' -%}
                   <div class="ProductMeta__ShareButtons hidden-pocket" {{ block.shopify_attributes }}>
-                    <span class="ProductMeta__ShareTitle Heading Text--subdued u-h7">{{ 'product.form.share' | t }}</span>
+                    <span class="ProductMeta__ShareTitle Heading Text--subdued u-h7">
+                      {{- 'product.form.share' | t -}}
+                    </span>
 
                     {%- assign share_url = shop.url | append: product.url -%}
                     {%- assign twitter_text = product.title -%}
-                    {%- assign pinterest_description = product.description | strip_html | truncatewords: 15 | url_param_escape -%}
+                    {%- assign pinterest_description = product.description
+                      | strip_html
+                      | truncatewords: 15
+                      | url_param_escape
+                    -%}
                     {%- assign pinterest_image = product.featured_image | img_url: 'large' | prepend: 'https:' -%}
 
                     <div class="ProductMeta__ShareList Text--subdued">
-                      <a class="ProductMeta__ShareItem" href="https://www.facebook.com/sharer.php?u={{ share_url }}" target="_blank" rel="noopener" aria-label="Facebook">{%- render 'icon' with 'facebook' -%}</a>
-                      <a class="ProductMeta__ShareItem" href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}" target="_blank" rel="noopener" aria-label="Twitter">{%- render 'icon' with 'twitter' -%}</a>
-                      <a class="ProductMeta__ShareItem" href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}" target="_blank" rel="noopener" aria-label="Pinterest">{%- render 'icon' with 'pinterest' -%}</a>
+                      <a
+                        class="ProductMeta__ShareItem"
+                        href="https://www.facebook.com/sharer.php?u={{ share_url }}"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Facebook"
+                      >
+                        {%- render 'icon' with 'facebook' -%}
+                      </a>
+                      <a
+                        class="ProductMeta__ShareItem"
+                        href="https://twitter.com/share?{% if twitter_text != blank %}text={{twitter_text}}&{% endif %}url={{ share_url }}"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Twitter"
+                      >
+                        {%- render 'icon' with 'twitter' -%}
+                      </a>
+                      <a
+                        class="ProductMeta__ShareItem"
+                        href="https://pinterest.com/pin/create/button/?url={{ share_url }}{% if pinterest_image != blank %}&media={{ pinterest_image }}{% endif %}&description={{ pinterest_description }}"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Pinterest"
+                      >
+                        {%- render 'icon' with 'pinterest' -%}
+                      </a>
                     </div>
                   </div>
 
@@ -336,28 +398,64 @@
                     <div class="QuantitySelector QuantitySelector--large">
                       {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
 
-                      <button type="button" class="QuantitySelector__Button Link Link--secondary" data-action="decrease-quantity">{% render 'icon' with 'minus' %}</button>
-                      <input type="text" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" name="quantity" value="1" aria-label="{{ 'product.form.quantity' | t }}">
-                      <button type="button" class="QuantitySelector__Button Link Link--secondary" data-action="increase-quantity">{% render 'icon' with 'plus' %}</button>
+                      <button
+                        type="button"
+                        class="QuantitySelector__Button Link Link--secondary"
+                        data-action="decrease-quantity"
+                      >
+                        {% render 'icon' with 'minus' %}
+                      </button>
+                      <input
+                        type="text"
+                        class="QuantitySelector__CurrentQuantity"
+                        pattern="[0-9]*"
+                        name="quantity"
+                        value="1"
+                        aria-label="{{ 'product.form.quantity' | t }}"
+                      >
+                      <button
+                        type="button"
+                        class="QuantitySelector__Button Link Link--secondary"
+                        data-action="increase-quantity"
+                      >
+                        {% render 'icon' with 'plus' %}
+                      </button>
                     </div>
                   </div>
 
                 {%- when 'inventory' -%}
                   {%- assign hide_inventory_quantity_by_default = false -%}
 
-                  {%- if product.selected_or_first_available_variant.inventory_management == blank or product.selected_or_first_available_variant.inventory_quantity <= 0 -%}
+                  {%- if product.selected_or_first_available_variant.inventory_management == blank
+                    or product.selected_or_first_available_variant.inventory_quantity <= 0
+                  -%}
                     {%- assign hide_inventory_quantity_by_default = true -%}
                   {%- endif -%}
 
-                  {%- if block.settings.inventory_quantity_threshold != 0 and product.selected_or_first_available_variant.inventory_quantity > block.settings.inventory_quantity_threshold -%}
+                  {%- if block.settings.inventory_quantity_threshold != 0
+                    and product.selected_or_first_available_variant.inventory_quantity
+                      > block.settings.inventory_quantity_threshold
+                  -%}
                     {%- assign hide_inventory_quantity_by_default = true -%}
                   {%- endif -%}
 
-                  <p class="ProductForm__Inventory Text--subdued" {% if hide_inventory_quantity_by_default %}style="display: none"{% endif %} {{ block.shopify_attributes }}>
+                  <p
+                    class="ProductForm__Inventory Text--subdued"
+                    {% if hide_inventory_quantity_by_default %}
+                      style="display: none"
+                    {% endif %}
+                    {{ block.shopify_attributes }}
+                  >
                     {%- if block.settings.inventory_quantity_threshold == 0 -%}
-                      {{- 'product.form.inventory_quantity_count' | t: count: product.selected_or_first_available_variant.inventory_quantity -}}
+                      {{-
+                        'product.form.inventory_quantity_count'
+                        | t: count: product.selected_or_first_available_variant.inventory_quantity
+                      -}}
                     {%- else -%}
-                      {{- 'product.form.low_inventory_quantity_count' | t: count: product.selected_or_first_available_variant.inventory_quantity -}}
+                      {{-
+                        'product.form.low_inventory_quantity_count'
+                        | t: count: product.selected_or_first_available_variant.inventory_quantity
+                      -}}
                     {%- endif -%}
                   </p>
 
@@ -369,7 +467,9 @@
                   {%- endif -%}
 
                   <div class="ProductForm__BuyButtons" {{ block.shopify_attributes }}>
-                    {%- if block.settings.show_payment_button and product.selected_or_first_available_variant.available == false -%}
+                    {%- if block.settings.show_payment_button
+                      and product.selected_or_first_available_variant.available == false
+                    -%}
                       <style>
                         #shopify-section-{{ section.id }} .shopify-payment-button {
                           display: none;
@@ -377,9 +477,24 @@
                       </style>
                     {%- endif -%}
 
-                    <button type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full" {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
+                    <button
+                      type="submit"
+                      data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}"
+                      class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %} Button--full"
+                      {% if product.selected_or_first_available_variant.available %}
+                        data-action="add-to-cart"
+                      {% else %}
+                        disabled="disabled"
+                      {% endif %}
+                    >
                       {%- if product.selected_or_first_available_variant.available -%}
-                        <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
+                        <span>
+                          {%- if product.template_suffix == 'pre-order' -%}
+                            {{- 'product.form.pre_order' | t -}}
+                          {%- else -%}
+                            {{- 'product.form.add_to_cart' | t -}}
+                          {%- endif -%}
+                        </span>
 
                         {%- if block.settings.show_price_in_button -%}
                           <span class="Button__SeparatorDot"></span>
@@ -412,7 +527,6 @@
                       {{ block.settings.liquid }}
                     </div>
                   {%- endif -%}
-
               {%- endcase -%}
             {%- endfor -%}
 
@@ -425,8 +539,14 @@
           {%- if section.settings.stack_images and product_aside != blank and media_count > 0 -%}
             <div class="Product__QuickNav hidden-pocket">
               <div class="Product__QuickNavWrapper">
-                <a href="#ProductAside" class="Heading Link Link--secondary u-h7">{{ 'product.form.view_info' | t }} {% render 'icon' with 'select-arrow-right' %}</a>
-                <a href="#ProductGallery" class="Heading Link Link--secondary u-h7">{{ 'product.form.view_images' | t }} {% render 'icon' with 'select-arrow-right' %}</a>
+                <a href="#ProductAside" class="Heading Link Link--secondary u-h7">
+                  {{- 'product.form.view_info' | t }}
+                  {% render 'icon' with 'select-arrow-right' -%}
+                </a>
+                <a href="#ProductGallery" class="Heading Link Link--secondary u-h7">
+                  {{- 'product.form.view_images' | t }}
+                  {% render 'icon' with 'select-arrow-right' -%}
+                </a>
               </div>
             </div>
           {%- endif -%}
@@ -444,11 +564,11 @@
 </section>
 
 {%- comment -%}
---------------------------------------------------------------------------------------------------------------------
-PHOTO SWIPE
+  --------------------------------------------------------------------------------------------------------------------
+  PHOTO SWIPE
 
-This is the root container for the zoom functionality. Must not be removed, as order element is important.
---------------------------------------------------------------------------------------------------------------------
+  This is the root container for the zoom functionality. Must not be removed, as order element is important.
+  --------------------------------------------------------------------------------------------------------------------
 {%- endcomment -%}
 
 {%- if section.settings.enable_image_zoom -%}
@@ -458,7 +578,6 @@ This is the root container for the zoom functionality. Must not be removed, as o
 
     <!-- Slides wrapper with overflow:hidden. -->
     <div class="pswp__scroll-wrap">
-
       <!-- Container that holds slides. Do not remove as content is dynamically added -->
       <div class="pswp__container">
         <div class="pswp__item"></div>
@@ -468,9 +587,27 @@ This is the root container for the zoom functionality. Must not be removed, as o
 
       <!-- Main UI bar -->
       <div class="pswp__ui pswp__ui--hidden">
-        <button class="pswp__button pswp__button--prev RoundButton" data-animate-left title="{{ 'product.slideshow.previous' | t }}">{% render 'icon' with 'arrow-left' %}</button>
-        <button class="pswp__button pswp__button--close RoundButton RoundButton--large" data-animate-bottom title="{{ 'product.slideshow.close' | t }}">{% render 'icon' with 'close' %}</button>
-        <button class="pswp__button pswp__button--next RoundButton" data-animate-right title="{{ 'product.slideshow.next' | t }}">{% render 'icon' with 'arrow-right' %}</button>
+        <button
+          class="pswp__button pswp__button--prev RoundButton"
+          data-animate-left
+          title="{{ 'product.slideshow.previous' | t }}"
+        >
+          {% render 'icon' with 'arrow-left' %}
+        </button>
+        <button
+          class="pswp__button pswp__button--close RoundButton RoundButton--large"
+          data-animate-bottom
+          title="{{ 'product.slideshow.close' | t }}"
+        >
+          {% render 'icon' with 'close' %}
+        </button>
+        <button
+          class="pswp__button pswp__button--next RoundButton"
+          data-animate-right
+          title="{{ 'product.slideshow.next' | t }}"
+        >
+          {% render 'icon' with 'arrow-right' %}
+        </button>
       </div>
     </div>
   </div>
