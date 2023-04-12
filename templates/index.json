@@ -210,12 +210,26 @@
             "button_link": "",
             "apply_overlay": true
           }
+        },
+        "af360a54-5ffa-4aaa-8900-88d8e512317e": {
+          "type": "collection",
+          "settings": {
+            "collection": "nuts-for-alcohol",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "{{ block.settings.collection.title }}",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
         }
       },
       "block_order": [
         "collection-0",
         "collection-1",
-        "collection-2"
+        "collection-2",
+        "af360a54-5ffa-4aaa-8900-88d8e512317e"
       ],
       "settings": {
         "image_size": "normal",
