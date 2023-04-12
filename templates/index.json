@@ -243,6 +243,17 @@
         "link_url": "https:\/\/www.instagram.com\/goingnuts777\/"
       }
     },
+    "a547d28b-e370-4c94-9461-c93127e1672e": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "有機JAS",
+        "image_position": "right",
+        "content": "<p>画像を後日追加する<\/p>",
+        "link_text": "",
+        "link_url": "shopify:\/\/pages\/organic-jas"
+      }
+    },
     "b55374c3-626e-4180-a067-68db24187d6c": {
       "type": "image-with-text-block",
       "settings": {
@@ -512,6 +523,7 @@
     "c8d871be-8ad9-41f1-9126-6d5effb8ce8f",
     "7d33335a-13e1-4948-b924-260fca0ba1cc",
     "9ec21ff4-3879-4cb7-96fe-df1c25f0abec",
+    "a547d28b-e370-4c94-9461-c93127e1672e",
     "b55374c3-626e-4180-a067-68db24187d6c",
     "7157ae8e-48f1-498b-beb2-c4ce8faa61b6",
     "d66e582b-5bd6-4174-9f1c-a21033e78b77",
