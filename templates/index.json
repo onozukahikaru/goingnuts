@@ -215,6 +215,46 @@
     "b55374c3-626e-4180-a067-68db24187d6c": {
       "type": "image-with-text-block",
       "settings": {
+        "image": "shopify:\/\/shop_images\/banners03_tenpo.png",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "small",
+        "title": "Your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label": "店舗紹介",
+        "button_link": "shopify:\/\/pages\/store-locations",
+        "show_parallax": true
+      }
+    },
+    "7157ae8e-48f1-498b-beb2-c4ce8faa61b6": {
+      "type": "image-with-text-block",
+      "settings": {
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "small",
+        "title": "Your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_parallax": true
+      }
+    },
+    "d66e582b-5bd6-4174-9f1c-a21033e78b77": {
+      "type": "image-with-text-block",
+      "settings": {
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "small",
+        "title": "Your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_parallax": true
+      }
+    },
+    "856c924d-7b31-4d25-a424-87ebbb44ed01": {
+      "type": "image-with-text-block",
+      "settings": {
         "background": "#ffffff",
         "text_color": "#1c1b1b",
         "block_size": "small",
@@ -438,6 +478,9 @@
     "7d33335a-13e1-4948-b924-260fca0ba1cc",
     "9ec21ff4-3879-4cb7-96fe-df1c25f0abec",
     "b55374c3-626e-4180-a067-68db24187d6c",
+    "7157ae8e-48f1-498b-beb2-c4ce8faa61b6",
+    "d66e582b-5bd6-4174-9f1c-a21033e78b77",
+    "856c924d-7b31-4d25-a424-87ebbb44ed01",
     "f89065e7-ce65-4d97-9383-583ba6bf43ee",
     "38a58fab-56cc-499b-a4bd-4f67bf1a9220",
     "0db90031-7c5e-47cf-9386-faad8d847250",
