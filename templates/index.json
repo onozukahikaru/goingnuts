@@ -219,9 +219,9 @@
         "background": "#ffffff",
         "text_color": "#1c1b1b",
         "block_size": "small",
-        "title": "Your story",
+        "title": "店舗紹介",
         "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "button_label": "店舗紹介",
+        "button_label": "店舗紹介を見る",
         "button_link": "shopify:\/\/pages\/store-locations",
         "show_parallax": true
       }
