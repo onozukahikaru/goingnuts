@@ -169,6 +169,36 @@
         "button_background": "#ffffff"
       }
     },
+    "fc719b53-b642-4e36-ae1f-93fad1bc6947": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18557725802773__fc719b53-b642-4e36-ae1f-93fad1bc6947-1681365596fff77f8c-1": {
+          "type": "image",
+          "settings": {
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "季節用バナー配置予定セクション",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18557725802773__fc719b53-b642-4e36-ae1f-93fad1bc6947-1681365596fff77f8c-1"
+      ],
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -567,6 +597,7 @@
     "5983daf6-5e3a-47bb-900e-35fd12ad7640",
     "865a45c3-bf94-4ee3-89a4-d2da8770ff5e",
     "f710af6d-4230-4303-a7bc-58e33eefe340",
+    "fc719b53-b642-4e36-ae1f-93fad1bc6947",
     "collection-list",
     "78976c10-5067-4fe1-96c3-050a79043b43",
     "c8d871be-8ad9-41f1-9126-6d5effb8ce8f",
