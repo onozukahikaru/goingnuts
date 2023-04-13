@@ -107,27 +107,20 @@
         "button_background": "#ffffff"
       }
     },
+    "a7b4aadd-da0e-4f54-aa13-0da9c15f6cc4": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "Title",
+        "image": "shopify:\/\/shop_images\/reunion_bnr.png",
+        "image_position": "right",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
     "865a45c3-bf94-4ee3-89a4-d2da8770ff5e": {
       "type": "slideshow",
-      "blocks": {
-        "template--18557725802773__865a45c3-bf94-4ee3-89a4-d2da8770ff5e-1681271346181d6fa0-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/reunion_bnr.png",
-            "apply_overlay": false,
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/pages\/brand-story",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--18557725802773__865a45c3-bf94-4ee3-89a4-d2da8770ff5e-1681271346181d6fa0-0"
-      ],
       "settings": {
         "show_fullscreen": false,
         "show_arrow": false,
@@ -596,6 +589,7 @@
   "order": [
     "slideshow",
     "5983daf6-5e3a-47bb-900e-35fd12ad7640",
+    "a7b4aadd-da0e-4f54-aa13-0da9c15f6cc4",
     "865a45c3-bf94-4ee3-89a4-d2da8770ff5e",
     "f710af6d-4230-4303-a7bc-58e33eefe340",
     "fc719b53-b642-4e36-ae1f-93fad1bc6947",
