@@ -131,37 +131,6 @@
         "button_background": "#ffffff"
       }
     },
-    "f710af6d-4230-4303-a7bc-58e33eefe340": {
-      "type": "slideshow",
-      "blocks": {
-        "template--18557725802773__f710af6d-4230-4303-a7bc-58e33eefe340-1681271346181d6fa0-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2023-04-13_15.01.04.png",
-            "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "Slide title",
-            "title": "一旦配置：健康経営LPバナー配置セクション",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/pages\/health-management",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--18557725802773__f710af6d-4230-4303-a7bc-58e33eefe340-1681271346181d6fa0-1"
-      ],
-      "settings": {
-        "show_fullscreen": false,
-        "show_arrow": false,
-        "autoplay": true,
-        "cycle_speed": 5,
-        "text_color": "#ffffff",
-        "button_color": "#363636",
-        "button_background": "#ffffff"
-      }
-    },
     "fc719b53-b642-4e36-ae1f-93fad1bc6947": {
       "type": "slideshow",
       "blocks": {
@@ -595,7 +564,6 @@
     "5983daf6-5e3a-47bb-900e-35fd12ad7640",
     "a7b4aadd-da0e-4f54-aa13-0da9c15f6cc4",
     "865a45c3-bf94-4ee3-89a4-d2da8770ff5e",
-    "f710af6d-4230-4303-a7bc-58e33eefe340",
     "fc719b53-b642-4e36-ae1f-93fad1bc6947",
     "collection-list",
     "78976c10-5067-4fe1-96c3-050a79043b43",
