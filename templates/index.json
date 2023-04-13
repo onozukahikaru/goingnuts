@@ -528,8 +528,8 @@
       "type": "custom-html",
       "settings": {
         "subheading": "",
-        "title": "新着情報パターン２",
-        "html": "相談後制作予定\nこちらはEC-CUBE方式です。"
+        "title": "新着情報パターン２（EC-CUBE方式）",
+        "html": "相談後制作予定\nPrestageに存在しないため別途制作"
       }
     },
     "bc9b4315-5e42-438d-80bf-a82582428639": {
