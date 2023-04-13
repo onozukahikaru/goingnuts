@@ -318,62 +318,6 @@
         "link_url": "shopify:\/\/pages\/organic-jas"
       }
     },
-    "b55374c3-626e-4180-a067-68db24187d6c": {
-      "type": "image-with-text-block",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/banners03_tenpo.png",
-        "background": "#ffffff",
-        "text_color": "#1c1b1b",
-        "block_size": "small",
-        "title": "店舗紹介",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "button_label": "店舗紹介を見る",
-        "button_link": "shopify:\/\/pages\/store-locations",
-        "show_parallax": true
-      }
-    },
-    "7157ae8e-48f1-498b-beb2-c4ce8faa61b6": {
-      "type": "image-with-text-block",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/banners03_toriatsukai.png",
-        "background": "#ffffff",
-        "text_color": "#1c1b1b",
-        "block_size": "small",
-        "title": "取り扱い店舗一覧",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "button_label": "取り扱い店舗一覧を見る",
-        "button_link": "shopify:\/\/pages\/partners",
-        "show_parallax": true
-      }
-    },
-    "d66e582b-5bd6-4174-9f1c-a21033e78b77": {
-      "type": "image-with-text-block",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/media_banner.png",
-        "background": "#ffffff",
-        "text_color": "#1c1b1b",
-        "block_size": "small",
-        "title": "メディア向けページ",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "button_label": "メディア向けページを見る",
-        "button_link": "shopify:\/\/pages\/press-kit",
-        "show_parallax": true
-      }
-    },
-    "856c924d-7b31-4d25-a424-87ebbb44ed01": {
-      "type": "image-with-text-block",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/banners03_insta.png",
-        "background": "#ffffff",
-        "text_color": "#1c1b1b",
-        "block_size": "small",
-        "title": "Your story",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "button_label": "Instagramを見る",
-        "button_link": "https:\/\/www.instagram.com\/goingnuts777\/",
-        "show_parallax": true
-      }
-    },
     "38a58fab-56cc-499b-a4bd-4f67bf1a9220": {
       "type": "featured-collections",
       "blocks": {
@@ -572,10 +516,6 @@
     "7d33335a-13e1-4948-b924-260fca0ba1cc",
     "9ec21ff4-3879-4cb7-96fe-df1c25f0abec",
     "a547d28b-e370-4c94-9461-c93127e1672e",
-    "b55374c3-626e-4180-a067-68db24187d6c",
-    "7157ae8e-48f1-498b-beb2-c4ce8faa61b6",
-    "d66e582b-5bd6-4174-9f1c-a21033e78b77",
-    "856c924d-7b31-4d25-a424-87ebbb44ed01",
     "38a58fab-56cc-499b-a4bd-4f67bf1a9220",
     "0db90031-7c5e-47cf-9386-faad8d847250",
     "featured-collections",
