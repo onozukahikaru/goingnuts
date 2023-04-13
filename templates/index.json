@@ -107,30 +107,6 @@
         "button_background": "#ffffff"
       }
     },
-    "a7b4aadd-da0e-4f54-aa13-0da9c15f6cc4": {
-      "type": "text-with-image",
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "ブランドストーリー",
-        "image": "shopify:\/\/shop_images\/reunion_bnr.png",
-        "image_position": "right",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "link_text": "",
-        "link_url": ""
-      }
-    },
-    "865a45c3-bf94-4ee3-89a4-d2da8770ff5e": {
-      "type": "slideshow",
-      "settings": {
-        "show_fullscreen": false,
-        "show_arrow": false,
-        "autoplay": true,
-        "cycle_speed": 5,
-        "text_color": "#ffffff",
-        "button_color": "#363636",
-        "button_background": "#ffffff"
-      }
-    },
     "fc719b53-b642-4e36-ae1f-93fad1bc6947": {
       "type": "slideshow",
       "blocks": {
@@ -152,6 +128,30 @@
       "block_order": [
         "template--18557725802773__fc719b53-b642-4e36-ae1f-93fad1bc6947-1681365596fff77f8c-1"
       ],
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
+    "a7b4aadd-da0e-4f54-aa13-0da9c15f6cc4": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "ブランドストーリー",
+        "image": "shopify:\/\/shop_images\/reunion_bnr.png",
+        "image_position": "right",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "865a45c3-bf94-4ee3-89a4-d2da8770ff5e": {
+      "type": "slideshow",
       "settings": {
         "show_fullscreen": false,
         "show_arrow": false,
@@ -562,9 +562,9 @@
   "order": [
     "slideshow",
     "5983daf6-5e3a-47bb-900e-35fd12ad7640",
+    "fc719b53-b642-4e36-ae1f-93fad1bc6947",
     "a7b4aadd-da0e-4f54-aa13-0da9c15f6cc4",
     "865a45c3-bf94-4ee3-89a4-d2da8770ff5e",
-    "fc719b53-b642-4e36-ae1f-93fad1bc6947",
     "collection-list",
     "78976c10-5067-4fe1-96c3-050a79043b43",
     "c8d871be-8ad9-41f1-9126-6d5effb8ce8f",
