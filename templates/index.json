@@ -524,6 +524,27 @@
         "button_text": "View all articles"
       }
     },
+    "436e6ba2-21c6-4979-b375-d68580cfd1b9": {
+      "type": "blog-posts",
+      "blocks": {
+        "template--18557725802773__436e6ba2-21c6-4979-b375-d68580cfd1b9-168136518006909c5f-0": {
+          "type": "blog",
+          "settings": {
+            "blog": "nuts-recipes"
+          }
+        }
+      },
+      "block_order": [
+        "template--18557725802773__436e6ba2-21c6-4979-b375-d68580cfd1b9-168136518006909c5f-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "ブログ仕組み説明用セクション（ナッツレシピ）",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "View all articles"
+      }
+    },
     "22d350db-1005-4071-a924-bb597450593a": {
       "type": "custom-html",
       "settings": {
@@ -562,6 +583,7 @@
     "6c6dcb4b-ece2-4a6e-a193-64d9e52b1118",
     "featured-product",
     "blog-posts",
+    "436e6ba2-21c6-4979-b375-d68580cfd1b9",
     "22d350db-1005-4071-a924-bb597450593a",
     "bc9b4315-5e42-438d-80bf-a82582428639"
   ]
