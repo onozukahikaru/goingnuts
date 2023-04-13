@@ -150,6 +150,18 @@
         "link_url": ""
       }
     },
+    "51852740-bd8c-4615-95f2-d9fd3484a786": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "店舗経営LP",
+        "image": "shopify:\/\/shop_images\/2023-04-13_15.01.04.png",
+        "image_position": "left",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
     "865a45c3-bf94-4ee3-89a4-d2da8770ff5e": {
       "type": "slideshow",
       "settings": {
@@ -538,18 +550,6 @@
         "button_text": "View all articles"
       }
     },
-    "51852740-bd8c-4615-95f2-d9fd3484a786": {
-      "type": "text-with-image",
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "店舗経営LP",
-        "image": "shopify:\/\/shop_images\/2023-04-13_15.01.04.png",
-        "image_position": "right",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "link_text": "",
-        "link_url": ""
-      }
-    },
     "bc9b4315-5e42-438d-80bf-a82582428639": {
       "type": "custom-html",
       "settings": {
@@ -564,6 +564,7 @@
     "5983daf6-5e3a-47bb-900e-35fd12ad7640",
     "fc719b53-b642-4e36-ae1f-93fad1bc6947",
     "a7b4aadd-da0e-4f54-aa13-0da9c15f6cc4",
+    "51852740-bd8c-4615-95f2-d9fd3484a786",
     "865a45c3-bf94-4ee3-89a4-d2da8770ff5e",
     "collection-list",
     "78976c10-5067-4fe1-96c3-050a79043b43",
@@ -582,7 +583,6 @@
     "featured-product",
     "blog-posts",
     "436e6ba2-21c6-4979-b375-d68580cfd1b9",
-    "51852740-bd8c-4615-95f2-d9fd3484a786",
     "bc9b4315-5e42-438d-80bf-a82582428639"
   ]
 }
