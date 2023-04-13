@@ -309,6 +309,7 @@
     },
     "a547d28b-e370-4c94-9461-c93127e1672e": {
       "type": "text-with-image",
+      "disabled": true,
       "settings": {
         "subheading": "Sub-heading",
         "title": "有機JAS",
@@ -473,25 +474,12 @@
         "button_text": "View all articles"
       }
     },
-    "436e6ba2-21c6-4979-b375-d68580cfd1b9": {
-      "type": "blog-posts",
-      "blocks": {
-        "template--18557725802773__436e6ba2-21c6-4979-b375-d68580cfd1b9-168136518006909c5f-0": {
-          "type": "blog",
-          "settings": {
-            "blog": "nuts-recipes"
-          }
-        }
-      },
-      "block_order": [
-        "template--18557725802773__436e6ba2-21c6-4979-b375-d68580cfd1b9-168136518006909c5f-0"
-      ],
+    "f9ac1269-d232-46df-b5ba-32185450e5c9": {
+      "type": "custom-html",
       "settings": {
-        "subheading": "",
-        "title": "ブログ仕組み説明用セクション（ナッツレシピ）",
-        "show_category": false,
-        "button_link": "",
-        "button_text": "View all articles"
+        "subheading": "Sub-heading",
+        "title": "インスタ自社投稿のセクション",
+        "html": "<p>Write your own custom HTML content.<\/p>"
       }
     },
     "bc9b4315-5e42-438d-80bf-a82582428639": {
@@ -522,7 +510,7 @@
     "6c6dcb4b-ece2-4a6e-a193-64d9e52b1118",
     "featured-product",
     "blog-posts",
-    "436e6ba2-21c6-4979-b375-d68580cfd1b9",
+    "f9ac1269-d232-46df-b5ba-32185450e5c9",
     "bc9b4315-5e42-438d-80bf-a82582428639"
   ]
 }
