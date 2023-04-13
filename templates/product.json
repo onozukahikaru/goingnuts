@@ -79,11 +79,21 @@
         "show_vendor": false,
         "show_color_swatch": false
       }
+    },
+    "27828718-5667-4528-af90-680bcbf4512e": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Recently viewed",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
-    "recently-viewed-products"
+    "recently-viewed-products",
+    "27828718-5667-4528-af90-680bcbf4512e"
   ]
 }
