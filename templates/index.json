@@ -576,6 +576,18 @@
         "title": "Googleカレンダー",
         "html": "<iframe src=\"https:\/\/calendar.google.com\/calendar\/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;showPrint=0&amp;showTabs=0&amp;src=Y19iNTg0ODgwMWI3ZjQwMTVmOWY3NzVhYjk2ZDAxNjlmOWEzNjNlZGQ3YzJlNWNlYWVmZmRkYzAwZjNjYTdlNmZhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23b3b60d\" style=\"border:solid 1px #777\" width=\"300\" height=\"300\" frameborder=\"0\" scrolling=\"no\"><\/iframe>"
       }
+    },
+    "51852740-bd8c-4615-95f2-d9fd3484a786": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "店舗経営LP",
+        "image": "shopify:\/\/shop_images\/2023-04-13_15.01.04.png",
+        "image_position": "right",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
     }
   },
   "order": [
@@ -602,6 +614,7 @@
     "featured-product",
     "blog-posts",
     "436e6ba2-21c6-4979-b375-d68580cfd1b9",
-    "bc9b4315-5e42-438d-80bf-a82582428639"
+    "bc9b4315-5e42-438d-80bf-a82582428639",
+    "51852740-bd8c-4615-95f2-d9fd3484a786"
   ]
 }
