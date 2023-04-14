@@ -72,7 +72,7 @@
         "autoplay": true,
         "cycle_speed": 5,
         "text_color": "#ffffff",
-        "button_color": "#363636",
+        "button_color": "#000000",
         "button_background": "#ffffff"
       }
     },
@@ -103,7 +103,7 @@
         "autoplay": true,
         "cycle_speed": 5,
         "text_color": "#ffffff",
-        "button_color": "#363636",
+        "button_color": "#000000",
         "button_background": "#ffffff"
       }
     },
@@ -134,7 +134,7 @@
         "autoplay": true,
         "cycle_speed": 5,
         "text_color": "#ffffff",
-        "button_color": "#363636",
+        "button_color": "#000000",
         "button_background": "#ffffff"
       }
     },
@@ -170,7 +170,7 @@
         "autoplay": true,
         "cycle_speed": 5,
         "text_color": "#ffffff",
-        "button_color": "#363636",
+        "button_color": "#000000",
         "button_background": "#ffffff"
       }
     },
