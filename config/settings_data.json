@@ -2,8 +2,8 @@
   "current": {
     "heading_color": "#1c1b1b",
     "text_color": "#454545",
-    "text_light_color": "#6a6a6a",
-    "link_color": "#6a6a6a",
+    "text_light_color": "#454545",
+    "link_color": "#454545",
     "background": "#ffffff",
     "light_background": "#ffffff",
     "product_on_sale_color": "#f94c43",
