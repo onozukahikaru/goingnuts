@@ -2,6 +2,36 @@
   "sections": {
     "main": {
       "type": "main-contact",
+      "blocks": {
+        "7724d3b8-f025-4958-8c70-97e9763c97e7": {
+          "type": "text",
+          "settings": {
+            "title": "セイ",
+            "use_long_text": false,
+            "is_required": false
+          }
+        },
+        "c599da7c-689e-457e-9d82-92bbdcb3fbc0": {
+          "type": "text",
+          "settings": {
+            "title": "メイ",
+            "use_long_text": false,
+            "is_required": false
+          }
+        },
+        "c75dd5c1-781c-4e53-8022-22c0a50cb536": {
+          "type": "dropdown",
+          "settings": {
+            "title": "問い合わせ種別",
+            "values": "商品問い合わせ, 取材, 商品のお取り扱いに関して"
+          }
+        }
+      },
+      "block_order": [
+        "7724d3b8-f025-4958-8c70-97e9763c97e7",
+        "c599da7c-689e-457e-9d82-92bbdcb3fbc0",
+        "c75dd5c1-781c-4e53-8022-22c0a50cb536"
+      ],
       "settings": {
       }
     }
