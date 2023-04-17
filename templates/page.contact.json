@@ -31,7 +31,7 @@
           "settings": {
             "title": "市区町村名（例：千代田区神田神保町）",
             "use_long_text": false,
-            "is_required": false
+            "is_required": true
           }
         },
         "bb2d856e-d125-4f22-855b-dd2c44dea635": {
