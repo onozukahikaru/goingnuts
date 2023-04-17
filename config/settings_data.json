@@ -121,19 +121,11 @@
             "settings": {
               "menu": "footer"
             }
-          },
-          "footer-2": {
-            "type": "newsletter",
-            "settings": {
-              "title": "Newsletter",
-              "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
-            }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1",
-          "footer-2"
+          "footer-1"
         ],
         "settings": {
           "show_payment_methods": true,
