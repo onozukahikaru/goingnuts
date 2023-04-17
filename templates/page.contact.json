@@ -25,12 +25,21 @@
             "title": "問い合わせ種別",
             "values": "商品問い合わせ, 取材, 商品のお取り扱いに関して"
           }
+        },
+        "641e7c17-ad52-4440-b829-4dc50a94d0f9": {
+          "type": "text",
+          "settings": {
+            "title": "市区町村名（例：千代田区神田神保町）",
+            "use_long_text": false,
+            "is_required": false
+          }
         }
       },
       "block_order": [
         "7724d3b8-f025-4958-8c70-97e9763c97e7",
         "c599da7c-689e-457e-9d82-92bbdcb3fbc0",
-        "c75dd5c1-781c-4e53-8022-22c0a50cb536"
+        "c75dd5c1-781c-4e53-8022-22c0a50cb536",
+        "641e7c17-ad52-4440-b829-4dc50a94d0f9"
       ],
       "settings": {
       }
