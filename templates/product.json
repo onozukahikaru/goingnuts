@@ -61,6 +61,16 @@
         "enable_video_looping": false
       }
     },
+    "9f1851c1-6f09-4914-86ac-dec35aa2945c": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "recommendations_count": 4,
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
     "27828718-5667-4528-af90-680bcbf4512e": {
       "type": "recently-viewed-products",
       "settings": {
@@ -73,6 +83,7 @@
   },
   "order": [
     "main",
+    "9f1851c1-6f09-4914-86ac-dec35aa2945c",
     "27828718-5667-4528-af90-680bcbf4512e"
   ]
 }
