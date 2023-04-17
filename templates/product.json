@@ -61,25 +61,6 @@
         "enable_video_looping": false
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "You may also like",
-        "recommendations_count": 4,
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false
-      }
-    },
-    "recently-viewed-products": {
-      "type": "recently-viewed-products",
-      "settings": {
-        "title": "Recently viewed",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false
-      }
-    },
     "27828718-5667-4528-af90-680bcbf4512e": {
       "type": "recently-viewed-products",
       "settings": {
@@ -92,8 +73,6 @@
   },
   "order": [
     "main",
-    "product-recommendations",
-    "recently-viewed-products",
     "27828718-5667-4528-af90-680bcbf4512e"
   ]
 }
