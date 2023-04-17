@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+html body{
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+}
+
+.Button, 
+.shopify-payment-button__button--unbranded, 
+input.spr-button-primary, 
+.spr-summary-actions-newreview, 
+.spr-button-primary:not(input), 
+.spr-pagination-prev > a, 
+.spr-pagination-next > a{
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+}
+.Heading{
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+}
