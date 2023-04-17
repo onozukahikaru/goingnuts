@@ -8,7 +8,7 @@
           "settings": {
             "title": "セイ",
             "use_long_text": false,
-            "is_required": false
+            "is_required": true
           }
         },
         "c599da7c-689e-457e-9d82-92bbdcb3fbc0": {
@@ -16,7 +16,7 @@
           "settings": {
             "title": "メイ",
             "use_long_text": false,
-            "is_required": false
+            "is_required": true
           }
         },
         "7baa3ad0-6323-467c-be33-1034ad0f88a5": {
@@ -37,7 +37,7 @@
         "bb2d856e-d125-4f22-855b-dd2c44dea635": {
           "type": "text",
           "settings": {
-            "title": "Custom field",
+            "title": "番地・ビル名（例：1-3-5）",
             "use_long_text": false,
             "is_required": false
           }
