@@ -162,18 +162,6 @@
         "link_url": ""
       }
     },
-    "865a45c3-bf94-4ee3-89a4-d2da8770ff5e": {
-      "type": "slideshow",
-      "settings": {
-        "show_fullscreen": false,
-        "show_arrow": false,
-        "autoplay": true,
-        "cycle_speed": 5,
-        "text_color": "#ffffff",
-        "button_color": "#000000",
-        "button_background": "#ffffff"
-      }
-    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -497,7 +485,6 @@
     "fc719b53-b642-4e36-ae1f-93fad1bc6947",
     "a7b4aadd-da0e-4f54-aa13-0da9c15f6cc4",
     "51852740-bd8c-4615-95f2-d9fd3484a786",
-    "865a45c3-bf94-4ee3-89a4-d2da8770ff5e",
     "collection-list",
     "78976c10-5067-4fe1-96c3-050a79043b43",
     "c8d871be-8ad9-41f1-9126-6d5effb8ce8f",
