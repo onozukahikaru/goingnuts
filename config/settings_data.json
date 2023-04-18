@@ -151,14 +151,14 @@
 
     ],
     "blocks": {
-      "fbf92371-cdfd-40c7-91f5-817d3ab75f64": {
-        "type": "shopify:\/\/apps\/instagram-feed-story-tiktok\/blocks\/social-widget\/508b8d5b-b176-4dc6-a0ba-2b222db6eb79",
+      "11651401770006824842": {
+        "type": "shopify:\/\/apps\/ymq-product-options-variants\/blocks\/app-embed\/86b91121-1f62-4e27-9812-b70a823eb918",
         "disabled": false,
         "settings": {
         }
       },
-      "11651401770006824842": {
-        "type": "shopify:\/\/apps\/ymq-product-options-variants\/blocks\/app-embed\/86b91121-1f62-4e27-9812-b70a823eb918",
+      "52d0fed8-9c4c-46d9-8496-30e71aabc27e": {
+        "type": "shopify:\/\/apps\/instagram-feed-story-tiktok\/blocks\/social-widget\/508b8d5b-b176-4dc6-a0ba-2b222db6eb79",
         "disabled": false,
         "settings": {
         }
