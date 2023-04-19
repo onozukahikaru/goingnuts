@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/slide-1.png",
             "apply_overlay": false,
-            "content_position": "bottomLeft",
+            "content_position": "middleCenter",
             "subheading": "",
             "title": "カリフォルニアナッツとドライフルーツ専門店",
             "button_1_text": "",
