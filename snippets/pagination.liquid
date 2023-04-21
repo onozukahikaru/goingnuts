@@ -8,6 +8,13 @@
       {%- endif -%}
 
       {%- for part in paginate.parts -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: part %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
         {%- if part.is_link -%}
           <a href="{{ part.url | remove: 'view=ajax' }}{{ hash }}" class="Pagination__NavItem Link Link--primary" title="{{ 'general.pagination.go_to_page' | t: page: part.title }}">{{ part.title }}</a>
         {%- else -%}

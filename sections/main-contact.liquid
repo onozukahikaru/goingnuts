@@ -18,6 +18,13 @@
           <div class="Form__Alert Alert Alert--error">
             <ul class="Alert__ErrorList">
               {%- for field in form.errors -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: field %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                 {%- if field == 'form' -%}
                   <li class="Alert__ErrorItem">{{ form.errors.messages[field] }}</li>
                 {%- else -%}
@@ -41,6 +48,13 @@
         </div>
 
         {%- for block in section.blocks -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: block %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
           {%- assign field_title = block.settings.title -%}
 
           {%- if field_title == blank -%}
@@ -72,6 +86,13 @@
                   <option value="" disabled selected>{{ block.settings.title | escape }}</option>
 
                   {%- for value in values -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: value %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                     {%- assign trim_value = value | strip -%}
 
                     <option value="{{ trim_value | escape }}">{{ trim_value | escape }}</option>

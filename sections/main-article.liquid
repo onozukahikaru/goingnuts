@@ -107,6 +107,13 @@
           <div class="Article__CommentList">
             {%- paginate article.comments by 25 -%}
               {%- for comment in article.comments -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: comment %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                 <div class="ArticleComment">
                   <div class="ArticleComment__Body Rte">
                     {{ comment.content }}
@@ -149,6 +156,13 @@
             <div class="Form__Alert Alert Alert--error">
               <ul class="Alert__ErrorList">
                 {%- for field in form.errors -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: field %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                   {%- if field == 'form' -%}
                     <li class="Alert__ErrorItem">{{ form.errors.messages[field] }}</li>
                   {%- else -%}

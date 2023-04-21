@@ -3,6 +3,13 @@
     <div class="Timeline">
       <div class="Timeline__ListItem">
         {%- for block in section.blocks -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: block %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
           <div {{ block.shopify_attributes }} class="Timeline__Item {% if forloop.first %}is-selected{% endif %}" data-index="{{ forloop.index0 }}">
             <div class="Timeline__ImageWrapper {% if block.settings.apply_overlay %}Image--contrast{% endif %}" {% if block.settings.image %}style="background: url({{ block.settings.image | img_url: '1x1' }})"{% endif %}>
               {%- if block.settings.image -%}
@@ -54,6 +61,13 @@
         <div class="Timeline__Nav">
           <div class="Timeline__NavWrapper {% if section.blocks.size <= 3 %}Timeline__NavWrapper--center{% endif %}">
             {%- for block in section.blocks -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: block %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
               <button type="button" class="Timeline__NavItem {% if forloop.first %}is-selected{% endif %} Link Link--primary" data-index="{{ forloop.index0 }}">
                 <span class="Timeline__NavLabel">{{ block.settings.title | truncate: 20 | escape }}</span>
               </button>

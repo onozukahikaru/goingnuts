@@ -59,6 +59,13 @@
           <div class="Drawer__Main" data-scrollable>
             <div class="Drawer__Container">
               {%- for availability in pick_up_availabilities -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: availability %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                 <div class="store-availability-list__item">
                   <p class="store-availability-list__location"><strong>{{ availability.location.name }}</strong></p>
 

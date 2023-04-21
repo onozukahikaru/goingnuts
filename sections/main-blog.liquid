@@ -26,6 +26,13 @@
                 </li>
 
                 {%- for tag in blog.all_tags -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: tag %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                   <li class="HorizontalList__Item">
                     <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handle }}" class="Heading Link Link--primary Text--subdued u-h8 {% if current_tags contains tag %}is-active{% endif %}">{{ tag }}</a>
                   </li>
@@ -51,6 +58,13 @@
           <div class="ArticleListWrapper">
             <div class="ArticleList {% if is_first_article_featured %}ArticleList--withFeatured{% endif %} Grid Grid--m">
               {%- for article in blog.articles -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: article %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                 {%- if is_first_article_featured and forloop.first -%}
                   <div class="Grid__Cell hidden-phone">
                     <div class="FlexboxIeFix">

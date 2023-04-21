@@ -9,6 +9,13 @@ As an output, it will render the supported sizes that can be captured
 {%- assign supported_sizes = '' -%}
 
 {%- for size in desired_sizes -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: size %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
   {%- assign size_as_int = size | times: 1 -%}
 
   {%- if image.width < size_as_int -%}

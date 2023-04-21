@@ -1,5 +1,12 @@
 {%- capture product_tabs -%}
   {%- for block in section.blocks -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: block %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
     {%- case block.type -%}
       {%- when 'content' -%}
         {%- if block.settings.page != blank -%}

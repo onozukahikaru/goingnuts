@@ -1,6 +1,13 @@
 {%- assign has_section_separator = false -%}
 
 {%- for block in section.blocks -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: block %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
   {%- if block.type == 'separator' -%}
     {%- assign has_section_separator = true -%}
     {%- break -%}
@@ -10,6 +17,13 @@
 {%- capture faq_content -%}
   <div class="Faq">
     {%- for block in section.blocks -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: block %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
       {%- case block.type -%}
         {%- when 'separator' -%}
           <h1 class="Faq__Section Heading u-h1" {{ block.shopify_attributes }}>
@@ -48,6 +62,13 @@
               {%- assign faq_separator_count = 0 -%}
 
               {%- for block in section.blocks -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: block %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                 {%- if block.type == 'separator' -%}
                   <li class="FaqSummary__Item {% if faq_separator_count == 0 %}is-active{% endif %}">
                     <a href="#block-{{ block.id }}" class="FaqSummary__Link" data-offset="80">

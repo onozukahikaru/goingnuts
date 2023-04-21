@@ -2,6 +2,13 @@
 
 {%- if section.settings.collections_to_show == 'all' -%}
   {%- for collection in collections -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: collection %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
     {%- unless collection.handle == 'frontpage' -%}
       {%- assign collection_count = collection_count | plus: 1 -%}
     {%- endunless -%}
@@ -41,6 +48,13 @@
       <div class="CollectionList CollectionList--grid {% if section.settings.add_spacing %}CollectionList--spaced{% endif %}">
         {%- if linklist.handle != blank -%}
           {%- for link in linklist.links -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: link %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
             {%- if link.type != 'collection_link' -%}
               {%- continue -%}
             {%- endif -%}
@@ -50,10 +64,24 @@
         {%- else -%}
           {%- if section.settings.collections_to_show == 'all' -%}
             {%- for collection in collections -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: collection %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
               {%- render 'collection-item', collection: collection, apply_overlay: section.settings.apply_overlay -%}
             {%- endfor -%}
           {%- else -%}
             {%- for block in section.blocks -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: block %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
               {%- assign collection = collections[block.settings.collection] -%}
               {%- render 'collection-item', collection: collection, apply_overlay: section.settings.apply_overlay, block: block -%}
             {%- endfor -%}

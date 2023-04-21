@@ -62,6 +62,13 @@ CURRENCY AND LANGUAGE SELECTORS
               <div class="Popover__Content">
                 <div class="Popover__ValueList Popover__ValueList--center" data-scrollable>
                   {%- for country in localization.available_countries -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: country %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                     <button type="submit" name="country_code" class="Popover__Value {% if country.iso_code == localization.country.iso_code %}is-selected{% endif %} Heading Link Link--primary u-h6"  value="{{ country.iso_code }}" {% if country.iso_code == localization.country.iso_code %}aria-current="true"{% endif %}>
                       {{- country.name }} ({{ country.currency.iso_code }} {% if country.currency.symbol %}{{ country.currency.symbol }}{%- endif -%})
                     </button>
@@ -91,6 +98,13 @@ CURRENCY AND LANGUAGE SELECTORS
               <div class="Popover__Content">
                 <div class="Popover__ValueList Popover__ValueList--center" data-scrollable>
                   {%- for language in localization.available_languages -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: language %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                     <button type="submit" name="locale_code" class="Popover__Value {% if language.iso_code == localization.language.iso_code %}is-selected{% endif %} Heading Link Link--primary u-h6" value="{{ language.iso_code }}" {% if language.iso_code == localization.language.iso_code %}aria-current="true"{% endif %}>
                       {{- language.endonym_name | capitalize -}}
                     </button>
@@ -182,6 +196,13 @@ HEADER CONTENT
         {%- assign mega_menu_names = '' -%}
 
         {%- for block in section.blocks -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: block %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
           {%- if block.type == 'mega_menu' -%}
             {%- assign trim_mega_menu_name = block.settings.navigation_mega_menu | strip -%}
             {%- assign mega_menu_names = mega_menu_names | append: trim_mega_menu_name | append: ',' -%}
@@ -193,12 +214,26 @@ HEADER CONTENT
         <nav class="Header__MainNav hidden-pocket hidden-lap" aria-label="{{ 'header.navigation.title' | t }}">
           <ul class="HorizontalList HorizontalList--spacingExtraLoose">
             {%- for link in main_menu.links -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: link %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
               {%- assign downcased_link_title = link.title | downcase | strip -%}
               {%- assign use_mega_menu = false -%}
 
               {%- capture menu_item_dropdown -%}
                 {%- if mega_menu_names contains downcased_link_title -%}
                   {%- for block in section.blocks -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: block %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                     {%- assign downcased_mega_menu_name = block.settings.navigation_mega_menu | downcase -%}
 
                     {%- if downcased_mega_menu_name != downcased_link_title -%}
@@ -233,12 +268,26 @@ HEADER CONTENT
                     <div class="MegaMenu {% if push_image_count != 0 and link.links.size == 0 %}MegaMenu--spacingCenter{% elsif should_space_evenly %}MegaMenu--spacingEvenly{% endif %} {% if push_image_count == 0 and link.links.size > 4 %}MegaMenu--grid{% endif %}" aria-hidden="true" {{ block.shopify_attributes }}>
                       <div class="MegaMenu__Inner">
                         {%- for sub_link in link.links -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: sub_link %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                           <div class="MegaMenu__Item MegaMenu__Item--fit">
                             <a href="{{ sub_link.url }}" class="MegaMenu__Title Heading Text--subdued u-h7">{{ sub_link.title | title }}</a>
 
                             {%- if sub_link.links != blank -%}
                               <ul class="Linklist">
                                 {%- for sub_sub_link in sub_link.links -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: sub_sub_link %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                                   <li class="Linklist__Item">
                                     <a href="{{ sub_sub_link.url }}" class="Link Link--secondary">{{ sub_sub_link.title | escape }}</a>
                                   </li>
@@ -318,6 +367,13 @@ HEADER CONTENT
                   <div class="DropdownMenu" aria-hidden="true">
                     <ul class="Linklist">
                       {%- for sub_link in link.links -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: sub_link %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                         <li class="Linklist__Item" {% if sub_link.links != blank %}aria-haspopup="true"{% endif %}>
                           <a href="{{ sub_link.url }}" class="Link Link--secondary">{{ sub_link.title | escape }} {% if sub_link.links != blank %}{% render 'icon' with 'select-arrow-right' %}{% endif %}</a>
 
@@ -325,6 +381,13 @@ HEADER CONTENT
                             <div class="DropdownMenu" aria-hidden="true">
                               <ul class="Linklist">
                                 {%- for sub_sub_link in sub_link.links -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: sub_sub_link %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                                   <li class="Linklist__Item">
                                     <a href="{{ sub_sub_link.url }}" class="Link Link--secondary">{{ sub_sub_link.title | escape }}</a>
                                   </li>

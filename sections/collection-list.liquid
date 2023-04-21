@@ -12,6 +12,13 @@
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="collection-list">
   {%- capture collection_items -%}
     {%- for block in section.blocks -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: block %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
       {%- assign collection = collections[block.settings.collection] -%}
       {%- render 'collection-item', block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
     {%- endfor -%}

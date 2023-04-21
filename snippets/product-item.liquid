@@ -1,3 +1,70 @@
+
+{% comment %} Wholesale_Club_Product_Prices Start {% endcomment %}
+{% assign base_product = product %}
+{% assign base_variant = product.selected_or_first_available_variant %}
+
+{% if shop.metafields.sawholesale['base_price'] == blank %}
+  {% assign base_price = 'compare_at_price' %}
+{% else %}
+  {% assign base_price = shop.metafields.sawholesale['base_price'] %}
+{% endif %}
+
+{% assign saw_discount = 0 %}{% assign saw_has_discount = false %}
+
+{% if customer.tags != blank %}
+  {% for mf in base_product.metafields.sawholesale %}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: mf %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
+    {% capture product_customer_tag %}{{ mf | first | replace: 'discount_', '' }}{% endcapture %}
+    {% if customer.tags contains product_customer_tag %}
+      {% assign saw_has_discount = true %}
+      {% assign discount_key = product_customer_tag | prepend: 'discount_' %}
+      {% assign price_key = product_customer_tag | prepend: 'price_' %}
+      {% assign saw_discount = base_product.metafields.sawholesale[discount_key] | divided_by: 100.0 %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% assign saw_discount = 1 | minus: saw_discount %}
+
+{% if base_price == 'price' or base_variant.compare_at_price == blank  or base_variant.compare_at_price == 0 or base_variant.compare_at_price < base_variant.price %}
+  {% assign saw_variant_compare_at_price = base_variant.price %}
+{% else %}
+  {% assign saw_variant_compare_at_price = base_variant.compare_at_price %}
+{% endif %}
+
+{% assign cpe = shop.metafields.sawholesale['cpe'] | default: "true" %}
+{% if base_variant.metafields.sawholesale[price_key] != blank and cpe == "true" %}
+  {% assign saw_variant_price = base_variant.metafields.sawholesale[price_key] %}
+{% else %}
+  {% assign saw_variant_price = saw_variant_compare_at_price | times: saw_discount %}
+{% endif %}
+
+{% if saw_has_discount == false or saw_variant_price >= saw_variant_compare_at_price %}
+  {% assign WCProduct_Price = base_product.price %}
+  {% assign WCProduct_ComparePrice = base_product.compare_at_price %}
+  {% assign WCProduct_PriceMin = base_product.price_min %}
+  {% assign WCProduct_ComparePriceMin = base_product.compare_at_price_min %}
+  {% assign WCProduct_PriceMax = base_product.price_max %}
+  {% assign WCProduct_ComparePriceMax = base_product.compare_at_price_max %}
+  {% assign WCProduct_VariantPrice = base_variant.price %}
+  {% assign WCProduct_VariantComparePrice = base_variant.compare_at_price %}
+{% else %}   
+  {% assign WCProduct_Price = saw_variant_price %}
+  {% assign WCProduct_PriceMin = base_product.price_min | times: saw_discount %}
+  {% assign WCProduct_PriceMax = base_product.price_max | times: saw_discount %}
+  {% assign WCProduct_ComparePrice = saw_variant_compare_at_price %}
+  {% if base_product.compare_at_price_min != 0 %}{% assign WCProduct_ComparePriceMin = base_product.compare_at_price_min %}{% else %}{% assign WCProduct_ComparePriceMin = base_product.price_min %}{% endif %}
+  {% if base_product.compare_at_price_max != 0 %}{% assign WCProduct_ComparePriceMax = base_product.compare_at_price_max %}{% else %}{% assign WCProduct_ComparePriceMax = base_product.price_max %}{% endif %}
+  {% assign WCProduct_VariantPrice = saw_variant_price %}
+  {% assign WCProduct_VariantComparePrice = saw_variant_compare_at_price %}
+{% endif %}
+{% comment %} Wholesale_Club_Product_Prices End {% endcomment %}
 <div class="ProductItem {% if use_horizontal %}ProductItem--horizontal{% endif %}">
   <div class="ProductItem__Wrapper">
     {%- comment -%}
@@ -56,6 +123,13 @@
     {%- if show_labels -%}
       {%- capture product_labels -%}
         {%- for tag in product.tags -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: tag %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
           {%- if tag contains '__label' -%}
             <span class="ProductItem__Label Heading Text--subdued">{{ tag | split: '__label:' | last }}</span>
             {%- break -%}
@@ -63,7 +137,7 @@
         {%- endfor -%}
 
         {%- if product.available -%}
-          {%- if product.compare_at_price > product.price -%}
+          {%- if WCProduct_ComparePrice > WCProduct_Price -%}
             <span class="ProductItem__Label ProductItem__Label--onSale Heading Text--subdued">{{ 'product.labels.on_sale' | t }}</span>
           {%- endif -%}
         {%- else -%}
@@ -105,16 +179,104 @@
             {%- capture color_name -%}{{ section.id }}-{{ product.id }}{%- endcapture -%}
 
             {%- for option in product.options_with_values -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: option %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
               {%- assign downcased_option = option.name | downcase -%}
 
               {%- if color_label contains downcased_option -%}
                 {%- assign variant_option = 'option' | append: forloop.index -%}
 
                 {%- for value in option.values -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: value %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                   {%- assign downcased_value = value | downcase -%}
                   {%- capture color_id -%}{{ section.id }}-{{ product.id }}-{{ forloop.index }}{%- endcapture -%}
 
                   {%- for variant in product.variants -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: variant %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
+{% comment %} Wholesale_Club_Product_Prices Start {% endcomment %}
+{% assign base_product = product %}
+{% assign base_variant = variant %}
+
+{% if shop.metafields.sawholesale['base_price'] == blank %}
+  {% assign base_price = 'compare_at_price' %}
+{% else %}
+  {% assign base_price = shop.metafields.sawholesale['base_price'] %}
+{% endif %}
+
+{% assign saw_discount = 0 %}{% assign saw_has_discount = false %}
+
+{% if customer.tags != blank %}
+  {% for mf in base_product.metafields.sawholesale %}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: mf %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
+    {% capture product_customer_tag %}{{ mf | first | replace: 'discount_', '' }}{% endcapture %}
+    {% if customer.tags contains product_customer_tag %}
+      {% assign saw_has_discount = true %}
+      {% assign discount_key = product_customer_tag | prepend: 'discount_' %}
+      {% assign price_key = product_customer_tag | prepend: 'price_' %}
+      {% assign saw_discount = base_product.metafields.sawholesale[discount_key] | divided_by: 100.0 %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% assign saw_discount = 1 | minus: saw_discount %}
+
+{% if base_price == 'price' or base_variant.compare_at_price == blank  or base_variant.compare_at_price == 0 or base_variant.compare_at_price < base_variant.price %}
+  {% assign saw_variant_compare_at_price = base_variant.price %}
+{% else %}
+  {% assign saw_variant_compare_at_price = base_variant.compare_at_price %}
+{% endif %}
+
+{% assign cpe = shop.metafields.sawholesale['cpe'] | default: "true" %}
+{% if base_variant.metafields.sawholesale[price_key] != blank and cpe == "true" %}
+  {% assign saw_variant_price = base_variant.metafields.sawholesale[price_key] %}
+{% else %}
+  {% assign saw_variant_price = saw_variant_compare_at_price | times: saw_discount %}
+{% endif %}
+
+{% if saw_has_discount == false or saw_variant_price >= saw_variant_compare_at_price %}
+  {% assign WCProduct_Price = base_product.price %}
+  {% assign WCProduct_ComparePrice = base_product.compare_at_price %}
+  {% assign WCProduct_PriceMin = base_product.price_min %}
+  {% assign WCProduct_ComparePriceMin = base_product.compare_at_price_min %}
+  {% assign WCProduct_PriceMax = base_product.price_max %}
+  {% assign WCProduct_ComparePriceMax = base_product.compare_at_price_max %}
+  {% assign WCProduct_VariantPrice = base_variant.price %}
+  {% assign WCProduct_VariantComparePrice = base_variant.compare_at_price %}
+{% else %}   
+  {% assign WCProduct_Price = saw_variant_price %}
+  {% assign WCProduct_PriceMin = base_product.price_min | times: saw_discount %}
+  {% assign WCProduct_PriceMax = base_product.price_max | times: saw_discount %}
+  {% assign WCProduct_ComparePrice = saw_variant_compare_at_price %}
+  {% if base_product.compare_at_price_min != 0 %}{% assign WCProduct_ComparePriceMin = base_product.compare_at_price_min %}{% else %}{% assign WCProduct_ComparePriceMin = base_product.price_min %}{% endif %}
+  {% if base_product.compare_at_price_max != 0 %}{% assign WCProduct_ComparePriceMax = base_product.compare_at_price_max %}{% else %}{% assign WCProduct_ComparePriceMax = base_product.price_max %}{% endif %}
+  {% assign WCProduct_VariantPrice = saw_variant_price %}
+  {% assign WCProduct_VariantComparePrice = saw_variant_compare_at_price %}
+{% endif %}
+{% comment %} Wholesale_Club_Product_Prices End {% endcomment %}
+
                     {%- if variant[variant_option] == value -%}
                       {%- assign variant_for_value = variant -%}
                       {%- break -%}
@@ -154,29 +316,29 @@
         <p>{{ product.metafields.custom._catchcopy }}</p>
         {%- if product.template_suffix != 'coming-soon' -%}
           <div class="ProductItem__PriceList {% if show_price_on_hover %}ProductItem__PriceList--showOnHover{% endif %} Heading">
-            {%- if product.compare_at_price > product.price -%}
+            {%- if WCProduct_ComparePrice > WCProduct_Price -%}
               {%- if settings.currency_code_enabled -%}
-                <span class="ProductItem__Price Price Price--highlight Text--subdued"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price | money_with_currency }}</span></span>
-                <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ product.compare_at_price | money_with_currency }}</span>
+                <span class="ProductItem__Price Price Price--highlight Text--subdued"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ WCProduct_Price | money_with_currency }}</span></span>
+                <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ WCProduct_ComparePrice | money_with_currency }}</span>
               {%- else -%}
-                <span class="ProductItem__Price Price Price--highlight Text--subdued"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price | money }}</span></span>
-                <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ product.compare_at_price | money }}</span>
+                <span class="ProductItem__Price Price Price--highlight Text--subdued"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ WCProduct_Price | money }}</span></span>
+                <span class="ProductItem__Price Price Price--compareAt Text--subdued">{{ WCProduct_ComparePrice | money }}</span>
               {%- endif -%}
             {%- elsif product.price_varies -%}
               {%- if settings.currency_code_enabled -%}
-                {%- capture formatted_min_price -%}<span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price_min | money_with_currency }}</span>{%- endcapture -%}
-                {%- capture formatted_max_price -%}<span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price_max | money_with_currency }}</span>{%- endcapture -%}
+                {%- capture formatted_min_price -%}<span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ WCProduct_PriceMin | money_with_currency }}</span>{%- endcapture -%}
+                {%- capture formatted_max_price -%}<span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ WCProduct_PriceMax | money_with_currency }}</span>{%- endcapture -%}
               {%- else -%}
-                {%- capture formatted_min_price -%}<span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price_min | money }}</span>{%- endcapture -%}
-                {%- capture formatted_max_price -%}<span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price_max | money }}</span>{%- endcapture -%}
+                {%- capture formatted_min_price -%}<span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ WCProduct_PriceMin | money }}</span>{%- endcapture -%}
+                {%- capture formatted_max_price -%}<span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ WCProduct_PriceMax | money }}</span>{%- endcapture -%}
               {%- endif -%}
 
               <span class="ProductItem__Price Price Text--subdued">{{ 'collection.product.from_price_html' | t: min_price: formatted_min_price, max_price: formatted_max_price }}</span>
             {%- else -%}
               {%- if settings.currency_code_enabled -%}
-                <span class="ProductItem__Price Price Text--subdued"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price | money_with_currency }}</span></span>
+                <span class="ProductItem__Price Price Text--subdued"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ WCProduct_Price | money_with_currency }}</span></span>
               {%- else -%}
-                <span class="ProductItem__Price Price Text--subdued"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ product.price | money }}</span></span>
+                <span class="ProductItem__Price Price Text--subdued"><span data-ymq-item-key="{{ product.key }}" class='ymq_item_price'>{{ WCProduct_Price | money }}</span></span>
               {%- endif -%}
             {%- endif -%}
           </div>

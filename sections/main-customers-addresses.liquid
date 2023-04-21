@@ -19,6 +19,13 @@
     {%- paginate customer.addresses by 9 -%}
       <div class="Grid Grid--l AddressList">
         {%- for address in customer.addresses -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: address %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
           <div class="Grid__Cell 1/2--tablet 1/3--lap-and-up">
             <div class="Segment">
               {%- if address == customer.default_address -%}
@@ -142,6 +149,13 @@
 
 {%- paginate customer.addresses by 9 -%}
   {%- for address in customer.addresses -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: address %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
     <div id="modal-{{ address.id }}" class="Modal Modal--address" aria-hidden="true" role="dialog" data-scrollable>
       <button class="Modal__Close Modal__Close--outside" data-action="close-modal">{%- render 'icon' with 'close' -%}</button>
 

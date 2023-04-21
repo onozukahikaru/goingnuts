@@ -3,6 +3,13 @@
     {%- if section.blocks.size > 0 -%}
       <div class="Footer__Inner">
         {%- for block in section.blocks -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: block %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
           <div class="Footer__Block Footer__Block--{{ block.type }}" {{ block.shopify_attributes }}>
             {%- case block.type -%}
               {%- when 'text' -%}
@@ -28,6 +35,13 @@
 
                   <ul class="Linklist">
                     {%- for link in linklist.links -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: link %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                       <li class="Linklist__Item">
                         <a href="{{ link.url }}" class="Link Link--primary">{{ link.title | escape }}</a>
                       </li>
@@ -96,6 +110,13 @@
                   <div class="Popover__Content">
                     <div class="Popover__ValueList Popover__ValueList--center" data-scrollable>
                       {%- for country in localization.available_countries -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: country %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                         <button type="submit" name="country_code" class="Popover__Value {% if country.iso_code == localization.country.iso_code %}is-selected{% endif %} Heading Link Link--primary u-h6"  value="{{ country.iso_code }}" {% if country.iso_code == localization.country.iso_code %}aria-current="true"{% endif %}>
                           {{- country.name }} ({{ country.currency.iso_code }} {% if country.currency.symbol %}{{ country.currency.symbol }}{%- endif -%})
                         </button>
@@ -125,6 +146,13 @@
                   <div class="Popover__Content">
                     <div class="Popover__ValueList Popover__ValueList--center" data-scrollable>
                       {%- for language in localization.available_languages -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: language %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
                         <button type="submit" name="locale_code" class="Popover__Value {% if language.iso_code == localization.language.iso_code %}is-selected{% endif %} Heading Link Link--primary u-h6" value="{{ language.iso_code }}" {% if language.iso_code == localization.language.iso_code %}aria-current="true"{% endif %}>
                           {{- language.endonym_name | capitalize -}}
                         </button>
@@ -146,6 +174,13 @@
       {%- if section.settings.show_payment_methods -%}
         {%- capture payment_methods -%}
           {%- for type in shop.enabled_payment_types -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+{%- capture hide_resource -%}{% render "wc_product_visibility", resource: type %}{%- endcapture -%}
+{%- if hide_resource == "true" -%}
+  {% continue %}
+{%- endif -%}
+{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+
             <li class="HorizontalList__Item">{{ type | payment_type_svg_tag }}</li>
           {%- endfor -%}
         {%- endcapture -%}
