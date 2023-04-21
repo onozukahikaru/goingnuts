@@ -49,3 +49,11 @@ input.spr-button-primary,
   }
   
 }
+
+/* お問い合わせ */
+#products,
+#order,
+#coverage,
+#company{
+  display: none;
+}

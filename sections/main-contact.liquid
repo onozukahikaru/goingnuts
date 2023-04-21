@@ -18,12 +18,12 @@
           <div class="Form__Alert Alert Alert--error">
             <ul class="Alert__ErrorList">
               {%- for field in form.errors -%}
-{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
-{%- capture hide_resource -%}{% render "wc_product_visibility", resource: field %}{%- endcapture -%}
-{%- if hide_resource == "true" -%}
-  {% continue %}
-{%- endif -%}
-{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+              {%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+              {%- capture hide_resource -%}{% render "wc_product_visibility", resource: field %}{%- endcapture -%}
+              {%- if hide_resource == "true" -%}
+                {% continue %}
+              {%- endif -%}
+              {%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
 
                 {%- if field == 'form' -%}
                   <li class="Alert__ErrorItem">{{ form.errors.messages[field] }}</li>
@@ -35,25 +35,17 @@
           </div>
         {%- endif -%}
 
-        <div class="Form__Group">
-          <div class="Form__Item">
-            <input type="text" class="Form__Input" name="contact[name]" aria-label="{{ 'contact.form.name' | t }}" placeholder="{{ 'contact.form.name' | t }}" required {% if customer %}value="{{ customer.name }}"{% endif %}>
-            <label class="Form__FloatingLabel">{{ 'contact.form.name' | t }}</label>
-          </div>
-
-          <div class="Form__Item">
-            <input type="email" class="Form__Input" name="contact[email]" aria-label="{{ 'contact.form.email' | t }}" placeholder="{{ 'contact.form.email' | t }}" required {% if customer %}value="{{ customer.email }}"{% endif %}>
-            <label class="Form__FloatingLabel">{{ 'contact.form.email' | t }}</label>
-          </div>
+        <div class="Form__Item">
+          <input type="text" class="Form__Input" name="contact[name]" aria-label="{{ 'contact.form.name' | t }}" placeholder="{{ 'contact.form.name' | t }}" required {% if customer %}value="{{ customer.name }}"{% endif %}>
+          <label class="Form__FloatingLabel">{{ 'contact.form.name' | t }}</label>
         </div>
-
         {%- for block in section.blocks -%}
-{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
-{%- capture hide_resource -%}{% render "wc_product_visibility", resource: block %}{%- endcapture -%}
-{%- if hide_resource == "true" -%}
-  {% continue %}
-{%- endif -%}
-{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+          {%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+          {%- capture hide_resource -%}{% render "wc_product_visibility", resource: block %}{%- endcapture -%}
+          {%- if hide_resource == "true" -%}
+            {% continue %}
+          {%- endif -%}
+          {%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
 
           {%- assign field_title = block.settings.title -%}
 
@@ -86,12 +78,12 @@
                   <option value="" disabled selected>{{ block.settings.title | escape }}</option>
 
                   {%- for value in values -%}
-{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
-{%- capture hide_resource -%}{% render "wc_product_visibility", resource: value %}{%- endcapture -%}
-{%- if hide_resource == "true" -%}
-  {% continue %}
-{%- endif -%}
-{%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
+                    {%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
+                    {%- capture hide_resource -%}{% render "wc_product_visibility", resource: value %}{%- endcapture -%}
+                    {%- if hide_resource == "true" -%}
+                      {% continue %}
+                    {%- endif -%}
+                    {%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
 
                     {%- assign trim_value = value | strip -%}
 
@@ -102,6 +94,39 @@
             </div>
           {%- endif -%}
         {%- endfor -%}
+        <div class="Form__Item">
+          <input type="email" class="Form__Input" name="contact[email]" aria-label="{{ 'contact.form.email' | t }}" placeholder="{{ 'contact.form.email' | t }}" required {% if customer %}value="{{ customer.email }}"{% endif %}>
+          <label class="Form__FloatingLabel">{{ 'contact.form.email' | t }}</label>
+        </div>
+        <div class="Form__Item">
+          <div class="Form__Select Select Select--primary">
+            {%- render 'icon' with 'select-arrow' -%}
+
+            <select id="select" name="select" title="select" required>
+              <option value="" disabled selected>問い合わせ種別</option>
+              <option value="products">商品問い合わせ</option>
+              <option value="order">注文に関して</option>
+              <option value="coverage">取材</option>
+              <option value="company">お取り扱いに関して</option>
+            </select>
+          </div>
+        </div>
+        <div id="products" class="Form__Item">
+          <input type="text" class="Form__Input" name="products" aria-label="商品名" placeholder="商品名">
+          <label class="Form__FloatingLabel">商品名</label>
+        </div>
+        <div id="order" class="Form__Item">
+          <input type="text" class="Form__Input" name="order" aria-label="注文番号" placeholder="注文番号">
+          <label class="Form__FloatingLabel">注文番号</label>
+        </div>
+        <div id="coverage" class="Form__Item">
+          <input type="text" class="Form__Input" name="coverage" aria-label="会社名" placeholder="会社名">
+          <label class="Form__FloatingLabel">会社名</label>
+        </div>
+        <div id="company" class="Form__Item">
+          <input type="text" class="Form__Input" name="company" aria-label="会社名" placeholder="会社名">
+          <label class="Form__FloatingLabel">会社名</label>
+        </div>
 
         <div class="Form__Item">
           <textarea name="contact[body]" cols="30" rows="10" class="Form__Textarea" aria-label="{{ 'contact.form.message' | t }}" placeholder="{{ 'contact.form.message' | t }}" required></textarea>
@@ -175,3 +200,35 @@
   }
 }
 {% endschema %}
+
+{% javascript %}
+$(function(){
+  var select = $('#select');
+  var selected = $('#selected');
+
+  select.on('change', function(){
+    var selectedOptionText = $(this).children(':selected').text();
+    $('#products').hide();
+    $('#order').hide();
+    $('#coverage').hide();
+    $('#company').hide();
+    if (selectedOptionText == '商品問い合わせ'){
+      $('#products').show();
+      $('#products .Form__Input').attr('required', true);
+    } else if (selectedOptionText == '注文に関して') {
+      $('#order').show();
+      $('#order .Form__Input').attr('required', true);
+    } else if (selectedOptionText == '取材') {
+      $('#coverage').show();
+      $('#coverage .Form__Input').attr('required', true);
+    } else if (selectedOptionText == 'お取り扱いに関して') {
+      $('#company').show();
+      $('#company .Form__Input').attr('required', true);
+    }
+  });
+});
+$(function() {
+    // remove form validation
+    $('form').find('input textarea select').removeAttr('required max min maxlength pattern');
+});
+{% endjavascript %}
