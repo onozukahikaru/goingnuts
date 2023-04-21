@@ -477,6 +477,30 @@
         "title": "Googleカレンダー",
         "html": "<iframe src=\"https:\/\/calendar.google.com\/calendar\/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;showPrint=0&amp;showTabs=0&amp;src=Y19iNTg0ODgwMWI3ZjQwMTVmOWY3NzVhYjk2ZDAxNjlmOWEzNjNlZGQ3YzJlNWNlYWVmZmRkYzAwZjNjYTdlNmZhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23b3b60d\" style=\"border:solid 1px #777\" width=\"300\" height=\"300\" frameborder=\"0\" scrolling=\"no\"><\/iframe>"
       }
+    },
+    "01b17f85-570a-4cf9-8ecf-6e90a20fa050": {
+      "type": "faq_customize",
+      "blocks": {
+        "d7d26b0d-b160-4126-9faa-26cfd646df7e": {
+          "type": "separator",
+          "settings": {
+            "title": "大項目"
+          }
+        },
+        "cd1b4d88-ce3d-4b24-aff5-b5ef37daa96b": {
+          "type": "question",
+          "settings": {
+            "title": "",
+            "answer": ""
+          }
+        }
+      },
+      "block_order": [
+        "d7d26b0d-b160-4126-9faa-26cfd646df7e",
+        "cd1b4d88-ce3d-4b24-aff5-b5ef37daa96b"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -498,6 +522,7 @@
     "featured-product",
     "blog-posts",
     "f9ac1269-d232-46df-b5ba-32185450e5c9",
-    "bc9b4315-5e42-438d-80bf-a82582428639"
+    "bc9b4315-5e42-438d-80bf-a82582428639",
+    "01b17f85-570a-4cf9-8ecf-6e90a20fa050"
   ]
 }

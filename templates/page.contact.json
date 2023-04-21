@@ -3,18 +3,10 @@
     "main": {
       "type": "main-contact",
       "blocks": {
-        "7724d3b8-f025-4958-8c70-97e9763c97e7": {
+        "a6710365-83ee-40fe-b706-acfbcd3cc6e7": {
           "type": "text",
           "settings": {
-            "title": "セイ",
-            "use_long_text": false,
-            "is_required": true
-          }
-        },
-        "c599da7c-689e-457e-9d82-92bbdcb3fbc0": {
-          "type": "text",
-          "settings": {
-            "title": "メイ",
+            "title": "フリガナ",
             "use_long_text": false,
             "is_required": true
           }
@@ -41,31 +33,13 @@
             "use_long_text": false,
             "is_required": false
           }
-        },
-        "685e5b6e-ccc8-4c13-81ec-6ca5372f7894": {
-          "type": "text",
-          "settings": {
-            "title": "会社名（取材・商品お取り扱いの場合は必須入力）",
-            "use_long_text": false,
-            "is_required": false
-          }
-        },
-        "c75dd5c1-781c-4e53-8022-22c0a50cb536": {
-          "type": "dropdown",
-          "settings": {
-            "title": "問い合わせ種別",
-            "values": "商品問い合わせ, 取材, 商品のお取り扱いに関して"
-          }
         }
       },
       "block_order": [
-        "7724d3b8-f025-4958-8c70-97e9763c97e7",
-        "c599da7c-689e-457e-9d82-92bbdcb3fbc0",
+        "a6710365-83ee-40fe-b706-acfbcd3cc6e7",
         "7baa3ad0-6323-467c-be33-1034ad0f88a5",
         "641e7c17-ad52-4440-b829-4dc50a94d0f9",
-        "bb2d856e-d125-4f22-855b-dd2c44dea635",
-        "685e5b6e-ccc8-4c13-81ec-6ca5372f7894",
-        "c75dd5c1-781c-4e53-8022-22c0a50cb536"
+        "bb2d856e-d125-4f22-855b-dd2c44dea635"
       ],
       "settings": {
       }
