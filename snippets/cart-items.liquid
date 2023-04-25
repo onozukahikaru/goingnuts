@@ -122,10 +122,10 @@
 
           <div class="CartItem__PriceList">
             {%- if WCLineItem_OriginalPrice != WCLineItem_FinalPrice -%}
-              <span class="CartItem__Price Price Price--highlight"><span data-ymq-item-key="{{ line_item.key }}" class='ymq_item_final_price'>{{ WCLineItem_FinalPrice | money }}</span></span>
-              <span class="CartItem__OriginalPrice Price Price--compareAt"><span data-ymq-item-key="{{ line_item.key }}" class='ymq_item_original_price'>{{ WCLineItem_OriginalPrice | money }}</span></span>
+              <span class="CartItem__Price Price Price--highlight">{{ WCLineItem_FinalPrice | money }}</span>
+              <span class="CartItem__OriginalPrice Price Price--compareAt">{{ WCLineItem_OriginalPrice | money }}</span>
             {%- else -%}
-              <span class="CartItem__Price Price"><span data-ymq-item-key="{{ line_item.key }}" class='ymq_item_final_price'>{{ WCLineItem_FinalPrice | money }}</span></span>
+              <span class="CartItem__Price Price">{{ WCLineItem_FinalPrice | money }}</span>
             {%- endif -%}
 
             {%- if line_item.line_level_discount_allocations != blank -%}
@@ -142,14 +142,13 @@
           {%- if line_item.unit_price_measurement -%}
             <div class="CartItem__UnitPriceMeasurement">
               <div class="UnitPriceMeasurement Heading Text--subdued">
-                <span class="UnitPriceMeasurement__Price"><span data-ymq-item-key="{{ line_item.key }}" class='ymq_item_unit_price'>{{ line_item.unit_price | money }}</span></span>
+                <span class="UnitPriceMeasurement__Price">{{ line_item.unit_price | money }}</span>
                 <span class="UnitPriceMeasurement__Separator">/ </span>
 
                 {%- if line_item.unit_price_measurement.reference_value != 1 -%}
-                  <span class="UnitPriceMeasurement__ReferenceValue"><span data-ymq-item-key="{{ line_item.key }}" class='ymq_item_unit_price_measurement'>{{ line_item.unit_price_measurement.reference_value }}</span></span>
+                  <span class="UnitPriceMeasurement__ReferenceValue">{{ line_item.unit_price_measurement.reference_value }}</span>
                 {%- endif -%}
-
-                <span class="UnitPriceMeasurement__ReferenceUnit"><span data-ymq-item-key="{{ line_item.key }}" class='ymq_item_unit_price_measurement'>{{ line_item.unit_price_measurement.reference_unit }}</span></span>
+                <span class="UnitPriceMeasurement__ReferenceUnit">{{ line_item.unit_price_measurement.reference_unit }}</span>
               </div>
             </div>
           {%- endif -%}
@@ -187,10 +186,10 @@
 
         <div class="CartItem__LinePriceList Heading Text--subdued" style="text-align: right">
           {%- if WCLineItem_OriginalLinePrice != WCLineItem_FinalLinePrice -%}
-            <span class="CartItem__Price Price Price--highlight"><span data-ymq-item-key="{{ line_item.key }}" class='ymq_item_final_line_price'>{{ WCLineItem_FinalLinePrice | money }}</span></span>
-            <span class="CartItem__Price Price Price--compareAt"><span data-ymq-item-key="{{ line_item.key }}" class='ymq_item_original_line_price'>{{ WCLineItem_OriginalLinePrice | money }}</span></span>
+            <span class="CartItem__Price Price Price--highlight">{{ WCLineItem_FinalLinePrice | money }}</span>
+            <span class="CartItem__Price Price Price--compareAt">{{ WCLineItem_OriginalLinePrice | money }}</span>
           {%- else -%}
-            <span class="CartItem__Price Price"><span data-ymq-item-key="{{ line_item.key }}" class='ymq_item_final_line_price'>{{ WCLineItem_FinalLinePrice | money }}</span></span>
+            <span class="CartItem__Price Price">{{ WCLineItem_FinalLinePrice | money }}</span>
           {%- endif -%}
         </div>
       {%- endunless -%}
@@ -200,4 +199,4 @@
       </div>
     {%- endif -%}
   {%- endfor -%}
-</div>{% comment %}<!-- ymq option done -->{% endcomment %}
+</div>
