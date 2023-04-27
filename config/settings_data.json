@@ -15,8 +15,8 @@
     "footer_background": "#ffffff",
     "footer_heading_color": "#0c3b2c",
     "footer_text_color": "#454545",
-    "navigation_background": "#efeeea",
-    "navigation_text_color": "#454545",
+    "navigation_background": "#3f665c",
+    "navigation_text_color": "#ffffff",
     "newsletter_popup_background": "#3f665c",
     "newsletter_popup_text_color": "#ffffff",
     "secondary_elements_background": "#3f665c",
@@ -149,15 +149,7 @@
     },
     "content_for_index": [
 
-    ],
-    "blocks": {
-      "a80a958f-ea43-4228-a771-8b2ffd8f867f": {
-        "type": "shopify:\/\/apps\/instagram-feed-story-tiktok\/blocks\/social-widget\/508b8d5b-b176-4dc6-a0ba-2b222db6eb79",
-        "disabled": false,
-        "settings": {
-        }
-      }
-    }
+    ]
   },
   "presets": {
     "Allure": {
