@@ -5,24 +5,14 @@
       "settings": {
       }
     },
-    "shop-now": {
-      "type": "shop-now",
-      "blocks": {
-        "quote": {
-          "type": "quote",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "quote"
-      ],
+    "prev-next-blog-posts": {
+      "type": "prev-next-blog-posts",
       "settings": {
       }
     }
   },
   "order": [
     "main",
-    "shop-now"
+    "prev-next-blog-posts"
   ]
 }

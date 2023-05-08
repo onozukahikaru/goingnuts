@@ -6,357 +6,95 @@
         "slide-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide-1.png",
-            "apply_overlay": false,
-            "content_position": "middleCenter",
+            "image": "shopify:\/\/shop_images\/DSC00323.jpg",
             "subheading": "",
-            "title": "カリフォルニアナッツとドライフルーツ専門店",
+            "title": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
             "button_1_text": "",
             "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
             "button_2_text": "",
-            "button_2_link": ""
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
           }
         },
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide-2.png",
-            "apply_overlay": false,
-            "content_position": "bottomLeft",
-            "subheading": "Slide title",
-            "title": "Tell your story",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
-        },
-        "7aa79bea-37b0-4247-b3fb-1b2472e0b87c": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/slide-3.png",
-            "apply_overlay": false,
-            "content_position": "bottomLeft",
-            "subheading": "Slide title",
-            "title": "Tell your story",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
-        },
-        "6bbfda46-3031-4426-a48e-6d29358085a0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/slide-4.png",
-            "apply_overlay": false,
-            "content_position": "bottomLeft",
+            "image": "shopify:\/\/shop_images\/DSC00529.jpg",
             "subheading": "",
             "title": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
             "button_1_text": "",
-            "button_1_link": "shopify:\/\/pages\/nutsbutter",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
             "button_2_text": "",
-            "button_2_link": ""
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        },
+        "80f0a20a-aa07-4283-b7d6-b32158dd1a32": {
+          "type": "image",
+          "settings": {
+            "subheading": "Tell your story",
+            "title": "Image slide",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
           }
         }
       },
       "block_order": [
         "slide-0",
         "slide-1",
-        "7aa79bea-37b0-4247-b3fb-1b2472e0b87c",
-        "6bbfda46-3031-4426-a48e-6d29358085a0"
+        "80f0a20a-aa07-4283-b7d6-b32158dd1a32"
       ],
       "settings": {
-        "show_fullscreen": false,
-        "show_arrow": true,
+        "allow_transparent_header": true,
+        "show_next_section_button": true,
+        "media_size": "auto",
         "autoplay": true,
+        "autoplay_pause_on_video": true,
         "cycle_speed": 5,
-        "text_color": "#ffffff",
-        "button_color": "#000000",
-        "button_background": "#ffffff"
-      }
-    },
-    "5983daf6-5e3a-47bb-900e-35fd12ad7640": {
-      "type": "slideshow",
-      "blocks": {
-        "template--18557725802773__5983daf6-5e3a-47bb-900e-35fd12ad7640-1681106831b0e09898-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/butter_banner.png",
-            "apply_overlay": false,
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/pages\/nutsbutter",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--18557725802773__5983daf6-5e3a-47bb-900e-35fd12ad7640-1681106831b0e09898-0"
-      ],
-      "settings": {
-        "show_fullscreen": false,
-        "show_arrow": false,
-        "autoplay": true,
-        "cycle_speed": 5,
-        "text_color": "#ffffff",
-        "button_color": "#000000",
-        "button_background": "#ffffff"
-      }
-    },
-    "fc719b53-b642-4e36-ae1f-93fad1bc6947": {
-      "type": "slideshow",
-      "blocks": {
-        "template--18557725802773__fc719b53-b642-4e36-ae1f-93fad1bc6947-1681365596fff77f8c-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/mothersdayPC.png",
-            "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "Slide title",
-            "title": "一旦配置：季節用バナー配置予定セクション",
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--18557725802773__fc719b53-b642-4e36-ae1f-93fad1bc6947-1681365596fff77f8c-1"
-      ],
-      "settings": {
-        "show_fullscreen": false,
-        "show_arrow": false,
-        "autoplay": true,
-        "cycle_speed": 5,
-        "text_color": "#ffffff",
-        "button_color": "#000000",
-        "button_background": "#ffffff"
-      }
-    },
-    "a7b4aadd-da0e-4f54-aa13-0da9c15f6cc4": {
-      "type": "text-with-image",
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "ブランドストーリー",
-        "image": "shopify:\/\/shop_images\/reunion_bnr.png",
-        "image_position": "right",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "link_text": "ブランドストーリーを見る",
-        "link_url": "shopify:\/\/pages\/brand-story"
-      }
-    },
-    "51852740-bd8c-4615-95f2-d9fd3484a786": {
-      "type": "text-with-image",
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "店舗経営LP",
-        "image": "shopify:\/\/shop_images\/2023-04-13_15.01.04.png",
-        "image_position": "left",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "link_text": "",
-        "link_url": ""
-      }
-    },
-    "collection-list": {
-      "type": "collection-list",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "nuts",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Going Nuts!のナッツ類一覧",
-            "title": "{{ block.settings.collection.title }}",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "mixed-nuts",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "新しい風味と美容効果をお楽しみください。",
-            "title": "{{ block.settings.collection.title }}",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "dried-fruit",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "Going Nuts!のドライフルーツ類一覧",
-            "title": "{{ block.settings.collection.title }}",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        },
-        "af360a54-5ffa-4aaa-8900-88d8e512317e": {
-          "type": "collection",
-          "settings": {
-            "collection": "nuts-for-alcohol",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "{{ block.settings.collection.title }}",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        },
-        "6e822362-5b0f-4b15-b4d2-1590e6ec6bb7": {
-          "type": "collection",
-          "settings": {
-            "collection": "guilt-free-sweets",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "{{ block.settings.collection.title }}",
-            "button_text": "View products",
-            "button_link": "",
-            "apply_overlay": true
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "collection-1",
-        "collection-2",
-        "af360a54-5ffa-4aaa-8900-88d8e512317e",
-        "6e822362-5b0f-4b15-b4d2-1590e6ec6bb7"
-      ],
-      "settings": {
-        "image_size": "normal",
-        "add_spacing": true,
-        "expand_collection": true,
-        "stack_on_mobile": true,
-        "text_color": "#ffffff",
-        "button_color": "#363636"
-      }
-    },
-    "78976c10-5067-4fe1-96c3-050a79043b43": {
-      "type": "text-with-image",
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "店舗紹介",
-        "image": "shopify:\/\/shop_images\/banners03_tenpo.png",
-        "image_position": "left",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "link_text": "店舗紹介を見る",
-        "link_url": "shopify:\/\/pages\/store-locations"
-      }
-    },
-    "c8d871be-8ad9-41f1-9126-6d5effb8ce8f": {
-      "type": "text-with-image",
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "取り扱い店舗一覧",
-        "image": "shopify:\/\/shop_images\/banners03_toriatsukai.png",
-        "image_position": "right",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "link_text": "一覧を見る",
-        "link_url": "shopify:\/\/pages\/partners"
-      }
-    },
-    "7d33335a-13e1-4948-b924-260fca0ba1cc": {
-      "type": "text-with-image",
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "メディア向けページ",
-        "image": "shopify:\/\/shop_images\/media_banner.png",
-        "image_position": "left",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "link_text": "メディア向けページを見る",
-        "link_url": "shopify:\/\/pages\/press-kit"
-      }
-    },
-    "9ec21ff4-3879-4cb7-96fe-df1c25f0abec": {
-      "type": "text-with-image",
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "Going Nuts!のInstagram",
-        "image": "shopify:\/\/shop_images\/banners03_insta.png",
-        "image_position": "right",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "link_text": "Instagramを見る",
-        "link_url": "https:\/\/www.instagram.com\/goingnuts777\/"
-      }
-    },
-    "a547d28b-e370-4c94-9461-c93127e1672e": {
-      "type": "text-with-image",
-      "disabled": true,
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "有機JAS",
-        "image_position": "right",
-        "content": "<p>画像を後日追加する<\/p>",
-        "link_text": "",
-        "link_url": "shopify:\/\/pages\/organic-jas"
-      }
-    },
-    "38a58fab-56cc-499b-a4bd-4f67bf1a9220": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--18557725802773__38a58fab-56cc-499b-a4bd-4f67bf1a9220-1681190810d0e4b0a1-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "ranking",
-            "title": "{{ block.settings.collection.title }}",
-            "grid_items_count": 8,
-            "button_text": "View all products"
-          }
-        }
-      },
-      "block_order": [
-        "template--18557725802773__38a58fab-56cc-499b-a4bd-4f67bf1a9220-1681190810d0e4b0a1-0"
-      ],
-      "settings": {
-        "title": "Featured collection",
-        "layout_mode": "grid",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false,
-        "grid_mobile_items_per_row": "2",
-        "grid_desktop_items_per_row": 4
-      }
-    },
-    "0db90031-7c5e-47cf-9386-faad8d847250": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--18557725802773__0db90031-7c5e-47cf-9386-faad8d847250-1681190810d0e4b0a1-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "recommendations",
-            "title": "{{ block.settings.collection.title }}",
-            "grid_items_count": 8,
-            "button_text": "View all products"
-          }
-        }
-      },
-      "block_order": [
-        "template--18557725802773__0db90031-7c5e-47cf-9386-faad8d847250-1681190810d0e4b0a1-0"
-      ],
-      "settings": {
-        "title": "Featured collection",
-        "layout_mode": "grid",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false,
-        "grid_mobile_items_per_row": "2",
-        "grid_desktop_items_per_row": 4
+        "background": "#000000",
+        "controls_color": "#ffffff"
       }
     },
     "featured-collections": {
@@ -365,10 +103,11 @@
         "featured-collection-0": {
           "type": "collection",
           "settings": {
-            "collection": "new-arrivals",
-            "title": "{{ block.settings.collection.title }}",
-            "grid_items_count": 8,
-            "button_text": "View all products"
+            "collection": "",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
           }
         }
       },
@@ -376,128 +115,261 @@
         "featured-collection-0"
       ],
       "settings": {
-        "title": "",
-        "layout_mode": "grid",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false,
-        "grid_mobile_items_per_row": "2",
-        "grid_desktop_items_per_row": 4
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "Featured collection"
       }
     },
-    "6c6dcb4b-ece2-4a6e-a193-64d9e52b1118": {
-      "type": "recently-viewed-products",
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "Sub-heading",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "Sub-heading",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "Sub-heading",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-0",
+        "collection-1",
+        "collection-2"
+      ],
       "settings": {
-        "title": "Recently viewed",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "circle_button_background": "#ffffff",
+        "circle_button_text_color": "#1c1c1c"
       }
     },
     "featured-product": {
       "type": "featured-product",
       "blocks": {
-        "product-meta": {
-          "type": "product_meta",
-          "settings": {
-            "show_vendor": false,
-            "show_sku": false,
-            "show_product_rating": false,
-            "show_taxes_included": false
-          }
-        },
         "share-buttons": {
           "type": "share_buttons",
           "settings": {
           }
         },
-        "variant-selector": {
-          "type": "variant_selector",
-          "settings": {
-            "selector_mode": "dropdown",
-            "show_color_swatch": false,
-            "show_color_carousel": false,
-            "size_chart": ""
-          }
-        },
         "buy-buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_price_in_button": false,
-            "show_payment_button": true
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
           }
         }
       },
       "block_order": [
-        "product-meta",
         "share-buttons",
-        "variant-selector",
         "buy-buttons"
       ],
       "settings": {
+        "product": "natural-almond-butter",
+        "separate_section_with_border": true,
+        "container_size": "lg",
+        "product_info_size": 45,
+        "center_basic_info": false,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 3,
         "subheading": "",
-        "title": "おすすめ商品",
-        "show_headings_on_mobile": true,
-        "product": "natural-almond-butter"
+        "title": "Featured product",
+        "content": ""
+      }
+    },
+    "timeline": {
+      "type": "timeline",
+      "blocks": {
+        "item-0": {
+          "type": "item",
+          "settings": {
+            "label": "2020",
+            "subheading": "Sub-heading",
+            "title": "2000",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "mobile_text_color": "#ffffff"
+          }
+        },
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "label": "2020",
+            "subheading": "Sub-heading",
+            "title": "2001",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "mobile_text_color": "#ffffff"
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "label": "2020",
+            "subheading": "Sub-heading",
+            "title": "2002",
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link",
+            "mobile_text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "item-0",
+        "item-1",
+        "item-2"
+      ],
+      "settings": {
+        "separate_section_with_border": true
       }
     },
     "blog-posts": {
       "type": "blog-posts",
-      "blocks": {
-        "blog-0": {
-          "type": "blog",
-          "settings": {
-            "blog": "news"
-          }
-        }
-      },
-      "block_order": [
-        "blog-0"
-      ],
       "settings": {
-        "subheading": "",
-        "title": "新着情報パターン１（Shopify・Prestage方式）",
+        "separate_section_with_border": true,
+        "blog": "",
+        "posts_count": 3,
+        "stack_on_mobile": false,
         "show_category": false,
+        "show_excerpt": true,
+        "show_read_more": true,
+        "subheading": "",
+        "title": "Featured article",
+        "content": "",
         "button_link": "",
         "button_text": "View all articles"
       }
     },
-    "f9ac1269-d232-46df-b5ba-32185450e5c9": {
-      "type": "custom-html",
+    "shop-the-look": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look-0": {
+          "type": "look",
+          "settings": {
+            "hot_spots_background": "#ffffff",
+            "product_1": "",
+            "product_1_horizontal_position": 30,
+            "product_1_vertical_position": 40,
+            "product_2": "",
+            "product_2_horizontal_position": 45,
+            "product_2_vertical_position": 65,
+            "product_3": "",
+            "product_3_horizontal_position": 70,
+            "product_3_vertical_position": 50,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        },
+        "look-1": {
+          "type": "look",
+          "settings": {
+            "hot_spots_background": "#ffffff",
+            "product_1": "",
+            "product_1_horizontal_position": 25,
+            "product_1_vertical_position": 45,
+            "product_2": "",
+            "product_2_horizontal_position": 55,
+            "product_2_vertical_position": 30,
+            "product_3": "",
+            "product_3_horizontal_position": 65,
+            "product_3_vertical_position": 60,
+            "product_4": "",
+            "product_4_horizontal_position": 85,
+            "product_4_vertical_position": 85
+          }
+        }
+      },
+      "block_order": [
+        "look-0",
+        "look-1"
+      ],
       "settings": {
-        "subheading": "Sub-heading",
-        "title": "インスタ自社投稿のセクション",
-        "html": "<p>Write your own custom HTML content.<\/p>"
-      }
-    },
-    "bc9b4315-5e42-438d-80bf-a82582428639": {
-      "type": "custom-html",
-      "settings": {
-        "subheading": "",
-        "title": "Googleカレンダー",
-        "html": "<iframe src=\"https:\/\/calendar.google.com\/calendar\/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;showPrint=0&amp;showTabs=0&amp;src=Y19iNTg0ODgwMWI3ZjQwMTVmOWY3NzVhYjk2ZDAxNjlmOWEzNjNlZGQ3YzJlNWNlYWVmZmRkYzAwZjNjYTdlNmZhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23b3b60d\" style=\"border:solid 1px #777\" width=\"300\" height=\"300\" frameborder=\"0\" scrolling=\"no\"><\/iframe>"
+        "separate_section_with_border": true,
+        "subheading": "Shop",
+        "title": "Our looks",
+        "content": "",
+        "popover_title": "Shop the look"
       }
     }
   },
   "order": [
     "slideshow",
-    "5983daf6-5e3a-47bb-900e-35fd12ad7640",
-    "fc719b53-b642-4e36-ae1f-93fad1bc6947",
-    "a7b4aadd-da0e-4f54-aa13-0da9c15f6cc4",
-    "51852740-bd8c-4615-95f2-d9fd3484a786",
-    "collection-list",
-    "78976c10-5067-4fe1-96c3-050a79043b43",
-    "c8d871be-8ad9-41f1-9126-6d5effb8ce8f",
-    "7d33335a-13e1-4948-b924-260fca0ba1cc",
-    "9ec21ff4-3879-4cb7-96fe-df1c25f0abec",
-    "a547d28b-e370-4c94-9461-c93127e1672e",
-    "38a58fab-56cc-499b-a4bd-4f67bf1a9220",
-    "0db90031-7c5e-47cf-9386-faad8d847250",
     "featured-collections",
-    "6c6dcb4b-ece2-4a6e-a193-64d9e52b1118",
+    "collection-list",
     "featured-product",
+    "timeline",
     "blog-posts",
-    "f9ac1269-d232-46df-b5ba-32185450e5c9",
-    "bc9b4315-5e42-438d-80bf-a82582428639"
+    "shop-the-look"
   ]
 }

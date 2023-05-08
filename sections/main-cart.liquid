@@ -1,139 +1,284 @@
-{%- capture section_settings -%}
-{
-  "type": {{ settings.cart_type | json }},
-  "itemCount": {{ cart.item_count }},
-  "drawer": false,
-  "hasShippingEstimator": {% if section.settings.show_shipping_estimator and cart.item_count > 0 %}true{% else %}false{% endif %}
-}
-{%- endcapture -%}
+<div class="section-spacing section-spacing--tight">
+  {%- if cart.empty? -%}
+    <div class="container container--xs">
+      <div class="empty-state">
+        <div class="prose">
+          <h1 class="h4">{{ 'cart.general.title' | t }}</h1>
+          <p>{{ 'cart.general.empty' | t }}</p>
 
-<section data-section-id="{{ section.id }}" data-section-type="cart" data-section-settings='{{ section_settings }}'>
-  {%- if cart.item_count == 0 -%}
-    <div class="EmptyState">
-      <div class="Container">
-        <h1 class="EmptyState__Title Heading u-h5">{{ 'cart.general.empty' | t }}</h1>
-
-        {%- if settings.cart_show_free_shipping_threshold -%}
-          {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
-          {%- capture remaining_amount -%}<span><span  class='ymq_cart_total_price'>{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span></span>{%- endcapture -%}
-
-          <p class="Text--subdued">{{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}</p>
-        {%- endif -%}
-
-        <a href="{{ routes.all_products_collection_url }}" class="EmptyState__Action Button Button--primary">{{ 'cart.general.empty_button' | t }}</a>
+          {%- assign button_content = 'cart.general.continue_shopping' | t -%}
+          {%- render 'button', content: button_content, href: settings.cart_empty_cart_link -%}
+        </div>
       </div>
     </div>
   {%- else -%}
-    <div class="Container">
-      <header class="PageHeader">
-        <div class="SectionHeader SectionHeader--center">
-          <h1 class="SectionHeader__Heading Heading u-h1">{{ 'cart.general.title' | t }}</h1>
+    <div class="container container--sm">
+      <div class="section-stack">
+        <div class="section-header justify-self-center text-center">
+          <div class="v-stack gap-4">
+            <h1 class="h2">{{ 'cart.general.title' | t }}</h1>
 
-          {%- if settings.cart_show_free_shipping_threshold -%}
-            {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
-
-            <p class="SectionHeader__Description Text--subdued">
-              {%- if cart.total_price >= threshold_in_cents -%}
-                {{- 'cart.general.free_shipping' | t -}}
-              {%- else -%}
-                {%- capture remaining_amount -%}<span><span  class='ymq_cart_total_price'>{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span></span>{%- endcapture -%}
-                {{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}
-              {%- endif -%}
-            </p>
-          {%- endif -%}
-        </div>
-      </header>
-
-      <div class="PageContent">
-        <form action="{{ routes.cart_url }}" method="POST" class="Cart Cart--expanded" novalidate>
-          <input type="hidden" name="attributes[collection_mobile_items_per_row]" value="">
-          <input type="hidden" name="attributes[collection_desktop_items_per_row]" value="">
-
-          {% render 'cart-items' %}
-
-          <footer class="Cart__Footer">
-            {%- if settings.cart_enable_notes -%}
-              <div class="Cart__NoteContainer">
-                <span class="Cart__NoteButton">{{ 'cart.general.add_note' | t }}</span>
-                <textarea class="Cart__Note Form__Textarea" name="note" id="cart-note" rows="4" placeholder="{{ 'cart.general.note_placeholder' | t }}">{{ cart.note }}</textarea>
-              </div>
+            {%- if settings.cart_show_free_shipping_bar -%}
+              {%- render 'free-shipping-bar' -%}
             {%- endif -%}
+          </div>
+        </div>
 
-            <div class="Cart__Recap">
-              {%- capture shipping_and_taxes_notice -%}{{ 'cart.general.shipping_and_taxes_notice' | t }}{%- endcapture -%}
+        <form action="{{ routes.cart_url }}" method="POST" class="cart-page">
+          <input type="hidden" name="attributes[products_mobile_grid_mode]" value="">
+          <input type="hidden" name="attributes[products_desktop_grid_mode]" value="">
 
-              {%- if cart.cart_level_discount_applications != blank -%}
-                {%- for discount_application in cart.cart_level_discount_applications -%}
-                  <p class="Cart__Discount Heading u-h6">{{ 'cart.general.discount' | t }} ({{ discount_application.title }}): -<span>{{ discount_application.total_allocated_amount | money }}</span></p>
+          <div class="v-stack gap-6">
+            {%- comment -%}
+            ----------------------------------------------------------------------------------------------------------------
+            ORDER SUMMARY
+            ----------------------------------------------------------------------------------------------------------------
+            {%- endcomment -%}
+            <table class="order-summary table--reduce-border">
+              <thead class="order-summary__header">
+                <tr>
+                  <th>{{ 'cart.order.product' | t }}</th>
+                  <th class="text-center">{{ 'cart.order.quantity' | t }}</th>
+                  <th class="text-end">{{ 'cart.order.total' | t }}</th>
+                </tr>
+              </thead>
+
+              <tbody class="order-summary__body">
+                {%- for line_item in cart.items -%}
+{% comment %} Wholesale_Club_Line_Item_Prices Start {% endcomment %}
+{% if line_item.product %}{% assign base_product = line_item.product %}{% else %}{% assign base_product = line_item %}{% endif %}
+{% if line_item.variant %}{% assign base_variant = line_item.variant %}{% else %}{% assign base_variant = line_item.selected_or_first_available_variant %}{% endif %}
+
+{% if shop.metafields.sawholesale['base_price'] == blank %}
+  {% assign base_price = 'compare_at_price' %}
+{% else %}
+  {% assign base_price = shop.metafields.sawholesale['base_price'] %}
+{% endif %}
+
+{% assign saw_discount = 0 %}{% assign saw_has_discount = false %}
+
+{% if customer.tags != blank %}
+  {% for mf in base_product.metafields.sawholesale %}
+    {% capture product_customer_tag %}{{ mf | first | replace: 'discount_', '' }}{% endcapture %}
+    {% if customer.tags contains product_customer_tag %}
+      {% assign saw_has_discount = true %}
+      {% assign discount_key = product_customer_tag | prepend: 'discount_' %}
+      {% assign price_key = product_customer_tag | prepend: 'price_' %}
+      {% assign saw_discount = base_product.metafields.sawholesale[discount_key] | divided_by: 100.0 %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% assign saw_discount = 1 | minus: saw_discount %}
+
+{% if base_price == 'price' or base_variant.compare_at_price == blank  or base_variant.compare_at_price == 0 or base_variant.compare_at_price < base_variant.price %}
+  {% assign saw_variant_compare_at_price = base_variant.price %}
+{% else %}
+  {% assign saw_variant_compare_at_price = base_variant.compare_at_price %}
+{% endif %}
+
+{% assign cpe = shop.metafields.sawholesale['cpe'] | default: "true" %}
+{% if base_variant.metafields.sawholesale[price_key] != blank and cpe == "true" %}
+  {% assign saw_variant_price = base_variant.metafields.sawholesale[price_key] %}
+{% else %}
+  {% assign saw_variant_price = saw_variant_compare_at_price | times: saw_discount %}
+{% endif %}
+
+{% if saw_has_discount == false or saw_variant_price >= saw_variant_compare_at_price %}
+  {% assign WCLineItem_OriginalPrice = line_item.original_price %}
+  {% assign WCLineItem_FinalPrice = line_item.final_price %}
+  {% assign WCLineItem_Price = line_item.price %}
+  {% assign WCLineItem_PriceMin = line_item.price_min %}
+  {% assign WCLineItem_PriceMax = line_item.price_max %}
+  {% assign WCLineItem_CompareAtPrice = line_item.compare_at_price %}
+  {% assign WCLineItem_CompareAtPriceMin = line_item.compare_at_price_min %}
+  {% assign WCLineItem_CompareAtPriceMax = line_item.compare_at_price_max %}
+  {% assign WCLineItem_OriginalLinePrice = line_item.original_line_price %}
+  {% assign WCLineItem_FinalLinePrice = line_item.final_line_price %}
+  {% assign WCLineItem_LinePrice = line_item.line_price %}
+{% else %}
+  {% assign WCLineItem_OriginalPrice = saw_variant_compare_at_price %}
+  {% assign WCLineItem_FinalPrice = saw_variant_price %}
+  {% assign WCLineItem_Price = saw_variant_price %}
+  {% assign WCLineItem_PriceMin = line_item.price_min | times: saw_discount %}
+  {% assign WCLineItem_PriceMax = line_item.price_max | times: saw_discount %}
+  {% assign WCLineItem_CompareAtPrice = saw_variant_compare_at_price %}
+  {% if base_product.compare_at_price_min != 0 %}{% assign WCLineItem_CompareAtPriceMin = base_product.compare_at_price_min %}{% else %}{% assign WCLineItem_CompareAtPriceMin = base_product.price_min %}{% endif %}
+  {% if base_product.compare_at_price_max != 0 %}{% assign WCLineItem_CompareAtPriceMax = base_product.compare_at_price_max %}{% else %}{% assign WCLineItem_CompareAtPriceMax = base_product.price_max %}{% endif %}
+  {% assign WCLineItem_OriginalLinePrice = WCLineItem_OriginalPrice | round | times: line_item.quantity %}
+  {% assign WCLineItem_FinalLinePrice = WCLineItem_FinalPrice | round | times: line_item.quantity %}
+  {% assign WCLineItem_LinePrice = WCLineItem_Price | round | times: line_item.quantity %}
+{% endif %}
+{% comment %} Wholesale_Club_Line_Item_Prices End {% endcomment %}
+
+                  <tr>
+                    <td>{%- render 'line-item', line_item: line_item, show_quantity_selector: true -%}</td>
+
+                    <td class="text-center">
+                      <line-item-quantity class="v-stack justify-items-center gap-2">
+                        {%- render 'quantity-selector', line_item: line_item, size: 'sm', add_updates: true -%}
+                        <a href="{{ line_item.url_to_remove }}" class="link text-xs">{{ 'cart.order.remove' | t }}</a>
+                      </line-item-quantity>
+                    </td>
+
+                    <td class="text-end">
+                      {%- if settings.currency_code_enabled -%}
+                        {{- WCLineItem_FinalLinePrice | money_with_currency -}}
+                      {%- else -%}
+                        {{- WCLineItem_FinalLinePrice | money -}}
+                      {%- endif -%}
+                    </td>
+                  </tr>
                 {%- endfor -%}
+              </tbody>
+            </table>
+
+            {%- comment -%}
+            ----------------------------------------------------------------------------------------------------------------
+            CART FOOTER
+            ----------------------------------------------------------------------------------------------------------------
+            {%- endcomment -%}
+            <div class="cart-footer">
+              {%- if section.settings.show_cart_note -%}
+                <cart-note class="cart-note">
+                  {%- assign order_note = 'cart.general.add_order_note' | t -%}
+                  {%- assign placeholder = 'cart.general.note_placeholder' | t -%}
+                  {%- render 'input', name: 'note', multiline: 3, label: order_note, value: cart.note, placeholder: placeholder, show_label_as_block: true -%}
+                </cart-note>
               {%- endif -%}
 
-              <p class="Cart__Total Heading u-h6">{{ 'cart.general.total' | t }}: <span><span  class='ymq_cart_total_price'>{{ cart.total_price | money_with_currency }}</span></span></p>
+              <div class="cart-recap">
+                {%- comment -%}Give apps a special hook to add features on the recap (such as capturing delivery dates){%- endcomment -%}
+                {%- for block in section.blocks -%}
+                  {%- if block.type == '@app' -%}
+                    {%- render block -%}
+                  {%- endif -%}
+                {%- endfor -%}
 
-              {%- if shipping_and_taxes_notice != blank -%}
-                <p class="Cart__Taxes Text--subdued">{{ shipping_and_taxes_notice }}</p>
-              {%- endif -%}
-
-              <button type="submit" name="checkout" class="Cart__Checkout Button Button--primary Button--full">{{ 'cart.general.checkout' | t }}</button>
-            </div>
-          </footer>
-        </form>
-
-        {%- if section.settings.show_shipping_estimator -%}
-          <div class="Section Section--spacingExtraLarge">
-            <div class="Panel">
-              <h2 class="Panel__Title Heading u-h2">{{ 'cart.shipping_estimator.title' | t }}</h2>
-
-              <div class="Panel__Content">
-                <div class="ShippingEstimator">
-                  <div class="ShippingEstimator__Form">
-                    <div class="ShippingEstimator__Country Form__Select Select Select--primary">
-                      {%- render 'icon' with 'select-arrow' -%}
-                      <select name="country" title="{{ 'cart.shipping_estimator.country' | t }}" data-default="{% if customer %}{{ customer.default_address.country }}{% elsif section.settings.shipping_estimator_default_country != '' %}{{ section.settings.shipping_estimator_default_country }}{% endif %}">{{ country_option_tags }}</select>
-                    </div>
-
-                    <div class="ShippingEstimator__Province Form__Select Select Select--primary" style="display: none">
-                      {%- render 'icon' with 'select-arrow' -%}
-                      <select name="province" title="{{ 'cart.shipping_estimator.province' | t }}"></select>
-                    </div>
-
-                    <input type="text" class="ShippingEstimator__Zip Form__Input" name="zip" placeholder="{{ 'cart.shipping_estimator.zip_code' | t }}">
-
-                    <button type="button" class="ShippingEstimator__Submit Button Button--primary">{{ 'cart.shipping_estimator.estimate' | t }}</button>
+                {%- if section.settings.show_order_weight -%}
+                  <div class="h-stack justify-start gap-2">
+                    <span class="text-subdued">{{ 'cart.general.weight' | t }}:</span>
+                    <span class="text-subdued">{{ cart.total_weight | weight_with_unit }}</span>
                   </div>
+                {%- endif -%}
 
-                  <div class="ShippingEstimator__Error Alert Alert--error" style="display: none"></div>
-                  <div class="ShippingEstimator__Results">
-                    <div class="ShippingEstimator__ResultsInner"></div>
+                {%- if cart.items_subtotal_price != cart.total_price -%}
+                  <div class="h-stack justify-start gap-2">
+                    <span class="text-subdued">{{ 'cart.general.subtotal' | t }}:</span>
+                    <span class="text-subdued">
+                  
+                      {%- if settings.currency_code_enabled -%}
+                        {{- cart.items_subtotal_price | money_with_currency -}}
+                      {%- else -%}
+                        {{- cart.items_subtotal_price | money -}}
+                      {%- endif -%}
+                    </span>
+                  
                   </div>
-                </div>
+                {%- endif -%}
+
+                {% for discount_application in cart.cart_level_discount_applications %}
+                  <div class="h-stack justify-start gap-2">
+                    <span class="discount-badge text-xs">{%- render 'icon' with 'discount', width: 12 -%} {{- discount_application.title -}}</span>
+                    <span class="text-subdued">-{{ discount_application.total_allocated_amount | money }}</span>
+                  </div>
+                {% endfor %}
+
+                <div class="h-stack justify-start gap-2">
+                  <span class="text-lg">{{ 'cart.general.total' | t }}:</span>
+    <span style="display: block; text-align: right;" class="saw-extra-note"></span>
+           <span class="saw-cart-original-total">
+                  <span class="text-lg">{{- cart.total_price | money_with_currency -}}</span></span></span>
+                </div><span class="saw-cart-total"></span>
+
+                {%- if section.settings.show_shipping_text -%}
+                  {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+                    <p class="text-subdued text-sm">{{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}</p>
+                  {%- elsif cart.taxes_included -%}
+                    <p class="text-subdued text-sm">{{ 'cart.general.taxes_included_but_shipping_at_checkout' | t }}</p>
+                  {%- elsif shop.shipping_policy.body != blank -%}
+                    <p class="text-subdued text-sm">{{ 'cart.general.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}</p>
+                  {%- else -%}
+                    <p class="text-subdued text-sm">{{ 'cart.general.taxes_and_shipping_at_checkout' | t }}</p>
+                  {%- endif -%}
+                {%- endif -%}
+{% unless customer.tags.size > 0 %} 
+
+                {%- if section.settings.show_accelerated_payment_buttons and additional_checkout_buttons -%}
+                  <div class="additional-checkout-buttons additional-checkout-buttons--vertical">
+                    {{- content_for_additional_checkout_buttons -}}
+                  </div>
+                {% endif %}{% endunless %}
+
+                <noscript>
+                  {%- assign update_button = 'cart.general.update_cart' | t -%}
+                  {%- render 'button', type: 'submit', content: update_button, style: 'outline' -%}
+                </noscript>
+
+                {%- assign checkout_button = 'cart.general.checkout' | t -%}
+                {%- render 'button', type: 'submit', content: checkout_button, name: 'checkout' -%}
               </div>
             </div>
           </div>
-        {%- endif -%}
+
+          {%- comment -%}
+          ----------------------------------------------------------------------------------------------------------------
+          SHIPPING ESTIMATOR
+          ----------------------------------------------------------------------------------------------------------------
+          {%- endcomment -%}
+
+          {%- if section.settings.show_shipping_estimator and cart.requires_shipping -%}
+            {%- render 'shipping-estimator' -%}
+          {%- endif -%}
+        </form>
       </div>
     </div>
   {%- endif -%}
-</section>
+</div>
 
 {% schema %}
 {
-  "name": "Cart page",
-  "class": "shopify-section--bordered",
+  "name": "t:sections.main_cart.name",
+  "class": "shopify-section--main-cart",
+  "tag": "section",
   "settings": [
     {
       "type": "checkbox",
-      "id": "show_shipping_estimator",
-      "label": "Show shipping rates calculator",
+      "id": "show_cart_note",
+      "label": "t:sections.main_cart.show_cart_note",
       "default": true
     },
     {
-      "type": "text",
-      "id": "shipping_estimator_default_country",
-      "label": "Default country to use",
-      "info": "If your customer is logged-in, the country in his default shipping address will be selected.",
-      "default": "United States"
+      "type": "checkbox",
+      "id": "show_order_weight",
+      "label": "t:sections.main_cart.show_order_weight",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_shipping_text",
+      "label": "t:sections.main_cart.show_shipping_text",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_accelerated_buttons",
+      "label": "t:sections.main_cart.show_accelerated_buttons",
+      "info": "t:sections.main_cart.show_accelerated_buttons_info",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_shipping_estimator",
+      "label": "t:sections.main_cart.show_shipping_estimator",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
     }
   ]
 }
-{% endschema %}{% comment %}<!-- ymq option done -->{% endcomment %}
+{% endschema %}
+{% render 'wc_cart' %}

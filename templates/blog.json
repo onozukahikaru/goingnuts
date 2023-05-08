@@ -3,10 +3,6 @@
     "main": {
       "type": "main-blog",
       "settings": {
-        "show_rss": false,
-        "show_tags": false,
-        "show_featured_article": true,
-        "show_category": false
       }
     }
   },

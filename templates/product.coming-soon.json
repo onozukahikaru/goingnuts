@@ -3,11 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "product_meta": {
-          "type": "product_meta",
-          "settings": {
-          }
-        },
         "description": {
           "type": "description",
           "settings": {
@@ -20,15 +15,9 @@
         }
       },
       "block_order": [
-        "product_meta",
         "description",
         "share_buttons"
       ],
-      "settings": {
-      }
-    },
-    "product-recommendations": {
-      "type": "product-recommendations",
       "settings": {
       }
     },
@@ -40,7 +29,6 @@
   },
   "order": [
     "main",
-    "product-recommendations",
     "recently-viewed-products"
   ]
 }

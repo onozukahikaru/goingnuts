@@ -1,9 +1,8 @@
 {
   "sections": {
     "main": {
-      "type": "main-list-collections",
+      "type": "main-page",
       "settings": {
-        "collections_to_show": "selected"
       }
     }
   },

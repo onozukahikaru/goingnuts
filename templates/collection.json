@@ -9,9 +9,15 @@
       "type": "recently-viewed-products",
       "settings": {
       }
+    },
+    "collection-banner": {
+      "type": "collection-banner",
+      "settings": {
+      }
     }
   },
   "order": [
+    "collection-banner",
     "main",
     "recently-viewed-products"
   ]

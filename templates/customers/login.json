@@ -2,6 +2,17 @@
   "sections": {
     "main": {
       "type": "main-customers-login",
+      "blocks": {
+        "8ae05b53-20ef-430d-a0c9-b648d7a6c359": {
+          "type": "fields",
+          "settings": {
+            "return_to": ""
+          }
+        }
+      },
+      "block_order": [
+        "8ae05b53-20ef-430d-a0c9-b648d7a6c359"
+      ],
       "settings": {
       }
     }
