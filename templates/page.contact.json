@@ -4,16 +4,71 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
+        "show_title": true,
+        "page_width": "xs"
       }
     },
     "contact-form": {
       "type": "contact",
       "settings": {
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "Contact",
+        "content": ""
+      }
+    },
+    "34c08cbd-4219-47a0-b61a-205504e9f1cc": {
+      "type": "faq",
+      "disabled": true,
+      "blocks": {
+        "template--18903268884757__34c08cbd-4219-47a0-b61a-205504e9f1cc-168360247779a5a4b3-0": {
+          "type": "category",
+          "settings": {
+            "title": "Order",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "template--18903268884757__34c08cbd-4219-47a0-b61a-205504e9f1cc-168360247779a5a4b3-1": {
+          "type": "question",
+          "settings": {
+            "question": "Do you ship overseas?",
+            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+          }
+        },
+        "template--18903268884757__34c08cbd-4219-47a0-b61a-205504e9f1cc-168360247779a5a4b3-2": {
+          "type": "question",
+          "settings": {
+            "question": "How long will it take to get my orders?",
+            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+          }
+        },
+        "template--18903268884757__34c08cbd-4219-47a0-b61a-205504e9f1cc-168360247779a5a4b3-3": {
+          "type": "question",
+          "settings": {
+            "question": "Any question?",
+            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18903268884757__34c08cbd-4219-47a0-b61a-205504e9f1cc-168360247779a5a4b3-0",
+        "template--18903268884757__34c08cbd-4219-47a0-b61a-205504e9f1cc-168360247779a5a4b3-1",
+        "template--18903268884757__34c08cbd-4219-47a0-b61a-205504e9f1cc-168360247779a5a4b3-2",
+        "template--18903268884757__34c08cbd-4219-47a0-b61a-205504e9f1cc-168360247779a5a4b3-3"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
       }
     }
   },
   "order": [
     "main",
-    "contact-form"
+    "contact-form",
+    "34c08cbd-4219-47a0-b61a-205504e9f1cc"
   ]
 }

@@ -361,6 +361,34 @@
         "content": "",
         "popover_title": "Shop the look"
       }
+    },
+    "6984736e-0263-4ead-b813-5de3e1f58a99": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--18903269409045__6984736e-0263-4ead-b813-5de3e1f58a99-16836025613e5b78aa-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "products_count": 8,
+            "title": "",
+            "link_url": "",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "template--18903269409045__6984736e-0263-4ead-b813-5de3e1f58a99-16836025613e5b78aa-0"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 5,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "Ranking"
+      }
     }
   },
   "order": [
@@ -370,6 +398,7 @@
     "featured-product",
     "timeline",
     "blog-posts",
-    "shop-the-look"
+    "shop-the-look",
+    "6984736e-0263-4ead-b813-5de3e1f58a99"
   ]
 }
