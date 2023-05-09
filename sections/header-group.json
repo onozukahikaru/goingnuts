@@ -33,7 +33,7 @@
         "reduce_padding": false,
         "logo": "shopify:\/\/shop_images\/circle_logo.png",
         "logo_max_width": 85,
-        "logo_mobile_max_width": 100,
+        "logo_mobile_max_width": 60,
         "menu": "main-menu",
         "sidebar_menu": "",
         "menu_open_trigger": "hover",
