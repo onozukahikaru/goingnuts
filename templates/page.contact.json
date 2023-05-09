@@ -9,7 +9,6 @@
     },
     "contact-form": {
       "type": "contact",
-      "disabled": true,
       "settings": {
         "separate_section_with_border": false,
         "subheading": "",
