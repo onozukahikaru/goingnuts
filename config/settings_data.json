@@ -8,6 +8,7 @@
     "footer_text_color": "#3f665c",
     "modal_background": "#3f665c",
     "modal_text_color": "#ffffff",
+    "product_custom_badge_background": "#3f665c",
     "heading_font": "montserrat_n5",
     "text_font": "nunito_sans_n4",
     "show_page_transition": false,
