@@ -122,7 +122,8 @@
         "products_per_row_desktop": 4,
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
-        "subheading": "Featured collection"
+        "subheading": "Featured collection",
+        "show_ranking": false
       }
     },
     "collection-list": {
@@ -387,7 +388,8 @@
         "products_per_row_desktop": 4,
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
-        "subheading": "Ranking"
+        "subheading": "Ranking",
+        "show_ranking": true
       }
     }
   },
