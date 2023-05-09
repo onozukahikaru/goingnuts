@@ -15,13 +15,8 @@
         {%- endif -%}
 
         <div class="fieldset">
-          <div class="fieldset-row">
             {%- assign label  = 'contact.form.name' | t -%}
-            {%- render 'input', type: 'text', name: 'contact[name]', label: label, value: customer.name, required: true, autocomplete: 'name' -%}
-
-            {%- assign label  = 'contact.form.email' | t -%}
-            {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
-          </div>
+            {%- render 'input', type: 'text', name: 'contact[name]', label: 'お名前', value: customer.name, required: true, autocomplete: 'name' -%}
 
           {%- for block in section.blocks -%}
 {%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
@@ -50,6 +45,36 @@
               {%- render 'select', option_values: values, show_empty_value: true, name: name, label: block.settings.title, required: true -%}
             {%- endif -%}
           {%- endfor -%}
+          {%- assign label  = 'contact.form.email' | t -%}
+          {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
+          <div class="form-control">
+            <select id="select" name="select" class="select" required>
+              <option value="" disabled selected>問い合わせ種別</option>
+              <option value="products">商品問い合わせ</option>
+              <option value="order">注文に関して</option>
+              <option value="coverage">取材</option>
+              <option value="company">お取り扱いに関して</option>
+            </select>
+            <svg aria-hidden="true" focusable="false" fill="none" width="10" class="icon icon-dropdown-chevron" viewBox="0 0 10 6">
+              <path d="m1 1 4 4 4-4" stroke="currentColor" stroke-linecap="square"></path>
+            </svg>
+          </div>
+          <div id="products" class="form-control">
+            <input type="text" class="input" name="products" aria-label="商品名" placeholder="商品名">
+            <label class="floating-label text-xs">商品名</label>
+          </div>
+          <div id="order" class="form-control">
+            <input type="text" class="input" name="order" aria-label="注文番号" placeholder="注文番号">
+            <label class="floating-label text-xs">注文番号</label>
+          </div>
+          <div id="coverage" class="form-control">
+            <input type="text" class="input" name="coverage" aria-label="会社名" placeholder="会社名">
+            <label class="floating-label text-xs">会社名</label>
+          </div>
+          <div id="company" class="form-control">
+            <input type="text" class="input" name="company" aria-label="会社名" placeholder="会社名">
+            <label class="floating-label text-xs">会社名</label>
+          </div>
 
           {%- assign label = 'contact.form.message' | t -%}
           {%- render 'input', name: 'contact[body]', label: label, multiline: 4, required: true -%}
@@ -147,3 +172,36 @@
   ]
 }
 {% endschema %}
+
+{% javascript %}
+$(function(){
+  var select = $('#select');
+  var selected = $('#selected');
+
+  select.on('change', function(){
+    console.log('change');
+    var selectedOptionText = $(this).children(':selected').text();
+    $('#products').hide();
+    $('#order').hide();
+    $('#coverage').hide();
+    $('#company').hide();
+    if (selectedOptionText == '商品問い合わせ'){
+      $('#products').show();
+      $('#products .input').attr('required', true);
+    } else if (selectedOptionText == '注文に関して') {
+      $('#order').show();
+      $('#order .input').attr('required', true);
+    } else if (selectedOptionText == '取材') {
+      $('#coverage').show();
+      $('#coverage .input').attr('required', true);
+    } else if (selectedOptionText == 'お取り扱いに関して') {
+      $('#company').show();
+      $('#company .input').attr('required', true);
+    }
+  });
+});
+$(function() {
+    // remove form validation
+    $('form').find('input textarea select').removeAttr('required max min maxlength pattern');
+});
+{% endjavascript %}

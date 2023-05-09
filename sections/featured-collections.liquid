@@ -134,8 +134,12 @@
   {% assign WCProduct_VariantComparePrice = saw_variant_compare_at_price %}
 {% endif %}
 {% comment %} Wholesale_Club_Product_Prices End {% endcomment %}
-
+                <div>
+                  {% if section.settings.show_ranking %}
+                    <span class="ranking-badge">{{ forloop.index }}</span>
+                  {% endif %} 
                   {%- render 'product-card', product: product, reveal: should_reveal, hide_product_information: section.settings.hide_product_information -%}
+                </div>
                 {%- else -%}
                   {%- for i in (1..block.settings.products_count) -%}
 {%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
@@ -279,6 +283,12 @@
       "id": "subheading",
       "label": "t:global.text.subheading",
       "default": "Featured collection"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_ranking",
+      "label": "ランキングアイコンを表示する",
+      "default": false
     }
   ],
   "blocks": [
