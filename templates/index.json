@@ -197,7 +197,7 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "dried-fruit",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "Sub-heading",
@@ -214,7 +214,7 @@
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "mixed-nuts",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "Sub-heading",
