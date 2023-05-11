@@ -22,10 +22,10 @@
         "title": "Signup for our newsletter",
         "content": "Describe what your customers will receive when subscribing to your newsletter.",
         "button_text": "Subscribe",
-        "background": "#1c1c1c",
+        "background": "#3f665c",
         "text_color": "#ffffff",
-        "button_background": "#ffffff",
-        "button_text_color": "#1c1c1c"
+        "button_background": "#0c3b2c",
+        "button_text_color": "#ffffff"
       }
     },
     "privacy-banner": {
