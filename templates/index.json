@@ -365,6 +365,43 @@
         "subheading": "Ranking",
         "show_ranking": true
       }
+    },
+    "604489b7-7dc6-4582-a153-653eec5f812c": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text",
+            "heading_tag": "h1"
+          }
+        },
+        "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-0",
+        "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-1",
+        "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-2"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "image": "shopify:\/\/shop_images\/reunion_bnr.png",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
     }
   },
   "order": [
@@ -375,6 +412,7 @@
     "timeline",
     "blog-posts",
     "shop-the-look",
-    "6984736e-0263-4ead-b813-5de3e1f58a99"
+    "6984736e-0263-4ead-b813-5de3e1f58a99",
+    "604489b7-7dc6-4582-a153-653eec5f812c"
   ]
 }
