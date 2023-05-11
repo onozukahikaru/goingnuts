@@ -292,6 +292,7 @@
     },
     "timeline": {
       "type": "timeline",
+      "disabled": true,
       "blocks": {
         "item-0": {
           "type": "item",
@@ -344,6 +345,7 @@
     },
     "blog-posts": {
       "type": "blog-posts",
+      "disabled": true,
       "settings": {
         "separate_section_with_border": true,
         "blog": "",
@@ -361,6 +363,7 @@
     },
     "shop-the-look": {
       "type": "shop-the-look",
+      "disabled": true,
       "blocks": {
         "look-0": {
           "type": "look",
@@ -439,6 +442,44 @@
         "subheading": "Ranking",
         "show_ranking": true
       }
+    },
+    "fd3ff563-5576-4cc5-b387-b92612915e5f": {
+      "type": "image-with-text-block",
+      "blocks": {
+        "template--18903269409045__fd3ff563-5576-4cc5-b387-b92612915e5f-1683765945b0c9a6b2-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "店舗紹介"
+          }
+        },
+        "template--18903269409045__fd3ff563-5576-4cc5-b387-b92612915e5f-1683765945b0c9a6b2-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+          }
+        },
+        "3ca4304e-69fe-4ff2-b0ce-d4adbca1989a": {
+          "type": "link",
+          "settings": {
+            "text": "店舗を見る",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18903269409045__fd3ff563-5576-4cc5-b387-b92612915e5f-1683765945b0c9a6b2-0",
+        "template--18903269409045__fd3ff563-5576-4cc5-b387-b92612915e5f-1683765945b0c9a6b2-1",
+        "3ca4304e-69fe-4ff2-b0ce-d4adbca1989a"
+      ],
+      "settings": {
+        "image_size": "md",
+        "image": "shopify:\/\/shop_images\/DSC00529.jpg",
+        "content_width": "sm",
+        "enable_parallax": true,
+        "remove_vertical_spacing": true,
+        "block_text_color": "",
+        "block_background": ""
+      }
     }
   },
   "order": [
@@ -451,6 +492,7 @@
     "timeline",
     "blog-posts",
     "shop-the-look",
-    "6984736e-0263-4ead-b813-5de3e1f58a99"
+    "6984736e-0263-4ead-b813-5de3e1f58a99",
+    "fd3ff563-5576-4cc5-b387-b92612915e5f"
   ]
 }
