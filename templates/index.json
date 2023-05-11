@@ -77,7 +77,7 @@
         "featured-collection-0": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "nuts",
             "products_count": 8,
             "title": "",
             "link_url": "",
@@ -106,7 +106,7 @@
         "collection-0": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "nuts",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "Sub-heading",
