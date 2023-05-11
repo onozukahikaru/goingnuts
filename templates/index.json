@@ -378,7 +378,7 @@
         "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-1": {
           "type": "heading",
           "settings": {
-            "text": "Image with text",
+            "text": "ブランドストーリ",
             "heading_tag": "h1"
           }
         },
@@ -395,7 +395,7 @@
         "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-2"
       ],
       "settings": {
-        "separate_section_with_border": true,
+        "separate_section_with_border": false,
         "image": "shopify:\/\/shop_images\/reunion_bnr.png",
         "reveal_on_scroll": true,
         "image_position": "start",
