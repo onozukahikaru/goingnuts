@@ -607,7 +607,7 @@
           "type": "link",
           "settings": {
             "text": "店舗を見る",
-            "url": ""
+            "url": "shopify:\/\/pages\/store-locations"
           }
         }
       },
@@ -642,36 +642,6 @@
         "content": ""
       }
     },
-    "3ce68981-02a0-4e25-b5ce-7eef70ae5dae": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--18903269409045__3ce68981-02a0-4e25-b5ce-7eef70ae5dae-16837653369099f60d-1": {
-          "type": "heading",
-          "settings": {
-            "text": "取扱店舗一覧",
-            "heading_tag": "h1"
-          }
-        },
-        "template--18903269409045__3ce68981-02a0-4e25-b5ce-7eef70ae5dae-16837653369099f60d-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--18903269409045__3ce68981-02a0-4e25-b5ce-7eef70ae5dae-16837653369099f60d-1",
-        "template--18903269409045__3ce68981-02a0-4e25-b5ce-7eef70ae5dae-16837653369099f60d-2"
-      ],
-      "settings": {
-        "separate_section_with_border": true,
-        "image": "shopify:\/\/shop_images\/banners03_toriatsukai.png",
-        "reveal_on_scroll": true,
-        "image_position": "end",
-        "content_width": "sm",
-        "remove_vertical_spacing": true
-      }
-    },
     "fc74695a-d1f1-473d-8797-ad73efc90715": {
       "type": "image-with-text",
       "disabled": true,
@@ -702,6 +672,41 @@
         "content_width": "sm",
         "remove_vertical_spacing": true
       }
+    },
+    "e4535e4e-76cb-4f8e-af54-a593ddbf1676": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--18903269409045__e4535e4e-76cb-4f8e-af54-a593ddbf1676-1683857563c9b16106-0": {
+          "type": "heading",
+          "settings": {
+            "text": "取扱店舗一覧",
+            "heading_tag": "h4"
+          }
+        },
+        "template--18903269409045__e4535e4e-76cb-4f8e-af54-a593ddbf1676-1683857563c9b16106-1": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><a href=\"\/pages\/partners\" title=\"取り扱い店舗一覧\">店舗一覧を見る<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18903269409045__e4535e4e-76cb-4f8e-af54-a593ddbf1676-1683857563c9b16106-0",
+        "template--18903269409045__e4535e4e-76cb-4f8e-af54-a593ddbf1676-1683857563c9b16106-1"
+      ],
+      "settings": {
+        "image_size": "xs",
+        "image": "shopify:\/\/shop_images\/amond.jpg",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": false,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
     }
   },
   "order": [
@@ -720,7 +725,7 @@
     "109af544-101b-4823-a641-433c53319c0c",
     "fd3ff563-5576-4cc5-b387-b92612915e5f",
     "18492ff6-2be3-458e-ac97-1b8c100f909e",
-    "3ce68981-02a0-4e25-b5ce-7eef70ae5dae",
-    "fc74695a-d1f1-473d-8797-ad73efc90715"
+    "fc74695a-d1f1-473d-8797-ad73efc90715",
+    "e4535e4e-76cb-4f8e-af54-a593ddbf1676"
   ]
 }
