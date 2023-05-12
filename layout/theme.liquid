@@ -88,8 +88,12 @@
     <a href="#main" allow-hash-change class="skip-to-content sr-only">{{ 'general.accessibility.skip_to_content' | t }}</a>
 
     {%- if request.page_type != 'password' -%}
-      {%- sections 'header-group' -%}
       {%- sections 'overlay-group' -%}
+      {% if page.handle == 'nutsbutter' %}
+        
+      {% else %}
+        {% sections 'header-group' %}
+      {% endif %}
     {%- endif -%}
 
     <main id="main" class="anchor">
@@ -97,7 +101,11 @@
     </main>
 
     {%- if request.page_type != 'password' -%}
-      {%- sections 'footer-group' -%}
+      {% if page.handle == 'nutsbutter' %}
+
+      {% else %}
+        {% sections 'footer-group' %}
+      {% endif %}
     {%- endif -%}
 
     <!--     Wholesale Club check prices on Cart page -->
