@@ -200,7 +200,7 @@
         "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-1": {
           "type": "heading",
           "settings": {
-            "text": "ブランドストーリ",
+            "text": "インスタグラム",
             "heading_tag": "h1"
           }
         },
@@ -218,7 +218,7 @@
       ],
       "settings": {
         "separate_section_with_border": false,
-        "image": "shopify:\/\/shop_images\/reunion_bnr.png",
+        "image": "shopify:\/\/shop_images\/banners03_insta.png",
         "reveal_on_scroll": true,
         "image_position": "start",
         "content_width": "sm",
