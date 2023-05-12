@@ -695,11 +695,11 @@
         "columns_per_row": 3,
         "stack_on_mobile": false,
         "overlap_image": false,
-        "content_alignment": "start",
+        "content_alignment": "center",
         "text_alignment": "start",
         "spacing": "md",
         "subheading": "",
-        "title": "",
+        "title": "About us",
         "content": ""
       }
     }
