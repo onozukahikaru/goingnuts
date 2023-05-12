@@ -115,6 +115,50 @@
         "controls_color": "#ffffff"
       }
     },
+    "e4b064fc-190d-4c67-8899-b94d910493d7": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18903269409045__e4b064fc-190d-4c67-8899-b94d910493d7-1683857893452ffec5-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/reunion_bnr.png",
+            "subheading": "再会は夜明けの砂漠で",
+            "title": "REUNION IN THE DESERT AT DAWN",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "rgba(0,0,0,0)",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "shopify:\/\/pages\/brand-story",
+            "button_2_style": "outline",
+            "button_2_background": "rgba(0,0,0,0)",
+            "button_2_text_color": "#000000",
+            "background": "rgba(0,0,0,0)",
+            "background_opacity": 50,
+            "text_color": "#1c1b1b",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18903269409045__e4b064fc-190d-4c67-8899-b94d910493d7-1683857893452ffec5-0"
+      ],
+      "settings": {
+        "allow_transparent_header": false,
+        "show_next_section_button": false,
+        "media_size": "auto",
+        "autoplay": false,
+        "autoplay_pause_on_video": false,
+        "cycle_speed": 4,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
@@ -600,55 +644,12 @@
         "content_width": "sm",
         "remove_vertical_spacing": true
       }
-    },
-    "e4b064fc-190d-4c67-8899-b94d910493d7": {
-      "type": "slideshow",
-      "blocks": {
-        "template--18903269409045__e4b064fc-190d-4c67-8899-b94d910493d7-1683857893452ffec5-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/reunion_bnr.png",
-            "subheading": "再会は夜明けの砂漠で",
-            "title": "REUNION IN THE DESERT AT DAWN",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "content_max_width": 780,
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_style": "solid",
-            "button_1_background": "rgba(0,0,0,0)",
-            "button_1_text_color": "#000000",
-            "button_2_text": "",
-            "button_2_link": "shopify:\/\/pages\/brand-story",
-            "button_2_style": "outline",
-            "button_2_background": "rgba(0,0,0,0)",
-            "button_2_text_color": "#000000",
-            "background": "rgba(0,0,0,0)",
-            "background_opacity": 50,
-            "text_color": "#1c1b1b",
-            "border_color": "",
-            "gradient_overlay": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--18903269409045__e4b064fc-190d-4c67-8899-b94d910493d7-1683857893452ffec5-0"
-      ],
-      "settings": {
-        "allow_transparent_header": true,
-        "show_next_section_button": true,
-        "media_size": "auto",
-        "autoplay": true,
-        "autoplay_pause_on_video": true,
-        "cycle_speed": 5,
-        "background": "#000000",
-        "controls_color": "#ffffff"
-      }
     }
   },
   "order": [
     "slideshow",
     "ae383d69-f796-4bad-a97c-a8e9b5e21874",
+    "e4b064fc-190d-4c67-8899-b94d910493d7",
     "featured-collections",
     "604489b7-7dc6-4582-a153-653eec5f812c",
     "1693841c-3558-4cc7-ad65-385158c2e9cd",
@@ -661,7 +662,6 @@
     "fd3ff563-5576-4cc5-b387-b92612915e5f",
     "18492ff6-2be3-458e-ac97-1b8c100f909e",
     "3ce68981-02a0-4e25-b5ce-7eef70ae5dae",
-    "fc74695a-d1f1-473d-8797-ad73efc90715",
-    "e4b064fc-190d-4c67-8899-b94d910493d7"
+    "fc74695a-d1f1-473d-8797-ad73efc90715"
   ]
 }
