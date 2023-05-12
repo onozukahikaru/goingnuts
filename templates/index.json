@@ -556,6 +556,50 @@
         "content_width": "sm",
         "remove_vertical_spacing": true
       }
+    },
+    "ae383d69-f796-4bad-a97c-a8e9b5e21874": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18903269409045__ae383d69-f796-4bad-a97c-a8e9b5e21874-1683857893452ffec5-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/butter_banner.png",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/pages\/nutsbutter",
+            "button_1_style": "outline",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "link",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 0,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18903269409045__ae383d69-f796-4bad-a97c-a8e9b5e21874-1683857893452ffec5-0"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "show_next_section_button": true,
+        "media_size": "auto",
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -572,6 +616,7 @@
     "fd3ff563-5576-4cc5-b387-b92612915e5f",
     "18492ff6-2be3-458e-ac97-1b8c100f909e",
     "3ce68981-02a0-4e25-b5ce-7eef70ae5dae",
-    "fc74695a-d1f1-473d-8797-ad73efc90715"
+    "fc74695a-d1f1-473d-8797-ad73efc90715",
+    "ae383d69-f796-4bad-a97c-a8e9b5e21874"
   ]
 }
