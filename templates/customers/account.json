@@ -2,6 +2,16 @@
   "sections": {
     "main": {
       "type": "main-customers-account",
+      "blocks": {
+        "e40f0265-2581-4724-818c-57c8dd7461b3": {
+          "type": "orders",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e40f0265-2581-4724-818c-57c8dd7461b3"
+      ],
       "settings": {
       }
     }
