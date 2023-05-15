@@ -97,7 +97,8 @@ input.spr-button-primary,
 }
 .section_lp .title{
   color: #3f3a39;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
   position: relative;
   z-index: 1;
   display: inline-block;
@@ -145,7 +146,7 @@ input.spr-button-primary,
   margin-bottom: 60px;
 }
 .section_mv .products{
-  padding: 0px 50px 30px;
+  padding: 50px 50px 30px;
 }
 .section_mv .intro{
   display: flex;
@@ -163,6 +164,8 @@ input.spr-button-primary,
   display: flex;
   justify-content: space-between;
   align-items:baseline;
+  list-style: none;
+  margin-left: 0;
 }
 .section_mv .product_item{
   width: 33%;
@@ -172,6 +175,7 @@ input.spr-button-primary,
   padding: 20px 0;
   text-align: center;
   color: #231815;
+  background: transparent;
 }
 .section_mv .product_item img{
   max-width: 180px;
@@ -181,7 +185,22 @@ input.spr-button-primary,
   font-weight: bold;
   margin-top: 10px;
 }
-
+.section_mv .title::before {
+  background: #f6957a;
+}
+.add_mv p {
+  font-size: 16px;
+  line-height: 2;
+  padding-right: 20px;
+  margin-top: 0;
+}
+.add_mv_bottom {
+  padding: 40px 0 100px;
+}
+.add_mv_bottom > div {
+  display: flex;
+  justify-content: space-between;
+}
 @media only screen and (max-width: 768px) {
   .section_mv .intro{
       flex-direction: column;
@@ -220,7 +239,9 @@ input.spr-button-primary,
   .section_mv .product_item img{
       max-width: 80px;
   }
-  
+  .add_mv_bottom > div {
+      flex-direction: column;
+  }
 }
 
 
@@ -228,6 +249,7 @@ input.spr-button-primary,
 .section_reuse,
 .section_recipe{
   background: #e1ba8f;
+  margin-block-start: 0!important;
 }
 .section_feature .feature_list{
   position: relative;
@@ -442,13 +464,14 @@ input.spr-button-primary,
   position: relative;
   padding: 30px;
   width: 90%;
-  margin: 70px auto;
+  margin: 70px auto!important;
 }
 .section_recipe .recipe_body h2{
   position: absolute;
   max-width: 430px;
   top: -75px;
   left: -40px;
+  z-index: 1;
 }
 .section_recipe .recipe_desc{
   display: flex;
@@ -464,7 +487,7 @@ input.spr-button-primary,
 }
 .section_recipe .recipe_desc .recipe_left p{
   position: absolute;
-  bottom: 3%;
+  bottom: 10%;
   right: 7%;
   font-size: 18px;
 }
@@ -547,6 +570,7 @@ input.spr-button-primary,
 }
 .section_recipe .recipe_terms dl{
   width: 40%;
+  margin-top: 0;
 }
 .section_recipe .recipe_terms dt{
   color: #804e21;
@@ -601,7 +625,7 @@ input.spr-button-primary,
   right: 4%;
 }
 .section_recipe .recipe_desc .recipe_left.fukidashi2 p{
-  bottom: 5%;
+  bottom: 9%;
   right: 13%;
 }
 .section_recipe .recipe_desc .recipe_left.fukidashi3 p{
@@ -609,9 +633,13 @@ input.spr-button-primary,
   right: 7%;
 }
 .section_recipe .recipe_desc .recipe_left.fukidashi4 p{
-  bottom: 2%;
+  bottom: 4%;
   right: 15%;
 }
+.recipe_body_bottom p{
+  padding-top: 1rem;
+}
+
 @media only screen and (max-width: 768px) {
   .section_recipe .recipe_body h2{
       width: 80%;
@@ -633,6 +661,7 @@ input.spr-button-primary,
   }
   .section_recipe .recipe_desc .recipe_left p{
       font-size: 12px;
+      bottom: 7%;
   }
   .section_recipe .recipe_right,
   .recipe_list .memo{
@@ -655,6 +684,10 @@ input.spr-button-primary,
   .section_recipe .recipe_right_memo dd{
       font-size: 11px;
   }
+  .recipe_body_bottom{
+    padding-top: 1rem;
+  }
+
 }
 @media only screen and (max-width: 768px) and (min-width: 376px) {
   .section_lp{
@@ -665,7 +698,7 @@ input.spr-button-primary,
       right: 12%;
   }
   .section_recipe .recipe_desc .recipe_left.fukidashi1 p{
-      bottom: 7%;
+      bottom: 4%;
   }
   .section_recipe .recipe_desc .recipe_left.fukidashi2 p {
       bottom: 7%;
@@ -769,8 +802,23 @@ input.spr-button-primary,
   max-width: 320px;
   border-radius: 10px;
 }
+.introduce_flex p {
+  padding: 2rem 6rem 2rem 2rem;
+  line-height: 2;
+}
 .reverse {
   flex-direction: row-reverse;
+}
+.reverse p {
+  padding: 2rem 2rem 0 6rem;
+  line-height: 2;
+  margin: 0;
+}
+.reverse p span {
+  color: #804e21;
+  display: block;
+  margin: 10px 0;
+  font-weight: 500;
 }
 @media only screen and (max-width: 768px){
   .add_introduce {
@@ -865,5 +913,16 @@ input.spr-button-primary,
   }
   .section_recipe .footer_info .footer_ig span{
       display: none;
+  }
+}
+
+/* アプリ */
+#dummy-chat-button-iframe{
+  bottom: 114px;
+}
+@media only screen and (max-width: 768px){
+  #dummy-chat-button-iframe{
+    right: 94px;
+    bottom: 15px;
   }
 }
