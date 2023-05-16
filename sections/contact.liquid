@@ -61,19 +61,19 @@
           </div>
           <div id="products">
             {%- assign label  = 'contact.form.products' | t -%}
-            {%- render 'input', type: 'text', name: 'contact[products]', label: '商品名', value: customer.products, autocomplete: 'products' -%}
+            {%- render 'input', type: 'text', name: 'contact[products]', label: '商品名', value: customer.products -%}
           </div>
           <div id="order">
             {%- assign label  = 'contact.form.order' | t -%}
-            {%- render 'input', type: 'text', name: 'contact[order]', label: '注文番号', value: customer.order, autocomplete: 'order' -%}
+            {%- render 'input', type: 'text', name: 'contact[order]', label: '注文番号', value: customer.order -%}
           </div>
           <div id="coverage">
             {%- assign label  = 'contact.form.coverage' | t -%}
-            {%- render 'input', type: 'text', name: 'contact[coverage]', label: '会社名', value: customer.coverage, autocomplete: 'coverage' -%}
+            {%- render 'input', type: 'text', name: 'contact[coverage]', label: '会社名', value: customer.coverage -%}
           </div>
           <div id="company">
             {%- assign label  = 'contact.form.company' | t -%}
-            {%- render 'input', type: 'text', name: 'contact[company]', label: '会社名', value: customer.company, autocomplete: 'company' -%}
+            {%- render 'input', type: 'text', name: 'contact[company]', label: '会社名', value: customer.company -%}
           </div>
 
           {%- assign label = 'contact.form.message' | t -%}
