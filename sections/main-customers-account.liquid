@@ -116,7 +116,7 @@
 {%- endif -%}
 {%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
 
-                            <tr onclick="window.location.href = '{{ order.customer_url }}'">
+                            <tr onclick="window.location.href = '{{ order.customer_url }}'" data-order-id="{{ order.id }}">
                               <td>
                                 <span class="no-js:hidden">{{ order.name }}</span>
                                 <noscript>
@@ -159,6 +159,7 @@
     </div>
   </div>
 </div>
+<div id="mx-mypage-quotation-button"></div>
 
 {% schema %}
 {
