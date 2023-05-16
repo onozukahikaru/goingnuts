@@ -118,10 +118,7 @@
 
                             <tr onclick="window.location.href = '{{ order.customer_url }}'" data-order-id="{{ order.id }}">
                               <td>
-                                <span class="no-js:hidden">{{ order.name }}</span>
-                                <noscript>
-                                  <a href="{{ order.customer_url }}" data-order-id="{{ order.id }}" class="link">{{ order.name }}</a>
-                                </noscript>
+                                <a href="{{ order.customer_url }}" data-order-id="{{ order.id }}" class="link">{{ order.name }}</a>
                               </td>
                               <td>{{ order.created_at | date: format: 'date' }}</td>
                               <td>{{ order.financial_status_label }}</td>
