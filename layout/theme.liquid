@@ -124,5 +124,17 @@
 {% endif %}
 <!--     end Wholesale Club -->
   <script src="//collections-add-to-cart.incubate.dev/js/core/main.min.js?timestamp=1684142490&shop=r5-fm8hc-n-re87mmgxzeb4xsky6-r.myshopify.com" defer></script>
+  <!--     saw WHO reload product page on variant change to carry liquid wholesale prices on page -->
+  {% if template == 'product' and customer.tags != blank %}
+    <script>
+          $(document).on('click', '.select', function(){
+              setTimeout(function(){
+                window.location.reload();
+              }, 3000)
+          });
+    </script>
+    {% endif %}
+    <!--     end saw WHO -->
+  <script src="//collections-add-to-cart.incubate.dev/js/core/main.min.js?timestamp=1684142490&shop=r5-fm8hc-n-re87mmgxzeb4xsky6-r.myshopify.com" defer></script>
 </body>
 </html>
