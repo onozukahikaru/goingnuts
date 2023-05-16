@@ -120,7 +120,7 @@
                               <td>
                                 <span class="no-js:hidden">{{ order.name }}</span>
                                 <noscript>
-                                  <a href="{{ order.customer_url }}" class="link">{{ order.name }}</a>
+                                  <a href="{{ order.customer_url }}" data-order-id="{{ order.id }}" class="link">{{ order.name }}</a>
                                 </noscript>
                               </td>
                               <td>{{ order.created_at | date: format: 'date' }}</td>
