@@ -113,11 +113,37 @@
         "title": "Related products",
         "content": ""
       }
+    },
+    "16842080557056059d": {
+      "type": "apps",
+      "blocks": {
+        "57e64083-1b7a-4414-a799-4e775add2bb6": {
+          "type": "shopify:\/\/apps\/poing-pong\/blocks\/poingpong-section-reviews2\/6abfe1ab-fc32-4a60-8c37-35a70fd673b9",
+          "settings": {
+            "title": "商品レビュー",
+            "review_size": 5,
+            "review_size_max": 30,
+            "on_product_info": false,
+            "on_more": true,
+            "text_empty": "レビューはありません",
+            "accent_color": "#eee"
+          }
+        }
+      },
+      "block_order": [
+        "57e64083-1b7a-4414-a799-4e775add2bb6"
+      ],
+      "settings": {
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
     }
   },
   "order": [
     "main",
     "recently-viewed-products",
-    "415a55bc-44b2-479e-9a70-63a9c9d83d6a"
+    "415a55bc-44b2-479e-9a70-63a9c9d83d6a",
+    "16842080557056059d"
   ]
 }
