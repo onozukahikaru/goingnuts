@@ -59,21 +59,21 @@
               <path d="m1 1 4 4 4-4" stroke="currentColor" stroke-linecap="square"></path>
             </svg>
           </div>
-          <div id="products" class="form-control">
-            <input type="text" class="input" name="products" aria-label="商品名" placeholder="商品名">
-            <label class="floating-label text-xs">商品名</label>
+          <div id="products">
+            {%- assign label  = 'contact.form.products' | t -%}
+            {%- render 'input', type: 'text', name: 'contact[products]', label: '商品名', value: customer.products, autocomplete: 'products' -%}
           </div>
-          <div id="order" class="form-control">
-            <input type="text" class="input" name="order" aria-label="注文番号" placeholder="注文番号">
-            <label class="floating-label text-xs">注文番号</label>
+          <div id="order">
+            {%- assign label  = 'contact.form.order' | t -%}
+            {%- render 'input', type: 'text', name: 'contact[order]', label: '注文番号', value: customer.order, autocomplete: 'order' -%}
           </div>
-          <div id="coverage" class="form-control">
-            <input type="text" class="input" name="coverage" aria-label="会社名" placeholder="会社名">
-            <label class="floating-label text-xs">会社名</label>
+          <div id="coverage">
+            {%- assign label  = 'contact.form.coverage' | t -%}
+            {%- render 'input', type: 'text', name: 'contact[coverage]', label: '会社名', value: customer.coverage, autocomplete: 'coverage' -%}
           </div>
-          <div id="company" class="form-control">
-            <input type="text" class="input" name="company" aria-label="会社名" placeholder="会社名">
-            <label class="floating-label text-xs">会社名</label>
+          <div id="company">
+            {%- assign label  = 'contact.form.company' | t -%}
+            {%- render 'input', type: 'text', name: 'contact[company]', label: '会社名', value: customer.company, autocomplete: 'company' -%}
           </div>
 
           {%- assign label = 'contact.form.message' | t -%}

@@ -216,7 +216,11 @@
       "email": "E-mail",
       "message": "Message",
       "submit": "Send message",
-      "success_message": "Your message has been sent."
+      "success_message": "Your message has been sent.",
+      "products": "Products",
+      "order": "Order",
+      "coverage": "Company",
+      "company": "Company"
     }
   },
   "customer": {
