@@ -1,0 +1,4 @@
+{% for tag in product.tags %}
+  {% capture url %}/collections/all/{{tag | handle}}{% endcapture %}
+  {{ tag | link_to: url }}
+{% endfor %}
