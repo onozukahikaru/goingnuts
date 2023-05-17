@@ -15,8 +15,13 @@
         {%- endif -%}
 
         <div class="fieldset">
+          <div class="fieldset-row">
             {%- assign label  = 'contact.form.name' | t -%}
-            {%- render 'input', type: 'text', name: 'contact[name]', label: 'お名前', value: customer.name, required: true, autocomplete: 'name' -%}
+            {%- render 'input', type: 'text', name: 'contact[name]', label: label, value: customer.name, required: true, autocomplete: 'name' -%}
+
+            {%- assign label  = 'contact.form.email' | t -%}
+            {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
+          </div>
 
           {%- for block in section.blocks -%}
 {%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
@@ -45,8 +50,7 @@
               {%- render 'select', option_values: values, show_empty_value: true, name: name, label: block.settings.title, required: true -%}
             {%- endif -%}
           {%- endfor -%}
-          {%- assign label  = 'contact.form.email' | t -%}
-          {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
+
           {%- assign label = 'contact.form.message' | t -%}
           {%- render 'input', name: 'contact[body]', label: label, multiline: 4, required: true -%}
         </div>
