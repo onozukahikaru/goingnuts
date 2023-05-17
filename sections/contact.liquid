@@ -47,35 +47,6 @@
           {%- endfor -%}
           {%- assign label  = 'contact.form.email' | t -%}
           {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
-          <div class="form-control">
-            <select id="select" name="select" class="select" required>
-              <option value="" disabled selected>問い合わせ種別</option>
-              <option value="products">商品問い合わせ</option>
-              <option value="order">注文に関して</option>
-              <option value="coverage">取材</option>
-              <option value="company">お取り扱いに関して</option>
-            </select>
-            <svg aria-hidden="true" focusable="false" fill="none" width="10" class="icon icon-dropdown-chevron" viewBox="0 0 10 6">
-              <path d="m1 1 4 4 4-4" stroke="currentColor" stroke-linecap="square"></path>
-            </svg>
-          </div>
-          <div id="products" class="form-control">
-            <input type="text" class="input" name="products" aria-label="商品名" placeholder="商品名">
-            <label class="floating-label text-xs">商品名</label>
-          </div>
-          <div id="order" class="form-control">
-            <input type="text" class="input" name="order" aria-label="注文番号" placeholder="注文番号">
-            <label class="floating-label text-xs">注文番号</label>
-          </div>
-          <div id="coverage" class="form-control">
-            <input type="text" class="input" name="coverage" aria-label="会社名" placeholder="会社名">
-            <label class="floating-label text-xs">会社名</label>
-          </div>
-          <div id="company" class="form-control">
-            <input type="text" class="input" name="company" aria-label="会社名" placeholder="会社名">
-            <label class="floating-label text-xs">会社名</label>
-          </div>
-
           {%- assign label = 'contact.form.message' | t -%}
           {%- render 'input', name: 'contact[body]', label: label, multiline: 4, required: true -%}
         </div>
