@@ -143,36 +143,3 @@
   ]
 }
 {% endschema %}
-
-{% javascript %}
-$(function(){
-  var select = $('#select');
-  var selected = $('#selected');
-
-  select.on('change', function(){
-    console.log('change');
-    var selectedOptionText = $(this).children(':selected').text();
-    $('#products').hide();
-    $('#order').hide();
-    $('#coverage').hide();
-    $('#company').hide();
-    if (selectedOptionText == '商品問い合わせ'){
-      $('#products').show();
-      $('#products .input').attr('required', true);
-    } else if (selectedOptionText == '注文に関して') {
-      $('#order').show();
-      $('#order .input').attr('required', true);
-    } else if (selectedOptionText == '取材') {
-      $('#coverage').show();
-      $('#coverage .input').attr('required', true);
-    } else if (selectedOptionText == 'お取り扱いに関して') {
-      $('#company').show();
-      $('#company .input').attr('required', true);
-    }
-  });
-});
-$(function() {
-    // remove form validation
-    $('form').find('input textarea select').removeAttr('required max min maxlength pattern');
-});
-{% endjavascript %}
