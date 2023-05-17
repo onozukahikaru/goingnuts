@@ -3,16 +3,32 @@
     "main": {
       "type": "main-cart",
       "settings": {
+        "show_cart_note": true,
+        "show_order_weight": false,
+        "show_shipping_text": true,
+        "show_accelerated_buttons": false,
+        "show_shipping_estimator": true
       }
     },
-    "recently-viewed-products": {
+    "3db0786f-f54e-4195-bd44-ff6f76dd795f": {
       "type": "recently-viewed-products",
       "settings": {
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_count": 9,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "Recently viewed products",
+        "content": ""
       }
     }
   },
   "order": [
     "main",
-    "recently-viewed-products"
+    "3db0786f-f54e-4195-bd44-ff6f76dd795f"
   ]
 }
