@@ -126,7 +126,7 @@ Supported variables
                 {{- product.title -}}
               </a>
             {%- endif -%}
-
+            <p>{{ product.metafields.custom._catchcopy }}</p>
             {%- if show_prices -%}
               {%- render 'price-list', product: product, context: 'card' -%}
             {%- endif -%}

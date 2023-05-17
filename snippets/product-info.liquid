@@ -22,6 +22,7 @@ Supported variables
 
 <safe-sticky class="product-info {% if center_basic_info %}product-info--center{% endif %}">
   <div class="product-info__block-list">
+    <p style="text-decoration: underline;">{%- render 'product-tag' -%}</p>
     {%- assign inside_block_group_context = false -%}
     {%- assign current_block_group_name = '' -%}
 
