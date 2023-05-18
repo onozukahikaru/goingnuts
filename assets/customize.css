@@ -937,3 +937,6 @@ input.spr-button-primary,
     bottom: 15px;
   }
 }
+svg.poingpong-review__star{
+  display: inline-block;
+}
