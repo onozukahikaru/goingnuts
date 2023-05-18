@@ -2,6 +2,17 @@
   "sections": {
     "main": {
       "type": "main-customers-register",
+      "blocks": {
+        "6cde42a3-9bcd-489d-9c4f-61d125f49ae9": {
+          "type": "fields",
+          "settings": {
+            "show_marketing_consent": false
+          }
+        }
+      },
+      "block_order": [
+        "6cde42a3-9bcd-489d-9c4f-61d125f49ae9"
+      ],
       "settings": {
       }
     }
