@@ -89,9 +89,9 @@
         "type": "shopify:\/\/apps\/poing-pong\/blocks\/poingpong-section-floating\/6abfe1ab-fc32-4a60-8c37-35a70fd673b9",
         "disabled": false,
         "settings": {
-          "color_background": "#FFFF00",
-          "color_primary": "#000000",
-          "color_secondary": "#DDDDDD",
+          "color_background": "#3f665c",
+          "color_primary": "#ffffff",
+          "color_secondary": "#0c3b2c",
           "position": "right",
           "position_horizontal": 20,
           "position_vertical": 20
