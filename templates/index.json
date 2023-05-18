@@ -190,7 +190,6 @@
     },
     "604489b7-7dc6-4582-a153-653eec5f812c": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-0": {
           "type": "subheading",
@@ -228,7 +227,6 @@
     },
     "1693841c-3558-4cc7-ad65-385158c2e9cd": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "template--18903269409045__1693841c-3558-4cc7-ad65-385158c2e9cd-16837653369099f60d-0": {
           "type": "subheading",
@@ -435,7 +433,6 @@
     },
     "blog-posts": {
       "type": "blog-posts",
-      "disabled": true,
       "settings": {
         "separate_section_with_border": true,
         "blog": "",
