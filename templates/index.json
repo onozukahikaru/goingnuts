@@ -80,8 +80,8 @@
             "image": "shopify:\/\/shop_images\/butter_banner.png",
             "subheading": "",
             "title": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "mobile_text_position": "place-self-start-center text-center",
+            "desktop_text_position": "sm:place-self-start-center sm:text-center",
             "content_max_width": 780,
             "button_1_text": "",
             "button_1_link": "shopify:\/\/pages\/nutsbutter",
@@ -103,6 +103,9 @@
       },
       "block_order": [
         "template--18903269409045__ae383d69-f796-4bad-a97c-a8e9b5e21874-1683857893452ffec5-0"
+      ],
+      "custom_css": [
+        "section{max-width: 1000px; margin: 3rem auto;}"
       ],
       "settings": {
         "allow_transparent_header": true,
