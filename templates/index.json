@@ -151,6 +151,9 @@
       "block_order": [
         "template--18903269409045__e4b064fc-190d-4c67-8899-b94d910493d7-1683857893452ffec5-0"
       ],
+      "custom_css": [
+        ".slideshow {max-width: 1000px; margin: 3rem auto;}"
+      ],
       "settings": {
         "allow_transparent_header": false,
         "show_next_section_button": false,
