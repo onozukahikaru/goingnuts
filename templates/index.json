@@ -125,8 +125,8 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/reunion_bnr.png",
-            "subheading": "再会は夜明けの砂漠で",
-            "title": "REUNION IN THE DESERT AT DAWN",
+            "subheading": "",
+            "title": "",
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "content_max_width": 780,
