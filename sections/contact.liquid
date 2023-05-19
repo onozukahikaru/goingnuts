@@ -47,8 +47,9 @@
           {%- endfor -%}
           {%- assign label  = 'contact.form.email' | t -%}
           {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
+          {%- capture id -%}select-{{ section.id }}-{{ form }}-{{ name | handle }}{%- endcapture -%}
           <div class="form-control">
-            <select id="select" name="select" class="select" required>
+            <select id="{{ id }}" name="contact[問い合わせ種別]" class="select" required>
               <option value="" disabled selected>問い合わせ種別</option>
               <option value="products">商品問い合わせ</option>
               <option value="order">注文に関して</option>
@@ -171,7 +172,7 @@
 
 {% javascript %}
 $(function(){
-  var select = $('#select');
+  var select = $('.select');
   var selected = $('#selected');
 
   select.on('change', function(){
