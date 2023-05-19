@@ -33,20 +33,12 @@
             "use_long_text": false,
             "required": false
           }
-        },
-        "e9750452-c45d-44a9-85f2-11b18d26d426": {
-          "type": "dropdown",
-          "settings": {
-            "title": "Custom field",
-            "values": "value 1, value 2, セレクト３"
-          }
         }
       },
       "block_order": [
         "7f084a75-842b-42e3-a6a6-9fdc01055009",
         "f3f3ea29-da90-4e56-b222-005f1dccb5db",
-        "510d67ae-91ce-4de5-8f62-f7a4c83e435a",
-        "e9750452-c45d-44a9-85f2-11b18d26d426"
+        "510d67ae-91ce-4de5-8f62-f7a4c83e435a"
       ],
       "settings": {
         "separate_section_with_border": false,
