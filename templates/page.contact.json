@@ -38,7 +38,7 @@
           "type": "dropdown",
           "settings": {
             "title": "Custom field",
-            "values": "value 1, value 2, value 3"
+            "values": "value 1, value 2, セレクト３"
           }
         }
       },
