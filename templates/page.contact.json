@@ -9,6 +9,37 @@
     },
     "contact-form": {
       "type": "contact",
+      "blocks": {
+        "7f084a75-842b-42e3-a6a6-9fdc01055009": {
+          "type": "text",
+          "settings": {
+            "title": "お名前（カナ）",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "f3f3ea29-da90-4e56-b222-005f1dccb5db": {
+          "type": "text",
+          "settings": {
+            "title": "住所",
+            "use_long_text": false,
+            "required": false
+          }
+        },
+        "510d67ae-91ce-4de5-8f62-f7a4c83e435a": {
+          "type": "text",
+          "settings": {
+            "title": "電話番号",
+            "use_long_text": false,
+            "required": false
+          }
+        }
+      },
+      "block_order": [
+        "7f084a75-842b-42e3-a6a6-9fdc01055009",
+        "f3f3ea29-da90-4e56-b222-005f1dccb5db",
+        "510d67ae-91ce-4de5-8f62-f7a4c83e435a"
+      ],
       "settings": {
         "separate_section_with_border": false,
         "subheading": "",
