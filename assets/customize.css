@@ -1087,3 +1087,66 @@ p.todoufuken_ttl{
     flex-wrap: wrap;
   }
 }
+
+/* 店舗紹介 */
+.guide_ttl{
+  font-weight: 600;
+  border-bottom: 1px solid;
+  padding-bottom: 1rem;
+}
+.shoplist_flex{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+.shoplist_flex .text{
+  width: 50%;
+}
+.shoplist_flex .text span{
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.shoplist_flex .image{
+  width: 50%;
+  border-radius: 10px;
+}
+.shoplist_flex.parking, .shoplist_flex.video{
+  justify-content: space-between;
+  align-items: baseline;
+}
+.shoplist_flex.parking img,
+.shoplist_flex.video video{
+  width: 49%;
+}
+.accessroot{
+  margin-bottom: 5rem;
+}
+.accessroot h3{
+  font-size: 1rem;
+  background: #efefef;
+  padding: 4px;
+}
+.accessroot ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  justify-content: space-between;
+}
+.accessroot ul li{
+  width: 32%;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 768px){
+  .shoplist_flex.store{
+    flex-direction: column;
+  }
+  .shoplist_flex.store .text,
+  .shoplist_flex.store .image{
+    width: 100%;
+  }
+  .accessroot ul li span{
+    font-size: 12px;
+  }
+}
