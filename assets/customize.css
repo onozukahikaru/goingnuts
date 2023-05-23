@@ -1047,9 +1047,14 @@ p.todoufuken_ttl{
 }
 .partnerlist{
   width: 49%;
+  margin-bottom: 2rem;
+}
+.partnerlist span {
+  margin-block-start: 0!important;
 }
 .partnerlist p{
   background-color: #efefef;
+  padding: 6px;
 }
 .partnerlist a {
   background: none!important;
@@ -1069,6 +1074,7 @@ p.todoufuken_ttl{
 .todoufuken{
   display: flex!important;
   justify-content: space-between;
+  margin-left: 0;
 }
 .todoufuken li{
   list-style: none;
