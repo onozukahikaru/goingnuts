@@ -2,6 +2,19 @@
   "sections": {
     "main": {
       "type": "main-cart",
+      "blocks": {
+        "bab56a2c-a9cd-49c0-ab42-b61e16ca060d": {
+          "type": "shopify:\/\/apps\/multiship\/blocks\/multiship-toggle\/e86c1e6e-08e5-4cf2-bd2f-5f2db7026358",
+          "settings": {
+            "background_color": "#f8f8f8",
+            "text_color": "#565656",
+            "toggle_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "bab56a2c-a9cd-49c0-ab42-b61e16ca060d"
+      ],
       "settings": {
         "show_cart_note": true,
         "show_order_weight": false,
