@@ -931,6 +931,9 @@ input.spr-button-primary,
   bottom: 114px;
   z-index: 100!important;
 }
+body{
+  animation: fadein 1s forwards;
+}
 @media only screen and (max-width: 768px){
   #dummy-chat-button-iframe{
     right: 94px;
@@ -939,4 +942,142 @@ input.spr-button-primary,
 }
 svg.poingpong-review__star{
   display: inline-block;
+}
+
+/* ブランドストーリ */
+#article1, #article2, #article3, #article4, #article5, #article6, #article7, #article8, #article9 {
+  margin-bottom: 100px!important;
+  text-align: center;
+  line-height: 2.5em;
+  font-family: 'Zen Old Mincho', serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3em;
+  margin: 0;
+  color: #333;
+}
+@media only screen and (max-width: 768px){
+  #article1, #article2, #article3, #article4, #article5, #article6, #article7, #article8, #article9{
+    font-size: 1em;
+  }
+}
+div img.sashie {
+  width: 800px;
+  border-radius: 10px;
+  margin-bottom: 50px!important;
+}
+.fadeIn {
+  animation-name: fadeInAnime;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeInAnime{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+#photo1 img {
+  width: 800px;
+  margin: 180px auto!important;
+  border-radius: 10px;
+}
+#photo5{
+  margin: 0 calc(50% - 50vw);
+	width: 100vw;
+}
+#photo5 img {
+  margin-bottom: 100px!important;
+  width: 100%;
+}
+.homebutton {
+  background: #0c6;
+  padding: 0 0 30px;
+  border-radius: 20px;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a.homebutton {
+  text-decoration: none;
+  color: #000;
+  background: none!important;
+}
+p.homebutton img {
+  display: block!important;
+  text-align: center;
+}
+div#photoI,
+div#photo11 {
+  padding-bottom: 50px;
+  margin-bottom: 130px!important;
+}
+div#photoI:after,
+div#photo11:after {
+  border-bottom: 1px solid #7f9c68;
+  content: "";
+  display: block;
+  width: 30%;
+  margin: 108px auto 0!important;
+}
+@media only screen and (max-width: 768px){
+  .homebutton {
+    width: 100%;
+  }
+}
+
+/* 店舗一覧 */
+#shiga, #kyoto, #tokyo, #chiba, #kanagawa, #nagano, #osaka, #hougo, #nara, #aichi, #kagawa, #fukuoka{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.guide_ttl{
+  text-align: center;
+}
+p.todoufuken_ttl{
+  width: 100%;
+  font-weight: 600;
+}
+.partnerlist{
+  width: 49%;
+}
+.partnerlist p{
+  background-color: #efefef;
+}
+.partnerlist a {
+  background: none!important;
+  padding: 3px 10px;
+  text-align: center;
+  display: block;
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #3F665C;
+  color: #3F665C;
+}
+.partnerlist a:hover{
+  background: #3F665C!important;
+  color: white;
+}
+.todoufuken{
+  display: flex!important;
+  justify-content: space-between;
+}
+.todoufuken li{
+  list-style: none;
+}
+.todoufuken li a:hover{
+  color:  #3F665C;
+}
+@media only screen and (max-width: 768px){
+  .todoufuken{
+    flex-wrap: wrap;
+  }
 }
