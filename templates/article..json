@@ -1,0 +1,37 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "settings": {
+        "show_image": true,
+        "enable_parallax": true,
+        "image_size": "small",
+        "content_width": "xs",
+        "show_date": true,
+        "show_category": true,
+        "show_author": false,
+        "show_share_buttons": true,
+        "show_sticky_bar": false,
+        "background": "#3f665c",
+        "text_color": "#ffffff"
+      }
+    },
+    "prev-next-blog-posts": {
+      "type": "prev-next-blog-posts",
+      "settings": {
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "Read more",
+        "show_category": true,
+        "show_excerpt": true,
+        "show_read_more": true,
+        "background": "#ffffff",
+        "text_color": "#0c3b2c"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "prev-next-blog-posts"
+  ]
+}
