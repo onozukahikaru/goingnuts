@@ -946,6 +946,7 @@ svg.poingpong-review__star{
 
 /* ブランドストーリ */
 #article1, #article2, #article3, #article4, #article5, #article6, #article7, #article8, #article9 {
+  margin-top: 50px;
   margin-bottom: 100px!important;
   text-align: center;
   line-height: 2.5em;
@@ -971,6 +972,7 @@ div img.sashie {
   animation-duration: 4s;
   animation-fill-mode: forwards;
   opacity: 0;
+  margin-bottom: 50px;
 }
 @keyframes fadeInAnime{
   from {
@@ -995,18 +997,18 @@ div img.sashie {
   width: 100%;
 }
 .homebutton {
-  background: #0c6;
-  padding: 0 0 30px;
-  border-radius: 20px;
   margin: 2rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 a.homebutton {
+  border-radius: 20px;
   text-decoration: none;
   color: #000;
-  background: none!important;
+  background: #0c6!important;
+  padding: 10px 30px;
+  max-width: 35%;
 }
 p.homebutton img {
   display: block!important;
@@ -1015,7 +1017,7 @@ p.homebutton img {
 div#photoI,
 div#photo11 {
   padding-bottom: 50px;
-  margin-bottom: 130px!important;
+  margin-bottom: 100px!important;
 }
 div#photoI:after,
 div#photo11:after {
@@ -1026,8 +1028,14 @@ div#photo11:after {
   margin: 108px auto 0!important;
 }
 @media only screen and (max-width: 768px){
-  .homebutton {
-    width: 100%;
+  a.homebutton {
+    max-width: 100%;
+  }
+  #photo1 img{
+    margin: 70px auto!important;
+  }
+  div#photoI, div#photo11{
+    margin-bottom: 50px!important;
   }
 }
 
