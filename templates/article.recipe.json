@@ -5,7 +5,7 @@
       "settings": {
         "show_image": true,
         "enable_parallax": false,
-        "image_size": "small",
+        "image_size": "medium",
         "content_width": "xs",
         "show_date": false,
         "show_category": true,
