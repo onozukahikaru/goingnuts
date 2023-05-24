@@ -719,6 +719,14 @@
         "social_widget_type": "none"
       }
     },
+    "social_widget_56629": {
+      "type": "social-widget",
+      "settings": {
+        "social_widget_id": "56629",
+        "social_product_id": "none",
+        "social_widget_type": "none"
+      }
+    },
     "2a1e35a8-1602-4f51-a66d-fba1b98ca323": {
       "type": "custom-liquid",
       "settings": {
@@ -749,6 +757,7 @@
     "fc74695a-d1f1-473d-8797-ad73efc90715",
     "e4535e4e-76cb-4f8e-af54-a593ddbf1676",
     "social_widget_56315",
+    "social_widget_56629",
     "2a1e35a8-1602-4f51-a66d-fba1b98ca323"
   ]
 }

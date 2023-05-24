@@ -1158,3 +1158,61 @@ p.todoufuken_ttl{
     font-size: 12px;
   }
 }
+
+/* ブログ */
+.shopify-section.shopify-section--main-article .social-widget-wrapper{
+  max-width: 1070px;
+  margin: 0 auto;
+}
+
+/* レシピ */
+.recipe h1{
+  color: #0d3c2c;
+  border-bottom: 1px solid #0d3c2c;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.recipe .ex_product_ct{
+  text-align: center;
+  color: #0d3c2c;
+  margin-top: 2rem;
+}
+.recipe .ex_product{
+  background: #0d3c2c;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  padding: 6px;
+  border-radius: 4px;
+}
+.recipe_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.recipe_box h3{
+  color: #0d3c2c;
+  font-weight: 600;
+  border-bottom: 3px solid #0d3c2c;
+}
+.recipe_box_child{
+  width: 49%;
+  margin: 0 0 30px 0!important;
+}
+.recipe_box_child ul li::marker{
+  color: #3f665c;
+}
+@media only screen and (max-width: 768px){
+  .recipe_box{
+    flex-direction: column;
+  }
+  .recipe_box_child{
+    width: 100%;
+  }
+  .recipe .prose{
+    margin-bottom: 50px;
+  }
+  .recipe .ex_product{
+    padding: 4px;
+  }
+}
