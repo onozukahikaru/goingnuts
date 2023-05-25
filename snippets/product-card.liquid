@@ -44,6 +44,10 @@ Supported variables
 -%}
 
 <product-card class="product-card" {% if reveal %}reveal-on-scroll="true"{% endif %} handle="{{ product.handle | escape }}">
+    {% if collection.title == '売上ランキング' %}
+      <span class="ranking-badge"></span>
+    {% endif %}
+
   {%- comment -%}
   --------------------------------------------------------------------------------------------------------------------
   PRODUCT MEDIA
@@ -55,7 +59,6 @@ Supported variables
       {%- if show_badges -%}
         {%- render 'product-badges', product: product, vertical: true -%}
       {%- endif -%}
-
       <a href="{{ product.url }}" class="product-card__media" data-instant>
         {%- capture sizes -%}
           {%- if stacked -%}
