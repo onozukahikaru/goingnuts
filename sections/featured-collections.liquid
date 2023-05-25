@@ -134,9 +134,9 @@
   {% assign WCProduct_VariantComparePrice = saw_variant_compare_at_price %}
 {% endif %}
 {% comment %} Wholesale_Club_Product_Prices End {% endcomment %}
-                <div>
+                <div class="product-list--collection">
                   {% if section.settings.show_ranking %}
-                    <span class="ranking-badge">{{ forloop.index }}</span>
+                    <span class="ranking-badge"></span>
                   {% endif %} 
                   {%- render 'product-card', product: product, reveal: should_reveal, hide_product_information: section.settings.hide_product_information -%}
                 </div>

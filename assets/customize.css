@@ -32,6 +32,30 @@ input.spr-button-primary,
   border: 1px solid #dedddc;
   margin-bottom: 10px;
 }
+.product-list--collection:first-child .ranking-badge::after{
+  content: '1';
+}
+.product-list--collection:nth-child(2) .ranking-badge::after{
+  content: '2';
+}
+.product-list--collection:nth-child(3) .ranking-badge::after{
+  content: '3';
+}
+.product-list--collection:nth-child(4) .ranking-badge::after{
+  content: '4';
+}
+.product-list--collection:nth-child(5) .ranking-badge::after{
+  content: '5';
+}
+.product-list--collection:nth-child(6) .ranking-badge::after{
+  content: '6';
+}
+.product-list--collection:nth-child(7) .ranking-badge::after{
+  content: '7';
+}
+.product-list--collection:nth-child(8) .ranking-badge::after{
+  content: '8';
+}
 
 /* FAQ */
 .Faq__Icon{
@@ -1214,6 +1238,10 @@ p.todoufuken_ttl{
 }
 .prose .recipe_box_child:last-child{
   margin: 0 0 50px 0!important;
+}
+.recipe .v-stack{
+  border-bottom: 1px solid #3f665c;
+  padding-bottom: 5rem;
 }
 @media only screen and (max-width: 768px){
   .recipe_box{
