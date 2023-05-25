@@ -934,6 +934,14 @@ input.spr-button-primary,
 body{
   animation: fadein 1s forwards;
 }
+.saw-highlight,
+.saw-extra-note{
+  background-color: #fde881;
+}
+.saw-extra-note{
+  max-width: 220px;
+  background-color: #fde881;
+}
 @media only screen and (max-width: 768px){
   #dummy-chat-button-iframe{
     right: 94px;
@@ -1003,12 +1011,15 @@ div img.sashie {
   justify-content: center;
 }
 a.homebutton {
-  border-radius: 20px;
+  border-radius: 10px;
   text-decoration: none;
   color: #000;
-  background: #0c6!important;
+  background: #6f978d!important;
   padding: 10px 30px;
   max-width: 35%;
+}
+a.homebutton:hover{
+  background: #48665e!important;
 }
 p.homebutton img {
   display: block!important;
@@ -1171,6 +1182,7 @@ p.todoufuken_ttl{
   border-bottom: 1px solid #0d3c2c;
   text-align: center;
   padding-bottom: 1rem;
+  font-weight: 600;
 }
 .recipe .ex_product_ct{
   text-align: center;
@@ -1181,6 +1193,7 @@ p.todoufuken_ttl{
   background: #0d3c2c;
   color: white;
   font-weight: 600;
+  font-size: 1.2rem;
   text-align: center;
   padding: 6px;
   border-radius: 4px;
@@ -1197,10 +1210,14 @@ p.todoufuken_ttl{
 }
 .recipe_box_child{
   width: 49%;
-  margin: 0 0 30px 0!important;
+  margin: 0 0 50px 0!important;
 }
 .recipe_box_child ul li::marker{
   color: #3f665c;
+}
+.recipe_box_child ol li::marker{
+  color: #3f665c;
+  font-weight: 600;
 }
 @media only screen and (max-width: 768px){
   .recipe_box{
@@ -1208,11 +1225,18 @@ p.todoufuken_ttl{
   }
   .recipe_box_child{
     width: 100%;
+    margin: 0 0 30px 0!important;
   }
   .recipe .prose{
     margin-bottom: 50px;
   }
   .recipe .ex_product{
     padding: 4px;
+    font-size: 1rem;
   }
+}
+
+/* 配送アプリ */
+#haisosm input, #haisosm select{
+  border: 1px solid #ccc
 }
