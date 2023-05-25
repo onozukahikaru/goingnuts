@@ -934,14 +934,6 @@ input.spr-button-primary,
 body{
   animation: fadein 1s forwards;
 }
-.saw-highlight,
-.saw-extra-note{
-  background-color: #fde881;
-}
-.saw-extra-note{
-  max-width: 220px;
-  background-color: #fde881;
-}
 @media only screen and (max-width: 768px){
   #dummy-chat-button-iframe{
     right: 94px;
@@ -1197,6 +1189,7 @@ p.todoufuken_ttl{
   text-align: center;
   padding: 6px;
   border-radius: 4px;
+  margin-bottom: 2.5rem;
 }
 .recipe_box{
   display: flex;
@@ -1219,6 +1212,9 @@ p.todoufuken_ttl{
   color: #3f665c;
   font-weight: 600;
 }
+.prose .recipe_box_child:last-child{
+  margin: 0 0 50px 0!important;
+}
 @media only screen and (max-width: 768px){
   .recipe_box{
     flex-direction: column;
@@ -1240,3 +1236,4 @@ p.todoufuken_ttl{
 #haisosm input, #haisosm select{
   border: 1px solid #ccc
 }
+
