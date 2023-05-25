@@ -478,7 +478,7 @@
       "zip_label_text": "郵便番号",
       "phone_label_text": "電話番号",
       "optional_label_text": "optional",
-      "no_po_boxes": "Please note, we are unable to ship to P.O Boxes",
+      "no_po_boxes": "私書箱への発送はできませんのでご了承ください。",
       "save_address_text": "Save this address?",
       "items_heading_text": "Items",
       "delivery_heading_text": "Delivery",
