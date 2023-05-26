@@ -120,14 +120,12 @@
                               <td>
                                 {%- for tag in customer.tags -%}
                                   {%- if tag contains 'hojin' -%}
-                                    <span class="no-js:hidden">{{ order.name }}</span>
-                                    <noscript>
-                                      <a href="{{ order.customer_url }}" data-order-id="{{ order.id }}" class="link">{{ order.name }}</a>
-                                    </noscript>    
+                                    {%- assign receipt_class_name = 'no-document-link' -%}
                                   {%- else -%}
-                                  <a href="{{ order.customer_url }}" data-order-id="{{ order.id }}" class="link">{{ order.name }}</a>
+                                  {%- assign receipt_class_name = '' -%}
+                                    <a href="{{ order.customer_url }}" data-order-id="{{ order.id }}" class="link">{{ order.name }}</a>
                                   {%- endif -%}
-                              　{%- endfor -%}
+                                {%- endfor -%}
                               </td>
                               <td>{{ order.created_at | date: format: 'date' }}</td>
                               <td>{{ order.financial_status_label }}</td>
