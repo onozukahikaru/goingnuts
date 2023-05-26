@@ -119,7 +119,7 @@
                             <tr>
                               <td>
                                   {%- if customer.tags contains "hojin" -%}
-                                    {%- assign receipt_class_name = 'no-document-link' -%}
+                                    {%- assign receipt_class_name = 'disable-only-receipt-link' -%}
                                   {%- else -%}
                                     {%- assign receipt_class_name = '' -%}
                                   {%- endif -%}
