@@ -124,9 +124,6 @@
                                   {%- else -%}
                                     {%- assign receipt_class_name = '' -%}
                                   {%- endif -%}
-                                  <a href="{{ order.customer_url }}" class="{{ receipt_class_name }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
-                                    {{ order.name }}
-                                  </a>
                               {%- endfor -%}
                               </td>
                               <td>{{ order.created_at | date: format: 'date' }}</td>
