@@ -118,15 +118,14 @@
 
                             <tr>
                               <td>
-                              {%- for tag in customer.tags -%}
                                   {%- if customer.tags contains "hojin" -%}
                                     {%- assign receipt_class_name = 'no-document-link' -%}
-                                    <a href="{{ order.customer_url }}" data-order-id="{{ order.id }}" class="link">{{ order.name }}</a>
                                   {%- else -%}
                                     {%- assign receipt_class_name = '' -%}
-                                    <a href="{{ order.customer_url }}" data-order-id="{{ order.id }}" class="link">{{ order.name }}</a>
                                   {%- endif -%}
-                              {%- endfor -%}
+                                  <a href="{{ order.customer_url }}" class="{{ receipt_class_name }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
+                                    {{ order.name }}
+                                  </a>
                               </td>
                               <td>{{ order.created_at | date: format: 'date' }}</td>
                               <td>{{ order.financial_status_label }}</td>
