@@ -119,7 +119,7 @@
                             <tr>
                               <td>
                               {%- for tag in customer.tags -%}
-                                  {%- if tag contains 'hojin' -%}
+                                  {%- if customer.tags contains "hojin" -%}
                                     <p>hojin</p>
                                   {%- else -%}
                                     <p>nonhojin</p>
