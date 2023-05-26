@@ -120,9 +120,9 @@
                               <td>
                               {%- for tag in customer.tags -%}
                                   {%- if tag contains 'hojin' -%}
-                                    {%- assign receipt_class_name = 'no-document-link' -%}
+                                    <p>hojin</p>
                                   {%- else -%}
-                                    {%- assign receipt_class_name = '' -%}
+                                    <p>nonhojin</p>
                                     <a href="{{ order.customer_url }}" data-order-id="{{ order.id }}" class="link">{{ order.name }}</a>
                                   {%- endif -%}
                               {%- endfor -%}
