@@ -121,6 +121,7 @@
                               {%- for tag in customer.tags -%}
                                   {%- if customer.tags contains "hojin" -%}
                                     {%- assign receipt_class_name = 'no-document-link' -%}
+                                    <a href="{{ order.customer_url }}" data-order-id="{{ order.id }}" class="link">{{ order.name }}</a>
                                   {%- else -%}
                                     {%- assign receipt_class_name = '' -%}
                                     <a href="{{ order.customer_url }}" data-order-id="{{ order.id }}" class="link">{{ order.name }}</a>
