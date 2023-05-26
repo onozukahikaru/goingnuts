@@ -123,6 +123,7 @@
                                     {%- assign receipt_class_name = 'no-document-link' -%}
                                   {%- else -%}
                                     {%- assign receipt_class_name = '' -%}
+                                    <a href="{{ order.customer_url }}" data-order-id="{{ order.id }}" class="link">{{ order.name }}</a>
                                   {%- endif -%}
                               {%- endfor -%}
                               </td>
