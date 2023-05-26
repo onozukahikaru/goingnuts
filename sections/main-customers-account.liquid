@@ -118,11 +118,13 @@
 
                             <tr>
                               <td>
-                                {%- if customer.tags contains 'hojin' -%}
-                                  {%- assign receipt_class_name = 'no-document-link' -%}
-                                {%- else -%}
-                                  {%- assign receipt_class_name = '' -%}
-                                {%- endif -%}
+                                {%- for tag in customer.tags -%}
+                                  {%- if tag contains 'hojin' -%}
+                                    {%- assign receipt_class_name = 'no-document-link' -%}
+                                  {%- else -%}
+                                    {%- assign receipt_class_name = '' -%}
+                                  {%- endif -%}
+                              　{%- endfor -%}
                                 <a href="{{ order.customer_url }}" data-order-id="{{ order.id }}" class="link">{{ order.name }}</a>
                               </td>
                               <td>{{ order.created_at | date: format: 'date' }}</td>
