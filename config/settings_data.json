@@ -28,13 +28,14 @@
     "cart_icon": "shopping_bag",
     "cart_free_shipping_threshold": "50",
     "favicon": "shopify:\/\/shop_images\/circle_logo.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/circle_logo.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#ffffff",
     "checkout_input_background_color_mode": "white",
     "checkout_sidebar_background_color": "#efefef",
-    "checkout_accent_color": "#1c1b1b",
-    "checkout_button_color": "#1c1b1b",
+    "checkout_accent_color": "#0c3b2c",
+    "checkout_button_color": "#0c3b2c",
     "sections": {
       "header": {
         "type": "header",
