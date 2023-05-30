@@ -1271,7 +1271,7 @@ p.todoufuken_ttl{
 
 /* 配送アプリ */
 #haisosm{
-  text-align: left;
+  text-align: left!important;
 }
 #haisosm input, #haisosm select{
   border: 1px solid #ccc
