@@ -1270,6 +1270,9 @@ p.todoufuken_ttl{
 }
 
 /* 配送アプリ */
+#haisosm{
+  text-align: left;
+}
 #haisosm input, #haisosm select{
   border: 1px solid #ccc
 }
