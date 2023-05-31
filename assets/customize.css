@@ -1147,7 +1147,7 @@ p.todoufuken_ttl{
   margin-bottom: 5rem;
 }
 .shoplist_flex .text{
-  width: 50%;
+  width: 100%;
 }
 .shoplist_flex .text span{
   font-weight: 600;
@@ -1155,7 +1155,7 @@ p.todoufuken_ttl{
   margin-bottom: 2rem;
 }
 .shoplist_flex .image{
-  width: 50%;
+  width: 74%;
 }
 .shoplist_flex.parking, .shoplist_flex.video{
   justify-content: space-between;
