@@ -1133,6 +1133,9 @@ p.todoufuken_ttl{
 }
 
 /* 店舗紹介 */
+.shop_headimg{
+  margin-bottom: 3rem;
+}
 .guide_ttl{
   font-weight: 600;
   border-bottom: 1px solid;
@@ -1153,7 +1156,6 @@ p.todoufuken_ttl{
 }
 .shoplist_flex .image{
   width: 50%;
-  border-radius: 10px;
 }
 .shoplist_flex.parking, .shoplist_flex.video{
   justify-content: space-between;
