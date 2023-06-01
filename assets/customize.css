@@ -18,9 +18,13 @@ input.spr-button-primary,
 .HorizontalList__Item > .Link{
   font-family: 'Inter', 'Noto Sans JP', sans-serif;
 }
+.footer__aside .payment-methods{
+  max-width: 33rem;
+}
 .footer {
   padding-bottom: 6rem;
 }
+
 /* ランキング */
 .ranking-badge{
   font-family: 'Inter';
