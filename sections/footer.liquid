@@ -174,10 +174,10 @@
         {%- endif -%}
 
         <p class="heading text-subdued text-xxs">© {{ 'now' | date: '%Y' }} - {{ shop.name }} / {{ powered_by_link }}</p>
-
-        {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
+        {% assign enabled_payment_types = 'visa,master,jcb,american_express,discover,diners_club' | remove: ' ' | split: ',' %}
+        {%- if section.settings.show_payment_icons and enabled_payment_types.size > 0 -%}
           <div class="payment-methods">
-            {%- for type in shop.enabled_payment_types -%}
+            {%- for type in enabled_payment_types -%}
 {%- comment -%} Wholesale_Club_Product_Visibility_For_Loop Start {%- endcomment -%}
 {%- capture hide_resource -%}{% render "wc_product_visibility", resource: type %}{%- endcapture -%}
 {%- if hide_resource == "true" -%}
