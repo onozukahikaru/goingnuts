@@ -151,7 +151,11 @@
                 {%- comment -%}Give apps a special hook to add features on the recap (such as capturing delivery dates){%- endcomment -%}
                 {%- for block in section.blocks -%}
                   {%- if block.type == '@app' -%}
-                    {%- render block -%}
+                    {%- if customer.tags contains "toB" -%}
+                      
+                    {%- else -%}
+                      {%- render block -%}
+                    {%- endif -%}  
                   {%- endif -%}
                 {%- endfor -%}
 

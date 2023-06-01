@@ -37,24 +37,19 @@
 
 
   </script>
-  {%- for order in customer.orders -%}
-    {%- if customer.tags contains "toB" -%}
 
-    {%- else -%}
-      {% if multishipping == 'true' and template.name == 'cart' %}
-        <script type="text/javascript">
-          window.location = 'https://{{ request.host }}/a/ms/cart/';
-        </script>
-        <meta http-equiv="refresh" content="0;URL=https://{{ request.host }}/a/ms/cart/" />
-      {% endif %}
-      {% if template.name == 'cart' %}
-        <script type="text/javascript" src="https://multiship.app/build/storefront/storefront.js" defer></script>
-        <link rel="stylesheet" type="text/css" href="https://multiship.app/build/storefront/storefront.css">
-      {% endif %}       
-    {%- endif -%}
-  {%- endfor -%}
+  {% if multishipping == 'true' and template.name == 'cart' %}
+  <script type="text/javascript">
+    window.location = 'https://{{ request.host }}/a/ms/cart/';
+  </script>
+  <meta http-equiv="refresh" content="0;URL=https://{{ request.host }}/a/ms/cart/" />
+  {% endif %}
 
 
+  {% if template.name == 'cart' %}
+  <script type="text/javascript" src="https://multiship.app/build/storefront/storefront.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="https://multiship.app/build/storefront/storefront.css">
+  {% endif %}
 
 
       	
