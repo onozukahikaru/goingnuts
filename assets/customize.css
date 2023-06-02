@@ -120,7 +120,7 @@ input.spr-button-primary,
   left: 0;
 }
 #gsModalContainer #gsGroups, #gsMultishippingPage #gsGroups{
-  max-width: var(--container-sm-max-width);
+  max-width: var(--container-sm-max-width)!important;
 }
 
 /* ナッツバター */
