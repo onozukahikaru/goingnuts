@@ -1,9 +1,9 @@
 {
   "sections": {
-    "16856747183b5468e8": {
-      "type": "apps",
+    "main": {
+      "type": "main-cart",
       "blocks": {
-        "15fbf5fe-09cd-4979-8cd2-77465d9e8659": {
+        "2c8b6aae-ebbd-44dc-9a82-240dac31f63d": {
           "type": "shopify:\/\/apps\/multiship\/blocks\/multiship-toggle\/e86c1e6e-08e5-4cf2-bd2f-5f2db7026358",
           "settings": {
             "background_color": "#0c3b2c",
@@ -13,16 +13,8 @@
         }
       },
       "block_order": [
-        "15fbf5fe-09cd-4979-8cd2-77465d9e8659"
+        "2c8b6aae-ebbd-44dc-9a82-240dac31f63d"
       ],
-      "settings": {
-        "separate_section_with_border": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false
-      }
-    },
-    "main": {
-      "type": "main-cart",
       "settings": {
         "show_cart_note": true,
         "show_order_weight": false,
@@ -49,7 +41,6 @@
     }
   },
   "order": [
-    "16856747183b5468e8",
     "main",
     "3db0786f-f54e-4195-bd44-ff6f76dd795f"
   ]
