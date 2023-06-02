@@ -121,6 +121,8 @@ input.spr-button-primary,
 }
 #gsModalContainer #gsGroups, #gsMultishippingPage #gsGroups{
   max-width: var(--container-sm-max-width)!important;
+  width: 100%!important;
+  padding: 0;
 }
 
 /* ナッツバター */
