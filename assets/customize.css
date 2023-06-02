@@ -119,6 +119,9 @@ input.spr-button-primary,
   top: 0;
   left: 0;
 }
+#gsModalContainer #gsGroups, #gsMultishippingPage #gsGroups{
+  max-width: var(--container-sm-max-width);
+}
 
 /* ナッツバター */
 .section_lp img{
