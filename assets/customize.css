@@ -110,6 +110,16 @@ input.spr-button-primary,
   display: none;
 }
 
+/* カート */
+.shopify-section--main-cart .section-spacing--tight .container{
+  position: relative;
+}
+.shopify-section--main-cart .section-spacing--tight .container .shopify-block.shopify-app-block{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* ナッツバター */
 .section_lp img{
   width: 100%;
