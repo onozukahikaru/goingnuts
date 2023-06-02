@@ -174,7 +174,7 @@
         {%- endif -%}
 
         <p class="heading text-subdued text-xxs">© {{ 'now' | date: '%Y' }} - {{ shop.name }} / {{ powered_by_link }}</p>
-        {% assign enabled_payment_types = 'amazon,american_express,diners_club,discover,google_pay,jcb,master,paypal,shopify_pay,visa' | remove: ' ' | split: ',' %}
+        {% assign enabled_payment_types = 'amazon,american_express,apple_pay,diners_club,discover,google_pay,jcb,master,shopify_pay,visa' | remove: ' ' | split: ',' %}
         {%- if section.settings.show_payment_icons and enabled_payment_types.size > 0 -%}
           <div class="payment-methods">
             {%- for type in enabled_payment_types -%}
