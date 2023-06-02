@@ -461,7 +461,7 @@
       "business_day": "business day",
       "to": "to",
       "button_text": "Set Address",
-      "note_label": "注文メモを追加",
+      "note_label": "注文メモを追加 記入例）6/1 14時~16時",
       "ship_another_text": "他の配送先を追加する",
       "toggle_text": "複数の住所に配送する",
       "saved_addresses_text": "登録済みの住所",
