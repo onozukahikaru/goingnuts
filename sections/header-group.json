@@ -33,12 +33,14 @@
           "settings": {
             "menu_item": "すべてのナッツ",
             "images_position": "right",
-            "image_1_heading": "",
-            "image_1_text": "",
-            "image_1_link": "",
-            "image_2_heading": "",
+            "image_1": "shopify:\/\/shop_images\/butter_banner_248a8449-990e-4c89-8246-a0a9fa965d51.png",
+            "image_1_heading": "「Going Nuts!」オリジナルナッツバター",
+            "image_1_text": "本格派ナッツバター。こだわりのナッツを、素材の風味や栄養素を壊さない特別なグラインダーで、フレッシュなままペースト状にしています。",
+            "image_1_link": "shopify:\/\/pages\/nutsbutter",
+            "image_2": "shopify:\/\/shop_images\/banners03_snacks.png",
+            "image_2_heading": "燻製、塩、ドライフルーツでアレンジした極上おつまみをどうぞ。",
             "image_2_text": "",
-            "image_2_link": ""
+            "image_2_link": "shopify:\/\/collections\/nuts-for-alcohol"
           }
         }
       },
