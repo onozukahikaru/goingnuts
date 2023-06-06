@@ -115,7 +115,9 @@
   {% continue %}
 {%- endif -%}
 {%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
-
+                            {%- if customer.tags contains "ms_order" -%}
+                              <tr>親</tr>
+                            {%- endif -%}
                             <tr>
                               <td>
                                   {%- if customer.tags contains "toB" -%}
