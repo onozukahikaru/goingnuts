@@ -115,9 +115,9 @@
   {% continue %}
 {%- endif -%}
 {%- comment -%} Wholesale_Club_Product_Visibility_For_Loop End {%- endcomment -%}
-                            {%- if customer.tags contains "ms_order" -%}
-                              <tr>親</tr>
-                            {%- endif -%}
+                            {%- if order.tags contains "ms_order" -%}
+
+                            {%- else -%}
                             <tr>
                               <td>
                                   {%- if customer.tags contains "toB" -%}
@@ -134,6 +134,7 @@
                               <td>{{ order.fulfillment_status_label }}</td>
                               <td class="text-end">{{ order.total_net_amount | money }}</td>
                             </tr>
+                            {%- endif -%}
                           {%- endfor -%}
                         </tbody>
                       </table>
