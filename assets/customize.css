@@ -1734,3 +1734,89 @@ p.todoufuken_ttl{
     margin-bottom: 10px;
   }
 }
+
+/* メディアキット */
+.media_section{
+  margin-block-start: 5rem!important;
+}
+.media_section h2{
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 1px solid;
+  padding-bottom: 1rem;
+  font-size: initial;
+  margin-bottom: 1.5rem;
+}
+.media_section button{
+  background: #000;
+  color: white;
+  height: 40px;
+  min-height: 40px;
+  font-weight: normal;
+  cursor: pointer;
+  padding: 0 10px;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+.media_section button svg{
+  fill: white;
+  width: 14px;
+  margin-right: 6px;
+}
+.media_section .logo_list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+}
+.media_section .logo_list li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.media_section .logo_list li h3{
+  font-size: 1rem;
+}
+.media_section .logo_list li img{
+  max-height: 120px;
+  margin-bottom: 2rem;
+}
+.media_section .logo_list li p{
+  color: #666;
+  margin-top: 5px;
+  font-size: 0.7rem;
+}
+.media_section .copy-text{
+  background-color: #efefef;
+  padding: 16px;
+}
+.media_section #js-copy{
+  display: block;
+  margin-left: auto;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.media_section #js-copy svg{
+  width: 11px;
+}
+@media only screen and (max-width: 768px){
+  .media_section .logo_list{
+    flex-direction: column;
+  }
+  .media_section .logo_list li{
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  .media_section button{
+    width: 100%;
+    justify-content: center;
+  }
+  .media_section button{
+    margin-top: 1.5rem;
+  }
+}
