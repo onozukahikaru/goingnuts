@@ -1790,6 +1790,8 @@ p.todoufuken_ttl{
   margin-top: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
+  min-width: 148px;
 }
 .media_section button svg{
   fill: white;
@@ -1830,6 +1832,8 @@ p.todoufuken_ttl{
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
+  text-align: center;
+    justify-content: center;
 }
 .media_section #js-copy svg{
   width: 11px;
@@ -1848,6 +1852,7 @@ p.todoufuken_ttl{
   }
   .media_section button{
     margin-top: 1.5rem;
+    height: 60px;
   }
 }
 
