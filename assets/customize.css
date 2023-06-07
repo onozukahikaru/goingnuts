@@ -238,6 +238,7 @@ input.spr-button-primary,
   font-size: 19px;
   font-weight: bold;
   margin-top: 10px;
+  margin-block-start: 1rem!important;
 }
 .section_mv .title::before {
   background: #f6957a;
@@ -260,6 +261,26 @@ input.spr-button-primary,
   display: flex;
   justify-content: space-between;
 }
+.section_mv .link_collection{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-block-start: 1rem!important;
+  margin-bottom: 2rem;
+  background: linear-gradient(to right,currentColor,currentColor) 0 min(100%,1.35em) / 100% 1px no-repeat;
+  transition: background-size .3s ease-in-out;
+  font-weight: 500;
+  font-size: 18px;
+  width: 200px;
+  margin-left: auto;
+}
+.section_mv .link_collection svg{
+  margin-left: 5px;
+  width: 14px;
+}
+.section_mv .link_collection:hover{
+  background-size: 0 1px;
+}
 @media only screen and (max-width: 768px) {
   .section_mv .intro{
       flex-direction: column;
@@ -270,6 +291,11 @@ input.spr-button-primary,
   }
   .section_mv .product_item{
       width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
   }
   .section_mv .products{
       padding: 0;
@@ -301,6 +327,12 @@ input.spr-button-primary,
   .add_mv_bottom > div {
       flex-direction: column;
   }
+  .section_mv .link_collection{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 
@@ -1817,4 +1849,9 @@ p.todoufuken_ttl{
   .media_section button{
     margin-top: 1.5rem;
   }
+}
+
+/* 配送 */
+.ms__field textarea{
+
 }
