@@ -1737,7 +1737,7 @@ p.todoufuken_ttl{
 
 /* メディアキット */
 .media_section{
-  margin-block-start: 5rem!important;
+  margin-block-start: 6rem!important;
 }
 .media_section h2{
   text-align: center;
@@ -1768,15 +1768,13 @@ p.todoufuken_ttl{
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: space-evenly;
   padding-top: 2rem;
 }
 .media_section .logo_list li{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  margin-bottom: 7rem;
 }
 .media_section .logo_list li h3{
   font-size: 1rem;
