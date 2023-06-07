@@ -27,7 +27,3 @@ $("#js-copy").on("click", function () {
 	navigator.clipboard.writeText(copyText);
 	copyTarget.textContent = 'Copied!';
 });
-
-/* 配送 */
-$(document).ready(function(){
-$(".ms__field textarea").removeAttr('ご希望の配送日時を記載してください。・配送日のご指定は7日後から受付しております。例えば本日が5/25の場合、6/1からのご指定が可能です。・時間帯のご指定は下記よりご選択ください。- 指定なし- 午前中- 14時~16時- 16時~18時- 18時~20時- 19時~21時記入例）6/1 14時~16時');});
