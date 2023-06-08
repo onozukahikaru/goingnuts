@@ -1824,7 +1824,7 @@ p.todoufuken_ttl{
 }
 .media_section .copy-text{
   background-color: #efefef;
-  padding: 16px;
+  padding: 20px;
 }
 .media_section #js-copy{
   display: block;
@@ -1853,6 +1853,9 @@ p.todoufuken_ttl{
   .media_section button{
     margin-top: 1.5rem;
     height: 60px;
+  }
+  .media_section .copy-text{
+    padding: 16px;
   }
 }
 
