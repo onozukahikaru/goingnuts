@@ -1861,5 +1861,5 @@ p.todoufuken_ttl{
 
 /* 配送 */
 .ms__field textarea{
-
+  height: 300px!important;
 }
