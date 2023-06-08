@@ -26,4 +26,8 @@ $("#js-copy").on("click", function () {
 
 	navigator.clipboard.writeText(copyText);
 	copyTarget.textContent = 'Copied!';
+	if (!navigator.clipboard) {
+		alert("このブラウザは対応していません");
+		return;
+	}
 });
