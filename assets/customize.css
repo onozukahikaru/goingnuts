@@ -1029,6 +1029,22 @@ body{
 svg.poingpong-review__star{
   display: inline-block;
 }
+.poingpong-review__canvas2 .poingpong-review__title,
+.poingpong-review__canvas2 .poingpong-review__reply_from{
+  font-size: 1rem;
+}
+.poingpong-review__canvas2 .poingpong-text_right,
+.poingpong-review__texts,
+.poingpong-review__reply_contents{
+  font-size: var(--text-h6);
+  line-height: 1.7;
+}
+.poingpong-review__canvas2 .poingpong-review__reply{
+  background: #efefef;
+}
+select.incubate-collections-add-to-cart-variant-selector{
+  border-color: rgb(192, 192, 192)!important;
+}
 
 /* ブランドストーリ */
 #article1, #article2, #article3, #article4, #article5, #article6, #article7, #article8, #article9 {
@@ -1330,6 +1346,13 @@ p.todoufuken_ttl{
 }
 #haisosm input, #haisosm select{
   border: 1px solid #ccc
+}
+.ms__multishipping-shipping .link, 
+.ms__multishipping-shipping a{
+  color: black;
+}
+.ms__shadow-box{
+  box-shadow: none;
 }
 
 /* 健康LP */
