@@ -1031,12 +1031,12 @@ svg.poingpong-review__star{
 }
 .poingpong-review__canvas2 .poingpong-review__title,
 .poingpong-review__canvas2 .poingpong-review__reply_from{
-  font-size: 1rem;
+  font-size: 1rem!important;
 }
 .poingpong-review__canvas2 .poingpong-text_right,
 .poingpong-review__texts,
 .poingpong-review__reply_contents{
-  font-size: var(--text-h6);
+  font-size: var(--text-h6)!important;
   line-height: 1.7;
 }
 .poingpong-review__canvas2 .poingpong-review__reply{
@@ -1351,7 +1351,7 @@ p.todoufuken_ttl{
 .ms__multishipping-shipping a{
   color: black;
 }
-.ms__shadow-box{
+#gsGroupsBox .ms__shadow-box{
   box-shadow: none;
 }
 
