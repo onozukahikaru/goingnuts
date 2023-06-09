@@ -501,14 +501,6 @@
         "overlay_opacity": 43
       }
     },
-    "social_widget_56315": {
-      "type": "social-widget",
-      "settings": {
-        "social_widget_id": "56315",
-        "social_product_id": "none",
-        "social_widget_type": "none"
-      }
-    },
     "2a1e35a8-1602-4f51-a66d-fba1b98ca323": {
       "type": "custom-liquid",
       "disabled": true,
@@ -518,6 +510,12 @@
         "remove_horizontal_spacing": false,
         "liquid": "<iframe src=\"https:\/\/calendar.google.com\/calendar\/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FTokyo&amp;showPrint=0&amp;showTabs=0&amp;src=Y19iNTg0ODgwMWI3ZjQwMTVmOWY3NzVhYjk2ZDAxNjlmOWEzNjNlZGQ3YzJlNWNlYWVmZmRkYzAwZjNjYTdlNmZhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23b3b60d\" style=\"border:solid 1px #777\" width=\"300\" height=\"300\" frameborder=\"0\" scrolling=\"no\"><\/iframe>",
         "text_alignment": "center"
+      }
+    },
+    "social_widget_56315": {
+      "type": "social-widget",
+      "settings": {
+        "social_widget_id": "56315"
       }
     }
   },
@@ -534,7 +532,7 @@
     "fd3ff563-5576-4cc5-b387-b92612915e5f",
     "18492ff6-2be3-458e-ac97-1b8c100f909e",
     "e4535e4e-76cb-4f8e-af54-a593ddbf1676",
-    "social_widget_56315",
-    "2a1e35a8-1602-4f51-a66d-fba1b98ca323"
+    "2a1e35a8-1602-4f51-a66d-fba1b98ca323",
+    "social_widget_56315"
   ]
 }
