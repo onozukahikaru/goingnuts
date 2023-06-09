@@ -194,80 +194,6 @@
         "show_ranking": false
       }
     },
-    "604489b7-7dc6-4582-a153-653eec5f812c": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-1": {
-          "type": "heading",
-          "settings": {
-            "text": "インスタグラム",
-            "heading_tag": "h1"
-          }
-        },
-        "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-0",
-        "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-1",
-        "template--18903269409045__604489b7-7dc6-4582-a153-653eec5f812c-16837653369099f60d-2"
-      ],
-      "settings": {
-        "separate_section_with_border": false,
-        "image": "shopify:\/\/shop_images\/banners03_insta.png",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": true
-      }
-    },
-    "1693841c-3558-4cc7-ad65-385158c2e9cd": {
-      "type": "image-with-text",
-      "blocks": {
-        "template--18903269409045__1693841c-3558-4cc7-ad65-385158c2e9cd-16837653369099f60d-0": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "template--18903269409045__1693841c-3558-4cc7-ad65-385158c2e9cd-16837653369099f60d-1": {
-          "type": "heading",
-          "settings": {
-            "text": "店舗経営LP",
-            "heading_tag": "h1"
-          }
-        },
-        "template--18903269409045__1693841c-3558-4cc7-ad65-385158c2e9cd-16837653369099f60d-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--18903269409045__1693841c-3558-4cc7-ad65-385158c2e9cd-16837653369099f60d-0",
-        "template--18903269409045__1693841c-3558-4cc7-ad65-385158c2e9cd-16837653369099f60d-1",
-        "template--18903269409045__1693841c-3558-4cc7-ad65-385158c2e9cd-16837653369099f60d-2"
-      ],
-      "settings": {
-        "separate_section_with_border": true,
-        "image": "shopify:\/\/shop_images\/2023-04-13_15.01.04.png",
-        "reveal_on_scroll": true,
-        "image_position": "end",
-        "content_width": "sm",
-        "remove_vertical_spacing": true
-      }
-    },
     "collection-list": {
       "type": "collection-list",
       "blocks": {
@@ -384,59 +310,6 @@
         "content": ""
       }
     },
-    "timeline": {
-      "type": "timeline",
-      "disabled": true,
-      "blocks": {
-        "item-0": {
-          "type": "item",
-          "settings": {
-            "label": "2020",
-            "subheading": "Sub-heading",
-            "title": "2000",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "mobile_text_color": "#ffffff"
-          }
-        },
-        "item-1": {
-          "type": "item",
-          "settings": {
-            "label": "2020",
-            "subheading": "Sub-heading",
-            "title": "2001",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "mobile_text_color": "#ffffff"
-          }
-        },
-        "item-2": {
-          "type": "item",
-          "settings": {
-            "label": "2020",
-            "subheading": "Sub-heading",
-            "title": "2002",
-            "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "mobile_text_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "item-0",
-        "item-1",
-        "item-2"
-      ],
-      "settings": {
-        "separate_section_with_border": true
-      }
-    },
     "blog-posts": {
       "type": "blog-posts",
       "settings": {
@@ -452,59 +325,6 @@
         "content": "",
         "button_link": "",
         "button_text": "View all articles"
-      }
-    },
-    "shop-the-look": {
-      "type": "shop-the-look",
-      "disabled": true,
-      "blocks": {
-        "look-0": {
-          "type": "look",
-          "settings": {
-            "hot_spots_background": "#ffffff",
-            "product_1": "",
-            "product_1_horizontal_position": 30,
-            "product_1_vertical_position": 40,
-            "product_2": "",
-            "product_2_horizontal_position": 45,
-            "product_2_vertical_position": 65,
-            "product_3": "",
-            "product_3_horizontal_position": 70,
-            "product_3_vertical_position": 50,
-            "product_4": "",
-            "product_4_horizontal_position": 85,
-            "product_4_vertical_position": 85
-          }
-        },
-        "look-1": {
-          "type": "look",
-          "settings": {
-            "hot_spots_background": "#ffffff",
-            "product_1": "",
-            "product_1_horizontal_position": 25,
-            "product_1_vertical_position": 45,
-            "product_2": "",
-            "product_2_horizontal_position": 55,
-            "product_2_vertical_position": 30,
-            "product_3": "",
-            "product_3_horizontal_position": 65,
-            "product_3_vertical_position": 60,
-            "product_4": "",
-            "product_4_horizontal_position": 85,
-            "product_4_vertical_position": 85
-          }
-        }
-      },
-      "block_order": [
-        "look-0",
-        "look-1"
-      ],
-      "settings": {
-        "separate_section_with_border": true,
-        "subheading": "Shop",
-        "title": "Our looks",
-        "content": "",
-        "popover_title": "Shop the look"
       }
     },
     "6984736e-0263-4ead-b813-5de3e1f58a99": {
@@ -545,7 +365,7 @@
             "image": "shopify:\/\/shop_images\/2023-04-13_15.01.04.png",
             "title": "",
             "heading_tag": "h3",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "content": "",
             "link_url": "shopify:\/\/pages\/health-management",
             "link_text": ""
           }
@@ -556,7 +376,7 @@
             "image": "shopify:\/\/shop_images\/banners03_insta.png",
             "title": "",
             "heading_tag": "h3",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "content": "",
             "link_url": "",
             "link_text": ""
           }
@@ -567,7 +387,7 @@
             "image": "shopify:\/\/shop_images\/media_banner.png",
             "title": "",
             "heading_tag": "h3",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "content": "",
             "link_url": "shopify:\/\/pages\/press-kit",
             "link_text": ""
           }
@@ -645,37 +465,6 @@
         "content": ""
       }
     },
-    "fc74695a-d1f1-473d-8797-ad73efc90715": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "template--18903269409045__fc74695a-d1f1-473d-8797-ad73efc90715-16837653369099f60d-1": {
-          "type": "heading",
-          "settings": {
-            "text": "メディア向けページ",
-            "heading_tag": "h1"
-          }
-        },
-        "template--18903269409045__fc74695a-d1f1-473d-8797-ad73efc90715-16837653369099f60d-2": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--18903269409045__fc74695a-d1f1-473d-8797-ad73efc90715-16837653369099f60d-1",
-        "template--18903269409045__fc74695a-d1f1-473d-8797-ad73efc90715-16837653369099f60d-2"
-      ],
-      "settings": {
-        "separate_section_with_border": true,
-        "image": "shopify:\/\/shop_images\/media_banner.png",
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": true
-      }
-    },
     "e4535e4e-76cb-4f8e-af54-a593ddbf1676": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -721,6 +510,7 @@
     },
     "2a1e35a8-1602-4f51-a66d-fba1b98ca323": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "separate_section_with_border": false,
         "remove_vertical_spacing": false,
@@ -735,18 +525,13 @@
     "ae383d69-f796-4bad-a97c-a8e9b5e21874",
     "e4b064fc-190d-4c67-8899-b94d910493d7",
     "featured-collections",
-    "604489b7-7dc6-4582-a153-653eec5f812c",
-    "1693841c-3558-4cc7-ad65-385158c2e9cd",
     "collection-list",
     "featured-product",
-    "timeline",
     "blog-posts",
-    "shop-the-look",
     "6984736e-0263-4ead-b813-5de3e1f58a99",
     "109af544-101b-4823-a641-433c53319c0c",
     "fd3ff563-5576-4cc5-b387-b92612915e5f",
     "18492ff6-2be3-458e-ac97-1b8c100f909e",
-    "fc74695a-d1f1-473d-8797-ad73efc90715",
     "e4535e4e-76cb-4f8e-af54-a593ddbf1676",
     "social_widget_56315",
     "2a1e35a8-1602-4f51-a66d-fba1b98ca323"
