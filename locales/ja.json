@@ -499,7 +499,7 @@
       "shipping_method_text": "配送方法",
       "shipping_not_required_text": "These items do not require shipping",
       "no_rates_found": "No shipping rates found for",
-      "start_typing_text": "Start typing to search...",
+      "start_typing_text": "入力して検索",
       "email_or_phone_label": "Recipient Email or Mobile Number",
       "recipient_email_label": "Recipient Email",
       "enter_first_name": "Enter a first name",
@@ -539,10 +539,10 @@
       "additional_details_text": "Additional details",
       "cancel_button_text": "キャンセル",
       "continue_button_text": "Continue",
-      "tax": "Tax",
+      "tax": "税金",
       "your_cart": "Your cart",
-      "cart_empty": "Your cart is currently empty",
-      "continue_shopping": "Continue Shopping"
+      "cart_empty": "カートが空です",
+      "continue_shopping": "ショッピングを開始する"
     }
   }
 }
