@@ -361,6 +361,7 @@
       "blocks": {
         "template--18903269409045__109af544-101b-4823-a641-433c53319c0c-16838592489ab3a3f1-0": {
           "type": "image_with_text",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/2023-04-13_15.01.04.png",
             "title": "",
