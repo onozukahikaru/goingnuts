@@ -298,7 +298,7 @@
         "container_size": "lg",
         "product_info_size": 36,
         "center_basic_info": false,
-        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "desktop_media_layout": "carousel_thumbnails_left",
         "desktop_media_grid_gap": 0,
         "mobile_controls": "dots",
         "enable_media_autoplay": false,
