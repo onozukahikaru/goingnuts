@@ -1354,6 +1354,20 @@ p.todoufuken_ttl{
 #gsGroupsBox .ms__shadow-box{
   box-shadow: none;
 }
+@media only screen and (max-width: 768px){
+  #gsGroupsBox .ms__shadow-box .ms__line .ms__cart-meta {
+    padding: 10px;
+  }
+  #gsGroupsBox .ms__shadow-box .ms__remove-wrapper{
+    justify-content: flex-end;
+    width: auto;
+  }
+  #gsGroupsBox .ms__shadow-box .ms__remove-wrapper .ms__remove-btn .ms__cart-remove{
+    display: inline-block;
+    border: 1px solid #f25c58;
+    padding: 10px;
+  }
+}
 
 /* 健康LP */
 .kenko_lp.pc{
