@@ -1367,6 +1367,13 @@ p.todoufuken_ttl{
     border: 1px solid #f25c58;
     padding: 10px;
   }
+  #gsMultishippingPage #gsGroupsBox .ms__address-wrapper{
+    float: right;
+    width: 82%;
+  }
+  #gsMultishippingPage #gsGroupsBox #gsMultiContinue{
+    width: 100%;
+  }
 }
 
 /* 健康LP */
