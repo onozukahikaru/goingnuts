@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/DSC00323.jpg",
             "subheading": "",
-            "title": "カリフォルニアナッツとドライフルーツ専門店",
+            "title": "こだわりの木の実専門店",
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "content_max_width": 780,
@@ -515,7 +515,9 @@
     "social_widget_56315": {
       "type": "social-widget",
       "settings": {
-        "social_widget_id": "56315"
+        "social_widget_id": "56315",
+        "social_product_id": "none",
+        "social_widget_type": "none"
       }
     }
   },
