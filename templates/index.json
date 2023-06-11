@@ -10,7 +10,7 @@
             "subheading": "こだわりの木の実専門店",
             "title": "Going Nuts!",
             "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-end sm:text-end",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
             "content_max_width": 780,
             "button_1_text": "",
             "button_1_link": "",
