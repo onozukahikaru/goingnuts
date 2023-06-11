@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/MOM04214-230130_light.jpg",
             "subheading": "こだわりの木の実専門店",
-            "title": "<strong>Going Nuts!<\/strong>",
+            "title": "Going Nuts!",
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-end sm:text-end",
             "content_max_width": 780,
