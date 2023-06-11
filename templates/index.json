@@ -33,9 +33,9 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/DSC02744.jpg",
-            "subheading": "",
-            "title": "そうだ、ナッツ贈ろう。　　",
-            "mobile_text_position": "place-self-center text-center",
+            "subheading": "そうだ、ナッツ贈ろう。　　",
+            "title": "",
+            "mobile_text_position": "place-self-end-center text-center",
             "desktop_text_position": "sm:place-self-end-start sm:text-start",
             "content_max_width": 780,
             "button_1_text": "さらに詳しく",
