@@ -271,6 +271,29 @@
     "featured-product": {
       "type": "featured-product",
       "blocks": {
+        "93b7c8c9-073e-486f-bf2e-02d386c81550": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "3e34a76a-72ac-4fe6-9074-ff34d85726bb": {
+          "type": "product_variations",
+          "settings": {
+            "option_name": "",
+            "option_value_metafield": "",
+            "product_list": [
+
+            ],
+            "color_selector_type": "color"
+          }
+        },
+        "6ce48e97-28a9-4edf-a909-7cd563bf5772": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
         "share-buttons": {
           "type": "share_buttons",
           "settings": {
@@ -279,7 +302,7 @@
         "buy-buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_payment_button": false,
+            "show_payment_button": true,
             "show_gift_card_recipient": false,
             "atc_button_background": "",
             "atc_button_text_color": "",
@@ -289,6 +312,9 @@
         }
       },
       "block_order": [
+        "93b7c8c9-073e-486f-bf2e-02d386c81550",
+        "3e34a76a-72ac-4fe6-9074-ff34d85726bb",
+        "6ce48e97-28a9-4edf-a909-7cd563bf5772",
         "share-buttons",
         "buy-buttons"
       ],
