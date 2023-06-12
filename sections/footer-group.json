@@ -19,11 +19,19 @@
             "menu": "policy",
             "show_menu_title": true
           }
+        },
+        "f596ca29-b433-4a18-bae9-741d4c106055": {
+          "type": "links",
+          "settings": {
+            "menu": "about_us",
+            "show_menu_title": true
+          }
         }
       },
       "block_order": [
         "footer-0",
-        "footer-1"
+        "footer-1",
+        "f596ca29-b433-4a18-bae9-741d4c106055"
       ],
       "settings": {
         "separate_section_with_border": true,
