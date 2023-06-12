@@ -94,7 +94,7 @@
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
         "subheading": "",
-        "title": "Recently viewed products",
+        "title": "最近チェックした商品",
         "content": ""
       }
     },
@@ -126,7 +126,7 @@
             "on_product_info": true,
             "on_more": true,
             "text_empty": "レビューはありません",
-            "accent_color": "#eee"
+            "accent_color": "#eeeeee"
           }
         }
       },
