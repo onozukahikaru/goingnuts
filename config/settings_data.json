@@ -18,6 +18,7 @@
     "product_rating_color": "#1c1c1c",
     "product_custom_badge_background": "#3f665c",
     "heading_font": "univers_next_n4",
+    "heading_text_transform": "normal",
     "heading_font_size_factor": 1,
     "heading_letter_spacing": 18,
     "text_font": "univers_next_n4",
