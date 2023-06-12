@@ -277,6 +277,12 @@
             "heading_tag": "h3"
           }
         },
+        "6ce48e97-28a9-4edf-a909-7cd563bf5772": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
         "3e34a76a-72ac-4fe6-9074-ff34d85726bb": {
           "type": "product_variations",
           "settings": {
@@ -288,15 +294,20 @@
             "color_selector_type": "color"
           }
         },
-        "6ce48e97-28a9-4edf-a909-7cd563bf5772": {
-          "type": "price",
+        "7a0a25bb-4f65-460d-bd61-768b021ecd17": {
+          "type": "quantity_selector",
           "settings": {
-            "show_taxes_notice": false
           }
         },
-        "share-buttons": {
-          "type": "share_buttons",
+        "1458ac09-7a27-49d2-ad97-ca2e29306f16": {
+          "type": "line_item_property",
           "settings": {
+            "label": "{{ section.settings.product.metafields.custom._catchcopy.value }}",
+            "type": "text",
+            "required": false,
+            "allow_long_text": false,
+            "checkbox_value": "Yes",
+            "select_values": "Value 1,Value 2,Value 3"
           }
         },
         "buy-buttons": {
@@ -309,14 +320,21 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
+        },
+        "share-buttons": {
+          "type": "share_buttons",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "93b7c8c9-073e-486f-bf2e-02d386c81550",
-        "3e34a76a-72ac-4fe6-9074-ff34d85726bb",
         "6ce48e97-28a9-4edf-a909-7cd563bf5772",
-        "share-buttons",
-        "buy-buttons"
+        "3e34a76a-72ac-4fe6-9074-ff34d85726bb",
+        "7a0a25bb-4f65-460d-bd61-768b021ecd17",
+        "1458ac09-7a27-49d2-ad97-ca2e29306f16",
+        "buy-buttons",
+        "share-buttons"
       ],
       "settings": {
         "product": "natural-almond-butter",
