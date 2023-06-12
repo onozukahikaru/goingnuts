@@ -16,7 +16,7 @@
         "footer-1": {
           "type": "links",
           "settings": {
-            "menu": "footer",
+            "menu": "policy",
             "show_menu_title": true
           }
         }
