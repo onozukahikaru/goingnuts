@@ -26,12 +26,20 @@
             "menu": "about_us",
             "show_menu_title": true
           }
+        },
+        "541aa091-5424-45c8-92ee-438eb3b311a3": {
+          "type": "links",
+          "settings": {
+            "menu": "information",
+            "show_menu_title": true
+          }
         }
       },
       "block_order": [
         "footer-0",
         "footer-1",
-        "f596ca29-b433-4a18-bae9-741d4c106055"
+        "f596ca29-b433-4a18-bae9-741d4c106055",
+        "541aa091-5424-45c8-92ee-438eb3b311a3"
       ],
       "settings": {
         "separate_section_with_border": true,
