@@ -31,3 +31,14 @@ $("#js-copy").on("click", function () {
 		return;
 	}
 });
+$("#js-copy-owner").on("click", function () {
+	let copyText = document.querySelector('.copy-owner').textContent;
+	const copyTarget = document.getElementById("js-copy-owner");
+
+	navigator.clipboard.writeText(copyText);
+	copyTarget.textContent = 'Copied!';
+	if (!navigator.clipboard) {
+		alert("このブラウザは対応していません");
+		return;
+	}
+});

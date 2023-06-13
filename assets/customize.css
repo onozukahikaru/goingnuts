@@ -265,21 +265,24 @@ input.spr-button-primary,
   display: flex;
   justify-content: end;
   align-items: center;
-  margin-block-start: 1rem!important;
+  margin-block-start: 3rem!important;
   margin-bottom: 2rem;
-  background: linear-gradient(to right,currentColor,currentColor) 0 min(100%,1.35em) / 100% 1px no-repeat;
-  transition: background-size .3s ease-in-out;
+  background: #ee7959;
+  padding: 10px 16px;
+  border-radius: 5px;
   font-weight: 500;
-  font-size: 18px;
-  width: 200px;
+  font-size: 19px;
+  width: 250px;
   margin-left: auto;
+  color: white;
 }
 .section_mv .link_collection svg{
   margin-left: 5px;
   width: 14px;
+  fill: white;
 }
 .section_mv .link_collection:hover{
-  background-size: 0 1px;
+  background: #f6957a;
 }
 @media only screen and (max-width: 768px) {
   .section_mv .intro{
@@ -1861,26 +1864,45 @@ p.todoufuken_ttl{
   max-height: 120px;
   margin-bottom: 2rem;
 }
+.media_section .logo_list li .img_mv{
+  max-height: none;
+}
 .media_section .logo_list li p{
   color: #666;
   margin-top: 5px;
   font-size: 0.7rem;
 }
-.media_section .copy-text{
+.media_section .copy-text,
+.media_section .copy-owner{
   background-color: #efefef;
   padding: 20px;
 }
-.media_section #js-copy{
+.media_section #js-copy,
+.media_section #js-copy-owner{
   display: block;
   margin-left: auto;
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
   text-align: center;
-    justify-content: center;
+  justify-content: center;
 }
-.media_section #js-copy svg{
+.media_section #js-copy svg,
+.media_section #js-copy-owner svg{
   width: 11px;
+}
+.download_section{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 70%;
+}
+.download_section > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
 }
 @media only screen and (max-width: 768px){
   .media_section .logo_list{
@@ -1900,6 +1922,14 @@ p.todoufuken_ttl{
   }
   .media_section .copy-text{
     padding: 16px;
+  }
+  .download_section{
+    flex-direction: column;
+    width: 100%;
+  }
+  .download_section > div{
+    width: 100%;
+    margin-bottom: 2rem;
   }
 }
 
