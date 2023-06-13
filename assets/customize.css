@@ -266,7 +266,7 @@ input.spr-button-primary,
   justify-content: end;
   align-items: center;
   margin-block-start: 3rem!important;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   background: #ee7959;
   padding: 10px 16px;
   border-radius: 5px;
@@ -279,7 +279,6 @@ input.spr-button-primary,
 .section_mv .link_collection svg{
   margin-left: 5px;
   width: 14px;
-  fill: white;
 }
 .section_mv .link_collection:hover{
   background: #f6957a;
