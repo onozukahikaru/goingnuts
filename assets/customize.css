@@ -1090,6 +1090,9 @@ div img.sashie {
   border-radius: 10px;
   margin-bottom: 50px!important;
 }
+.fadeInTrigger{
+  opacity: 0;
+}
 .fadeIn {
   animation-name: fadeInAnime;
   animation-duration: 4s;
