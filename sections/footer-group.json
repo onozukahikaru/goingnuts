@@ -51,7 +51,7 @@
         "footer-1"
       ],
       "custom_css": [
-        ".{margin-top: 5rem;}"
+
       ],
       "settings": {
         "separate_section_with_border": true,
