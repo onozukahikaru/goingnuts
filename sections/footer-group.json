@@ -50,6 +50,9 @@
         "541aa091-5424-45c8-92ee-438eb3b311a3",
         "footer-1"
       ],
+      "custom_css": [
+        "footer{margin-top: 5rem;}"
+      ],
       "settings": {
         "separate_section_with_border": true,
         "show_social_media": true,
