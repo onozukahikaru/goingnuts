@@ -109,6 +109,25 @@ input.spr-button-primary,
 #company{
   display: none;
 }
+.requiredlabel{
+  position: relative;
+  display: block;
+}
+.requiredlabel::after{
+  content: '必須';
+  font-size: 10px;
+  color: #e00303;
+  position: absolute;
+  right: 0;
+  top: -3px;
+  
+}
+.form-control.options{
+  padding-top: 14px;
+}
+.form-control.options .requiredlabel::after{
+  top: -18px;
+}
 
 /* カート */
 .shopify-section--main-cart .section-spacing--tight .container{

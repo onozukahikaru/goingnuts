@@ -16,6 +16,7 @@
 
         <div class="fieldset">
             {%- assign label  = 'contact.form.name' | t -%}
+            <span class="requiredlabel"></span>
             {%- render 'input', type: 'text', name: 'contact[name]', label: 'お名前', value: customer.name, required: true, autocomplete: 'name' -%}
 
           {%- for block in section.blocks -%}
@@ -46,8 +47,10 @@
             {%- endif -%}
           {%- endfor -%}
           {%- assign label  = 'contact.form.email' | t -%}
+          <span class="requiredlabel"></span>
           {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
           {%- capture id -%}select-{{ section.id }}-{{ form }}-{{ name | handle }}{%- endcapture -%}
+          <span class="requiredlabel"></span>
           <div class="form-control">
             <select id="{{ id }}" name="contact[問い合わせ種別]" class="select" required>
               <option value="" disabled selected>問い合わせ種別</option>
@@ -60,15 +63,15 @@
               <path d="m1 1 4 4 4-4" stroke="currentColor" stroke-linecap="square"></path>
             </svg>
           </div>
-          <div id="products" class="form-control">
+          <div id="products" class="form-control options"><span class="requiredlabel"></span>
             <input type="text" class="input" name="contact[商品名]" aria-label="商品名" placeholder="商品名">
             <label class="floating-label text-xs">商品名</label>
           </div>
-          <div id="order" class="form-control">
+          <div id="order" class="form-control options"><span class="requiredlabel"></span>
             <input type="text" class="input" name="contact[注文番号]" aria-label="注文番号" placeholder="注文番号">
             <label class="floating-label text-xs">注文番号</label>
           </div>
-          <div id="company" class="form-control">
+          <div id="company" class="form-control options"><span class="requiredlabel"></span>
             <input type="text" class="input" name="contact[会社名]" aria-label="会社名" placeholder="会社名">
             <label class="floating-label text-xs">会社名</label>
           </div>
