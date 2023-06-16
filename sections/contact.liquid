@@ -81,7 +81,7 @@
         </div>
 
         {%- assign button_content = 'contact.form.submit' | t -%}
-        {%- render 'button', content: button_content, type: 'submit' -%}
+        {%- render 'button', content: button_content, type: 'submit', formnovalidate: 'formnovalidate' -%}
       {%- endform -%}
     </div>
   </div>
@@ -188,15 +188,27 @@ $(function(){
     if (selectedOptionText == '商品問い合わせ'){
       $('#products').show();
       $('#products .input').attr('required', true);
+      $('#order .input').attr('required', false);
+      $('#coverage .input').attr('required', false);
+      $('#company .input').attr('required', false);
     } else if (selectedOptionText == '注文に関して') {
       $('#order').show();
       $('#order .input').attr('required', true);
+      $('#products .input').attr('required', false);
+      $('#coverage .input').attr('required', false);
+      $('#company .input').attr('required', false);
     } else if (selectedOptionText == '取材') {
       $('#company').show();
       $('#company .input').attr('required', true);
+      $('#products .input').attr('required', false);
+      $('#coverage .input').attr('required', false);
+      $('#order .input').attr('required', false);
     } else if (selectedOptionText == 'お取り扱いに関して') {
       $('#company').show();
       $('#company .input').attr('required', true);
+      $('#products .input').attr('required', false);
+      $('#coverage .input').attr('required', false);
+      $('#order .input').attr('required', false);
     }
   });
 });
