@@ -194,7 +194,7 @@
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "dried-fruit",
+            "collection": "dried-fruits",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Going Nuts!のドライフルーツ類一覧",
