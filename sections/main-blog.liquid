@@ -105,6 +105,11 @@
     </div>
   {%- endif -%}
 </div>
+{%- if blog.handle contains 'nuts-recipes' -%}
+  <div class="ig_hushtag">{%- render 'icon' with 'instagram', width: 40, direction_aware: true -%}<span>#ゴーイングナッツレシピ</span></div>
+  <div class="social-widget-wrapper" data-widget-id="56629"></div>
+{%- endif -%}
+  
 
 {% schema %}
 {
