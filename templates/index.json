@@ -217,7 +217,7 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "dried-fruit",
+            "collection": "dried-fruits",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
