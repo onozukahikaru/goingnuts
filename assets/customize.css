@@ -1195,6 +1195,9 @@ div#photo11:after {
   div#photoI, div#photo11{
     margin-bottom: 50px!important;
   }
+  .homebutton img{
+    max-width: 170px;
+  }
 }
 
 /* 店舗一覧 */
