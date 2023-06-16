@@ -18,7 +18,7 @@
         "apparition_delay": 5,
         "show_only_on_index": true,
         "hide_for_account_holders": true,
-        "show_only_once": false,
+        "show_only_once": true,
         "title": "メールマガジン送付について",
         "content": "お得なキャンペーンやセール、新商品入荷の際にご案内のメールを送付させていただきます。",
         "button_text": "登録",
