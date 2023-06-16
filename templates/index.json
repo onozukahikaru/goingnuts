@@ -220,7 +220,7 @@
         "6e822362-5b0f-4b15-b4d2-1590e6ec6bb7": {
           "type": "collection",
           "settings": {
-            "collection": "guilt-free-sweets",
+            "collection": "guilt-freesweets",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "",
