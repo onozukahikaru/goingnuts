@@ -1132,12 +1132,15 @@ a.homebutton {
   border-radius: 10px;
   text-decoration: none;
   color: #000;
-  background: #6f978d!important;
+  background: #000!important;
   padding: 10px 30px;
   max-width: 35%;
 }
 a.homebutton:hover{
-  background: #48665e!important;
+  background: #000!important;
+}
+.homebutton img{
+  padding: 10px;
 }
 p.homebutton img {
   display: block!important;
