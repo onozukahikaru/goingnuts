@@ -1318,6 +1318,8 @@ p.todoufuken_ttl{
 .shoplist_flex.visuals > div{
   width: 48%;
   display: flex;
+  align-items: center;
+  background: black;
 }
 .shoplist_flex.visuals .back{
   margin-block-start: 0;
