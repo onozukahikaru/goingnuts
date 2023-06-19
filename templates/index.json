@@ -233,6 +233,7 @@
         },
         "collection-2": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "mixed-nuts",
             "expand_collection": false,
@@ -247,12 +248,30 @@
             "button_background": "",
             "button_text_color": ""
           }
+        },
+        "6f3af50e-4686-445f-a1ab-eca6c86bea59": {
+          "type": "collection",
+          "settings": {
+            "collection": "smoked",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "button_background": "",
+            "button_text_color": ""
+          }
         }
       },
       "block_order": [
         "collection-0",
         "collection-1",
-        "collection-2"
+        "collection-2",
+        "6f3af50e-4686-445f-a1ab-eca6c86bea59"
       ],
       "settings": {
         "separate_section_with_border": true,
