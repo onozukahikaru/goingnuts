@@ -1280,7 +1280,7 @@ p.todoufuken_ttl{
   margin-bottom: 2rem;
 }
 .shoplist_flex .image{
-  width: 74%;
+  width: 100%;
 }
 .shoplist_flex.parking, .shoplist_flex.video{
   justify-content: space-between;
@@ -1308,6 +1308,19 @@ p.todoufuken_ttl{
 .accessroot ul li{
   width: 32%;
   margin-bottom: 1rem;
+}
+.shoplist_flex.store{
+  justify-content: center;
+}
+.shoplist_flex.visuals{
+  justify-content: space-between;
+}
+.shoplist_flex.visuals > div{
+  width: 48%;
+  display: flex;
+}
+.shoplist_flex.visuals .back{
+  margin-block-start: 0;
 }
 @media only screen and (max-width: 768px){
   .shoplist_flex.store{
