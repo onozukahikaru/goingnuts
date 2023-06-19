@@ -8,8 +8,8 @@
         "7bba058d-989c-460e-ada3-004ea3ec8ad6": {
           "type": "image",
           "settings": {
-            "image": "{{ shop.brand.logo }}",
-            "image_width": 80,
+            "image": "shopify:\/\/shop_images\/1-100.jpg",
+            "image_width": 300,
             "link": ""
           }
         },
