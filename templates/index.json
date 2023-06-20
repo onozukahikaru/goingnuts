@@ -252,6 +252,7 @@
           "type": "collection",
           "settings": {
             "collection": "smoked",
+            "image": "shopify:\/\/shop_images\/3fc8e9c89ed782507247c1c42f359a8c_3d89479e-badf-4d1b-b4b9-94eeece0773c.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
