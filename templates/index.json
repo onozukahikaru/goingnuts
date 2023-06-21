@@ -213,10 +213,28 @@
             "button_background": "",
             "button_text_color": ""
           }
+        },
+        "cfb7d6f0-8b7f-42f1-8069-59f7ab683167": {
+          "type": "collection",
+          "settings": {
+            "collection": "nuts-for-alcohol",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5,
+            "button_background": "",
+            "button_text_color": ""
+          }
         }
       },
       "block_order": [
-        "collection-0"
+        "collection-0",
+        "cfb7d6f0-8b7f-42f1-8069-59f7ab683167"
       ],
       "settings": {
         "separate_section_with_border": true,
