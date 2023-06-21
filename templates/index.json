@@ -214,10 +214,29 @@
             "button_background": "",
             "button_text_color": ""
           }
+        },
+        "42a90064-03d2-4d9f-bcaf-b1e0a58cc69a": {
+          "type": "collection",
+          "settings": {
+            "collection": "gift",
+            "image": "shopify:\/\/shop_images\/banners03_gifts.png",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 5,
+            "button_background": "",
+            "button_text_color": ""
+          }
         }
       },
       "block_order": [
-        "cfb7d6f0-8b7f-42f1-8069-59f7ab683167"
+        "cfb7d6f0-8b7f-42f1-8069-59f7ab683167",
+        "42a90064-03d2-4d9f-bcaf-b1e0a58cc69a"
       ],
       "settings": {
         "separate_section_with_border": true,
