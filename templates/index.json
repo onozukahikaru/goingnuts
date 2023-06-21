@@ -218,6 +218,7 @@
           "type": "collection",
           "settings": {
             "collection": "nuts-for-alcohol",
+            "image": "shopify:\/\/shop_images\/banners03_snacks_cdf85371-ed1e-4040-81d9-eb1ee8082f6c.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
