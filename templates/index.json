@@ -213,65 +213,10 @@
             "button_background": "",
             "button_text_color": ""
           }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "dried-fruits",
-            "expand_collection": false,
-            "content_position": "place-self-end-start text-start",
-            "subheading": "",
-            "title": "",
-            "button_text": "商品を見る",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 5,
-            "button_background": "",
-            "button_text_color": ""
-          }
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "mixed-nuts",
-            "expand_collection": false,
-            "content_position": "place-self-end-start text-start",
-            "subheading": "",
-            "title": "",
-            "button_text": "商品を見る",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 5,
-            "button_background": "",
-            "button_text_color": ""
-          }
-        },
-        "6f3af50e-4686-445f-a1ab-eca6c86bea59": {
-          "type": "collection",
-          "settings": {
-            "collection": "smoked",
-            "image": "shopify:\/\/shop_images\/3fc8e9c89ed782507247c1c42f359a8c_3d89479e-badf-4d1b-b4b9-94eeece0773c.png",
-            "expand_collection": false,
-            "content_position": "place-self-end-start text-start",
-            "subheading": "",
-            "title": "",
-            "button_text": "",
-            "button_link": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30,
-            "button_background": "",
-            "button_text_color": ""
-          }
         }
       },
       "block_order": [
-        "collection-0",
-        "collection-1",
-        "collection-2",
-        "6f3af50e-4686-445f-a1ab-eca6c86bea59"
+        "collection-0"
       ],
       "settings": {
         "separate_section_with_border": true,
