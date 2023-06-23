@@ -105,7 +105,7 @@
         "template--18903269409045__2ce88c43-5745-43ee-b28b-9af809e880cb-1687479174e41e280b-0"
       ],
       "custom_css": [
-        ".slideshow__slide {max-width: 1000px; margin: 0 auto;}"
+        ".slideshow__slide {max-width: 1000px; margin: 3rem auto;}"
       ],
       "settings": {
         "allow_transparent_header": false,
