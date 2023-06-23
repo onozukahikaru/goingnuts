@@ -493,6 +493,9 @@
         "template--18903269409045__109af544-101b-4823-a641-433c53319c0c-16838592489ab3a3f1-1",
         "template--18903269409045__109af544-101b-4823-a641-433c53319c0c-16838592489ab3a3f1-2"
       ],
+      "custom_css": [
+        ".features--zoom-image .zoom-image{margin: 0 auto;}"
+      ],
       "settings": {
         "separate_section_with_border": true,
         "columns_per_row": 2,
@@ -500,7 +503,7 @@
         "overlap_image": false,
         "content_alignment": "center",
         "text_alignment": "center",
-        "spacing": "xs",
+        "spacing": "lg",
         "subheading": "",
         "title": "私たちについて",
         "content": ""
