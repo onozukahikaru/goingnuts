@@ -64,8 +64,8 @@
         "allow_transparent_header": true,
         "show_next_section_button": true,
         "media_size": "auto",
-        "autoplay": false,
-        "autoplay_pause_on_video": true,
+        "autoplay": true,
+        "autoplay_pause_on_video": false,
         "cycle_speed": 5,
         "background": "#000000",
         "controls_color": "#ffffff"
@@ -521,7 +521,7 @@
         "template--18903269409045__fd3ff563-5576-4cc5-b387-b92612915e5f-1683765945b0c9a6b2-1": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Going Nuts!は近江八幡仲屋町のまちや俱楽部内にある古き良き酒蔵跡にあります。<br\/><\/p><p>実店舗限定のメニューや、商品のご試食などもご用意しております。<\/p><p>元気なスタッフがあなたのお越しをお待ちしております！お気軽に遊びにきてください。<\/p>"
+            "content": "<p>Going Nuts!は近江八幡の古き良き酒蔵跡のこだわり木の実専門店。<\/p><p>カラダとココロの健康に役立つこだわりのナッツとドライフルーツを70種類以上揃え、量り売りを通してフードロスやプラスティック削減も目指しています。<\/p><p>「ココロ・カラダ・地球にイイコトはじめよう。」<\/p>"
           }
         },
         "3ca4304e-69fe-4ff2-b0ce-d4adbca1989a": {
