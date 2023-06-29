@@ -1474,23 +1474,27 @@ p.todoufuken_ttl{
 .kenko_lp.pc{
   display: block;
   min-width: 1220px;
-  width: 1220px;
+  
 }
 .kenko_lp section{
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: 0;
+  padding: 8rem 0;
+  background: #f7e3c3;
 }
 .kenko_lp .sec_1 h3{
-  display: none;
+  display: flex;
+  justify-content: center;
+}
+.kenko_lp .sec_1 h3 img{
+  max-width: 150px;
+}
+.kenko_lp .sec_1{
+  padding-bottom: 0;
 }
 .kenko_lp.pc .inner{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  width: 100%;
-  max-width: 70%;
+  max-width: 1220px;
+  margin: 0 auto;
 }
 .kenko_lp h3,
 .kenko_lp h4{
@@ -1557,6 +1561,9 @@ p.todoufuken_ttl{
   top: 370px;
   max-width: 78%;
 }
+.kenko_lp .sec_2 .inner:first-child{
+  margin-bottom: 5rem;
+}
 .kenko_lp.pc .sec_2 .left,
 .kenko_lp.pc .sec_2 .right{
   width: 42%;
@@ -1564,6 +1571,14 @@ p.todoufuken_ttl{
 .sec_2 h3{
   font-size: 1.4rem;
   margin-bottom: 3rem;
+}
+.sec_2 h4{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.sec_2 h4 img{
+  max-width: 280px;
 }
 .sec_2 .left ul{
   margin: 0;
@@ -1601,6 +1616,10 @@ p.todoufuken_ttl{
   font-size: 0.8rem;
 }
 @media only screen and (max-width: 768px){
+  .kenko_lp section{
+    margin-bottom: 0;
+    padding: 4rem 0;
+  }
   .kenko_lp .sec_2 .inner{
     flex-direction: column;
     max-width: none;
@@ -1611,10 +1630,13 @@ p.todoufuken_ttl{
     margin-bottom: 2rem;
   }
   .sec_2 .left{
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   }
 }
 
+.kenko_lp .sec_3{
+  background: #c5d87e;
+}
 .sec_3 .inner{
   top: 120px;
 }
@@ -1622,15 +1644,14 @@ p.todoufuken_ttl{
   text-align: center;
   display: block;
   margin-bottom: 7rem;
+  color: #6D6354;
 }
 .sec_3 .above small{
-  position: absolute;
-  top: 240px;
-  right: 60px;
   font-size: 10px;
+  padding-bottom: 3rem;
 }
 .sec_3 .inner h4{
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
 }
 .sec_3 .inner h4 span{
   position: relative;
@@ -1648,7 +1669,11 @@ p.todoufuken_ttl{
   z-index: -1;
 }
 .sec_3 .above{
-  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  border-bottom: 1px solid #fff;
 }
 .sec_3 .above dl{
   margin-bottom: 2rem;
@@ -1672,12 +1697,24 @@ p.todoufuken_ttl{
   position: absolute;
   left: 0;
 }
+.sec_3 .above .left{
+  width: 48%;
+}
+.sec_3 .above .right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+}
+.sec_3 .above .right img{
+  max-width: 350px;
+}
 .sec_3 .bottom h5{
   margin-bottom: 1rem;
 }
 .sec_3 .bottom h5 span{
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   background: white;
   color: #9d8557;
   margin-bottom: 8px;
@@ -1690,40 +1727,46 @@ p.todoufuken_ttl{
   font-weight: 600;
   background: white;
   color: #9d8557;
-  margin-left: 5px;
+  display: inline-block;
 }
 .sec_3 .bottom ul{
   list-style: none;
   padding: 0;
   margin: 0;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .sec_3 .bottom ul li{
-  position: absolute;
+  width: 46%;
+  margin-bottom: 3rem;
+}
+.sec_3 .bottom ul li p{
+  margin-bottom: 2rem;
 }
 .sec_3 .bottom ul li p span{
   font-weight: 600;
   display: block;
 }
-.sec_3 .bottom ul li.p01{
-  width: 52%;
-  top: 10px;
-  left: -50px;
+.sec_3 .bottom ul li.p01 img{
+  max-width: 380px;
+    margin: 0 auto;
+    display: block;
 }
-.sec_3 .bottom ul li.p02{
-  width: 50%;
-  right: -80px;
-  top: 10px;
+.sec_3 .bottom ul li.p02 img{
+  max-width: 380px;
+    margin: 0 auto;
+    display: block;
 }
-.sec_3 .bottom ul li.p03{
-  width: 50%;
-  bottom: -600px;
-  left: 90px;
+.sec_3 .bottom ul li.p03 img{
+  max-width: 240px;
+    margin: 0 auto;
+    display: block;
 }
-.sec_3 .bottom ul li.p04{
-  width: 50%;
-  bottom: -500px;
-  right: -130px;
+.sec_3 .bottom ul li.p04 img{
+  max-width: 300px;
+    margin: 0 auto;
+    display: block;
 }
 @media only screen and (max-width: 768px){
   .kenko_lp.sp .sec_3 .inner{
@@ -1744,6 +1787,7 @@ p.todoufuken_ttl{
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+    padding-bottom: 2rem;
   }
   .sec_3 .above img{
     width: 90%;
@@ -1796,11 +1840,11 @@ p.todoufuken_ttl{
     display: block;
     margin: 20px auto;
   }
-  .sec_3 .above small{
-    position: relative;
-    top: auto;
-    right: auto;
+  .sec_3 .bottom h5 small{
+    margin-left: 5px;
+    display: inline;
   }
+  
 }
 
 .sec_4 .inner{
@@ -1808,7 +1852,16 @@ p.todoufuken_ttl{
   color: #6D6354;
 }
 .sec_4 .above {
-  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: end;
+  margin-bottom: 3rem;
+}
+.sec_4 .above .left{
+  max-width: 640px;
+}
+.sec_4 .above .right{
+  max-width: 220px;
 }
 .sec_4 .above h3,
 .sec_4 .above h4{
@@ -1841,16 +1894,62 @@ p.todoufuken_ttl{
   left: 0;
 }
 .sec_4 .bottom{
-  width: 565px;
-  right: 0;
-  bottom: -270px;
-  position: absolute;
-  right: 0;
+  display: flex;
+  justify-content: flex-start;
 }
-.sec_4 .bottom .name{
+.sec_4 .bottom .left{
+  max-width: 270px;
+  margin-right: 2rem;
+}
+.sec_4 .contact_title{
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+.sec_4 .contact_title::before{
+  content: '';
+  background: #6D6354;
+  width: 100%;
+  height: 1px;
   position: absolute;
-  right: 150px;
-  top: -70px;
+  z-index: 0;
+  top: 68%;
+  left: 0%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+.sec_4 .contact_title span{
+  background: #f7e3c3;
+  padding-right: 10px;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+.sec_4 .sns {
+  display: flex;
+  justify-content: flex-start;
+  margin-block-start: 1rem!important;
+}
+.sec_4 .sns .qrcode{
+  max-width: 50px;
+}
+.sec_4 .sns .links{
+  margin-left: 20px;
+  font-weight: bold;
+}
+.sec_4 .sns .links a{
+  display: block;
+}
+.sec_4 .right .name{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec_4 .right .name img{
+  max-width: 200px;
 }
 @media only screen and (max-width: 768px){
   .kenko_lp.sp .sec_4 .inner{
@@ -1861,8 +1960,11 @@ p.todoufuken_ttl{
   }
   .sec_4 .above {
     width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .sec_4 .bottom{
+    flex-direction: column;
     width: 100%;
     position: relative;
     bottom: auto;
@@ -1876,6 +1978,10 @@ p.todoufuken_ttl{
     right: auto;
     top: auto;
   }
+  .sec_4 .sns {
+    display: flex;
+    justify-content: center;
+   }
   .sec_4 .above img{
     max-width: 180px;
     margin-left: auto;
@@ -1884,19 +1990,6 @@ p.todoufuken_ttl{
   .sec_4 .bottom img{
     max-width: 220px;
     margin-right: auto;
-    display: block;
-  }
-  .sec_4 .sns {
-   display: flex;
-   justify-content: center;
-  }
-  .sec_4 .sns .qrcode{
-    max-width: 50px;
-  }
-  .sec_4 .sns .links{
-    margin-left: 20px;
-  }
-  .sec_4 .sns .links a{
     display: block;
   }
   .sec_4 .bottom .name .logo{
@@ -2028,3 +2121,6 @@ p.todoufuken_ttl{
 .ms__field textarea{
   height: 300px!important;
 }
+
+/* calendar */
+#calendar { width: 300px; } #calendar h2 { margin: 0; padding: 0; border: 0; font-size: 1rem; } #calendar table { background: var(--color-body-background); } #calendar table a { color: var(--color-base); } #calendar .fc-event-title { display: none; } #calendar th, #calendar td, #calendar .fc-col-header, #calendar .fc-scrollgrid-sync-table { margin: 0; padding: 0; } #calendar .fc-daygrid-day-events { display: none; } #calendar a { pointer-events: none; text-decoration: none; } #calendar .fc-bg-event { background: var(--gradient-base-background-2)!important; opacity: 1!important; }
