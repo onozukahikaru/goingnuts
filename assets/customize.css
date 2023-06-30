@@ -1596,6 +1596,7 @@ p.todoufuken_ttl{
 .sec_2 .left ul li{
   padding-left: 20px;
   position: relative;
+  font-size: 1rem;
 }
 .sec_2 .left ul li::before{
   content: '●';
@@ -1604,13 +1605,14 @@ p.todoufuken_ttl{
   color: #b1c548;
 }
 .sec_2 .right h4{
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
   margin-bottom: 2rem;
 }
 .sec_2 .left p,
 .sec_2 .right p{
   margin-bottom: 2rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .sec_2 .right ul{
   padding: 0;
@@ -1686,10 +1688,11 @@ p.todoufuken_ttl{
   border-bottom: 1px solid #ffec3f;
   font-weight: 600;
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   display: inline-block;
 }
 .sec_3 .above dl dd p{
+  font-size: 1.1rem;
   padding-left: 20px;
   position: relative;
   margin-bottom: 10px;
@@ -1747,6 +1750,7 @@ p.todoufuken_ttl{
 }
 .sec_3 .bottom ul li p{
   margin-bottom: 2rem;
+  font-size: 1rem;
 }
 .sec_3 .bottom ul li p span{
   font-weight: 600;
@@ -1863,6 +1867,7 @@ p.todoufuken_ttl{
 }
 .sec_4 .above .left{
   padding-right: 3rem;
+  font-size: 1rem;
 }
 .sec_4 .above .right{
   max-width: 220px;
