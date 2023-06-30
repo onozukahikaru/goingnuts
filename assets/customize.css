@@ -1511,6 +1511,9 @@ p.todoufuken_ttl{
   position: relative;
   z-index: 1;
 }
+.kenko_lp h3 span img{
+  max-width: 150px;
+}
 .kenko_lp h3 span::after{
   content: '';
   width: 100%;
@@ -1946,6 +1949,10 @@ p.todoufuken_ttl{
 }
 .sec_4 .sns .links a{
   display: block;
+}
+.sec_4 .sns .links .instagram img{
+  width: 20px;
+  margin-right: 5px;
 }
 .sec_4 .right .name{
   display: flex;
