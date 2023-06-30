@@ -1631,6 +1631,7 @@ p.todoufuken_ttl{
   .sec_2 h3{
     font-size: 1.1rem;
     margin-bottom: 2rem;
+    display: block;
   }
   .sec_2 .left{
     margin-bottom: 5rem;
@@ -1886,8 +1887,6 @@ p.todoufuken_ttl{
   font-weight: 600;
   border-bottom: 1px solid #6D6354;
   margin-bottom: 10px;
-}
-.sec_4 .above dl dt{
   display: flex;
   justify-content: space-between;
 }
@@ -2006,6 +2005,13 @@ p.todoufuken_ttl{
   .sec_4 .bottom .name .logo{
     max-width: 140px;
     margin-bottom: 10px;
+  }
+  .sec_4 .above dl dt{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sec_4 .above h4{
+    text-align: left;
   }
 }
 
