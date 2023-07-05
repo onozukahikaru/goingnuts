@@ -2154,3 +2154,6 @@ p.todoufuken_ttl{
 #calendar .fc-daygrid-day-events { display: none; } 
 #calendar a { pointer-events: none; text-decoration: none; } 
 #calendar .fc-bg-event { background: var(--gradient-base-background-2)!important; opacity: 1!important; }
+.fc .fc-daygrid-day.fc-day-today{
+  background: darkseagreen;
+}
