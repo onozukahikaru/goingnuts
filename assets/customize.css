@@ -2145,15 +2145,3 @@ p.todoufuken_ttl{
 }
 
 /* calendar */
-#calendar { width: 300px; } 
-#calendar h2 { margin: 0; padding: 0; border: 0; font-size: 1rem; } 
-#calendar table { background: var(--color-body-background); } 
-#calendar table a { color: var(--color-base); } 
-#calendar .fc-event-title { display: none; } 
-#calendar th, #calendar td, #calendar .fc-col-header, #calendar .fc-scrollgrid-sync-table { margin: 0; padding: 0; }
-#calendar .fc-daygrid-day-events { display: none; } 
-#calendar a { pointer-events: none; text-decoration: none; } 
-#calendar .fc-bg-event { background: var(--gradient-base-background-2)!important; opacity: 1!important; }
-.fc .fc-daygrid-day.fc-day-today{
-  background: darkseagreen;
-}
