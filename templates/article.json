@@ -4,7 +4,7 @@
       "type": "main-article",
       "settings": {
         "show_image": true,
-        "enable_parallax": false,
+        "enable_parallax": true,
         "image_size": "auto",
         "content_width": "xs",
         "show_date": true,
